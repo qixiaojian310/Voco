@@ -1,8 +1,8 @@
-import {LineChart} from 'react-native-gifted-charts';
+import {BarChart} from 'react-native-gifted-charts';
 import React, {useState} from 'react';
 import {LayoutChangeEvent, Text, View, ScrollView} from 'react-native';
 
-function ForgetCurve() {
+function Schedule() {
   const [height, setHeight] = useState(0);
 
   const handleLayout = (event: LayoutChangeEvent) => {
@@ -12,16 +12,26 @@ function ForgetCurve() {
 
   const forgetData = [
     {
-      label: new Date(2023, 1, 1).toDateString(),
-      value: 10,
+      label: '1 days bafore',
+      stacks: [
+        {value: 10, color: 'orange'},
+        {value: 20, color: '#4ABFF4', marginBottom: 2},
+      ],
     },
     {
-      label: new Date(2023, 1, 2).toDateString(),
-      value: 15,
+      label: '2 days bafore',
+      stacks: [
+        {value: 10, color: '#4ABFF4'},
+        {value: 11, color: 'orange', marginBottom: 2},
+        {value: 15, color: '#28B2B3', marginBottom: 2},
+      ],
     },
     {
-      label: new Date(2023, 1, 3).toDateString(),
-      value: 20,
+      label: '3 days bafore',
+      stacks: [
+        {value: 14, color: 'orange'},
+        {value: 18, color: '#4ABFF4', marginBottom: 2},
+      ],
     },
   ];
   return (
@@ -32,7 +42,7 @@ function ForgetCurve() {
           marginHorizontal: 20,
         }}
         onLayout={handleLayout}>
-        <LineChart data={forgetData} height={height} isAnimated spacing={100}/>
+        <BarChart stackData={forgetData} height={height} isAnimated spacing={100} />
       </ScrollView>
       <View
         style={{
@@ -43,4 +53,4 @@ function ForgetCurve() {
     </View>
   );
 }
-export default ForgetCurve;
+export default Schedule;

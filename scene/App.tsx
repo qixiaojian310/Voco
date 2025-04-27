@@ -4,14 +4,14 @@ import * as React from 'react';
 import {DefaultTheme, NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import RegisterScreen from './Views/RegisterScreen';
-import {KeyboardAvoidingView} from 'react-native';
+import {KeyboardAvoidingView, StatusBar} from 'react-native';
 import ReviewScreen from './Views/ReviewScreen';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import BackgroundView from './CoreComponents/BackgroundView';
-import Icon from 'react-native-vector-icons/FontAwesome';
 import TabBar from './CoreComponents/TabBar';
 import StatisticsScreen from './Views/StatisticsScreen';
 import ProfileScreen from './Views/ProfileScreen';
+import { Icon } from '@rneui/themed';
 
 const RootStack = createNativeStackNavigator();
 const MainTab = createBottomTabNavigator();
@@ -50,7 +50,7 @@ function HomeTabs() {
         options={{
           headerShown: false,
           tabBarIcon: props => (
-            <Icon name="user" size={24} color={props.color} />
+            <Icon name="user" type='font-awesome' size={24} color={props.color} />
           ),
         }}
       />
@@ -74,6 +74,7 @@ export default function App() {
       behavior={'padding'}
       keyboardVerticalOffset={-50}>
       <BackgroundView blur={blur} />
+      <StatusBar backgroundColor="transparent" hidden={true} />
       <NavigationContainer
         theme={navTheme}
         onStateChange={state => {

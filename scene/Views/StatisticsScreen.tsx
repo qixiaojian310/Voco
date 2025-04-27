@@ -2,6 +2,8 @@ import {Platform, StatusBar, StyleSheet, Text, View} from 'react-native';
 // import { BarChart } from 'react-native-gifted-charts';
 import {Tab, TabView} from '@rneui/themed';
 import React from 'react';
+import ForgetCurve from './StatisticsTabs/ForgetCurve';
+import Schedule from './StatisticsTabs/Schedule';
 
 function StatisticsScreen() {
   const [index, setIndex] = React.useState(0);
@@ -36,10 +38,10 @@ function StatisticsScreen() {
 
       <TabView value={index} onChange={setIndex} animationType="spring">
         <TabView.Item style={{backgroundColor: '#ffffff52', width: '100%'}}>
-          <Text>Recent</Text>
+          <ForgetCurve />
         </TabView.Item>
         <TabView.Item style={{backgroundColor: '#ffffff52', width: '100%'}}>
-          <Text>Favorite</Text>
+          <Schedule />
         </TabView.Item>
         <TabView.Item style={{backgroundColor: '#ffffff52', width: '100%'}}>
           <Text>Cart</Text>
