@@ -1,32 +1,43 @@
 import mysql.connector
+from mysql.connector import pooling
+from contextlib import contextmanager
+import loguru
 
-# 建立连接
-config = {
-    "user": "root",  # 数据库用户名
-    "password": "123456",  # 数据库密码
-    "host": "localhost",  # 数据库地址（本地为 localhost）
-    "database": "voco",  # 数据库名
-    "raise_on_warnings": True,  # 显示警告
+# 初始化日志
+logger = loguru.logger
+
+# 数据库配置
+dbconfig = {
+    "user": "root",
+    "password": "123456",
+    "host": "120.76.53.217",
+    "database": "voco",
+    "port": 3306,
+    "connect_timeout": 5,
+    "raise_on_warnings": True,
 }
 
-try:
-    conn = mysql.connector.connect(**config)
-    print("数据库连接成功！")
+# 初始化连接池
+connection_pool = None
 
-    # 创建游标对象
-    cursor = conn.cursor()
 
-    # 执行SQL查询
-    cursor.execute("SELECT VERSION()")
-    db_version = cursor.fetchone()
-    print("MySQL 版本:", db_version[0])
+def init_connection_pool():
+    global connection_pool
+    connection_pool = pooling.MySQLConnectionPool(
+        pool_name="voco_pool", pool_size=5, **dbconfig
+    )
+    logger.debug(f"连接池初始化完成，大小: {connection_pool.pool_size}")
 
-except mysql.connector.Error as err:
-    print(f"连接失败: {err}")
 
-finally:
-    # 关闭连接
-    if "conn" in locals() and conn.is_connected():
-        cursor.close()
-        conn.close()
-        print("数据库连接已关闭")
+@contextmanager
+def get_connection():
+    conn = None
+    try:
+        conn = connection_pool.get_connection()
+        yield conn
+    except mysql.connector.Error as err:
+        logger.debug(f"获取连接失败: {err}")
+        raise
+    finally:
+        if conn:
+            conn.close()

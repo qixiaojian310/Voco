@@ -1,0 +1,143 @@
+from jwt_utils import JWTManager
+from database_connector import get_connection, logger
+import mysql.connector
+import hashlib
+
+jwt_manager = JWTManager(secret_key="your-secret-key-here")
+
+
+def get_user_count():
+    try:
+        with get_connection() as conn:
+            with conn.cursor() as cursor:
+                cursor.execute("SELECT COUNT(*) FROM users")
+                count = cursor.fetchone()[0]
+                logger.debug(f"用户总数: {count}")
+                return count
+    except Exception as e:
+        logger.debug(f"查询失败: {e}")
+        return None
+
+
+def create_user(username, password_hash, is_test=True):
+    if is_test:
+        password_hash = hashlib.sha1(password_hash.encode("utf-8")).hexdigest()
+    try:
+        with get_connection() as conn:
+            with conn.cursor() as cursor:
+                cursor.execute(
+                    "INSERT INTO users (username, password_hash) VALUES (%s, %s)",
+                    (username, password_hash),
+                )
+                conn.commit()
+                logger.debug(f"用户 {username} 插入成功")
+    except mysql.connector.Error as err:
+        logger.debug(f"插入失败: {err}")
+
+
+def user_login(username, password_hash, is_test=True):
+    if is_test:
+        password_hash = hashlib.sha1(password_hash.encode("utf-8")).hexdigest()
+    try:
+        with get_connection() as conn:
+            with conn.cursor() as cursor:
+                cursor.execute(
+                    "SELECT * FROM users WHERE username = %s AND password_hash = %s",
+                    (username, password_hash),
+                )
+                user = cursor.fetchone()
+                if user:
+                    logger.debug(f"用户 {username} 登录成功")
+                    return {
+                        "username": user[1],
+                        "token": jwt_manager.generate_token(user[1]),
+                    }
+                else:
+                    logger.debug(f"用户 {username} 登录失败")
+                    return None
+    except mysql.connector.Error as err:
+        logger.debug(f"查询失败: {err}")
+        return None
+
+
+def change_password(username, old_password_hash, new_password_hash, is_test=True):
+    if is_test:
+        old_password_hash = hashlib.sha1(old_password_hash.encode("utf-8")).hexdigest()
+        new_password_hash = hashlib.sha1(new_password_hash.encode("utf-8")).hexdigest()
+    try:
+        with get_connection() as conn:
+            with conn.cursor() as cursor:
+                cursor.execute(
+                    "SELECT * FROM users WHERE username = %s AND password_hash = %s",
+                    (username, old_password_hash),
+                )
+                user = cursor.fetchone()
+                if user:
+                    cursor.execute(
+                        "UPDATE users SET password_hash = %s WHERE username = %s",
+                        (new_password_hash, username),
+                    )
+                    conn.commit()
+                    logger.debug(f"用户 {username} 密码修改成功")
+                    return True
+                else:
+                    logger.debug(f"用户 {username} 密码修改失败")
+                    return False
+    except mysql.connector.Error as err:
+        logger.debug(f"查询失败: {err}")
+        return False
+
+
+def set_user_daily_goal(username, daily_goal, is_test=True):
+    try:
+        with get_connection() as conn:
+            with conn.cursor() as cursor:
+                cursor.execute(
+                    "UPDATE users SET daily_goal = %s WHERE username = %s",
+                    (daily_goal, username),
+                )
+                conn.commit()
+                logger.debug(f"用户 {username} 每日目标设置成功")
+    except mysql.connector.Error as err:
+        logger.debug(f"查询失败: {err}")
+        return False
+
+
+def get_user_daily_goal(username, is_test=True):
+    try:
+        with get_connection() as conn:
+            with conn.cursor() as cursor:
+                cursor.execute(
+                    "SELECT daily_goal FROM users WHERE username = %s",
+                    (username,),
+                )
+                daily_goal = cursor.fetchone()
+                if daily_goal:
+                    logger.debug(f"用户 {username} 每日目标获取成功")
+                    return daily_goal[0]
+                else:
+                    logger.debug(f"用户 {username} 每日目标获取失败")
+                    return None
+    except mysql.connector.Error as err:
+        logger.debug(f"查询失败: {err}")
+        return None
+
+
+def get_user_streak_days(username, is_test=True):
+    try:
+        with get_connection() as conn:
+            with conn.cursor() as cursor:
+                cursor.execute(
+                    "SELECT streak_days FROM users WHERE username = %s",
+                    (username,),
+                )
+                streak_days = cursor.fetchone()
+                if streak_days:
+                    logger.debug(f"用户 {username} 连续打卡天数获取成功")
+                    return streak_days[0]
+                else:
+                    logger.debug(f"用户 {username} 连续打卡天数获取失败")
+                    return None
+    except mysql.connector.Error as err:
+        logger.debug(f"查询失败: {err}")
+        return None
