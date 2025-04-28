@@ -1,7 +1,6 @@
 from database_connector import logger, init_connection_pool
-from user import user_login, get_user_daily_goal
+from word import insert_word_records
 
 if __name__ == "__main__":
     init_connection_pool()
-    logger.debug(user_login("qixiaojian", "sushiyun"))
-    logger.debug(get_user_daily_goal("qixiaojian"))
+    insert_word_records()

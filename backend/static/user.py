@@ -1,9 +1,6 @@
-from jwt_utils import JWTManager
-from database_connector import get_connection, logger
+from .database_connector import get_connection, logger
 import mysql.connector
 import hashlib
-
-jwt_manager = JWTManager(secret_key="your-secret-key-here")
 
 
 def get_user_count():
@@ -35,12 +32,12 @@ def create_user(username, password_hash, is_test=True):
         logger.debug(f"插入失败: {err}")
 
 
-def user_login(username, password_hash, is_test=True):
+def user_login(username, password_hash, is_test=False):
     if is_test:
         password_hash = hashlib.sha1(password_hash.encode("utf-8")).hexdigest()
     try:
         with get_connection() as conn:
-            with conn.cursor() as cursor:
+            with conn.cursor(dictionary=True) as cursor:
                 cursor.execute(
                     "SELECT * FROM users WHERE username = %s AND password_hash = %s",
                     (username, password_hash),
@@ -48,10 +45,7 @@ def user_login(username, password_hash, is_test=True):
                 user = cursor.fetchone()
                 if user:
                     logger.debug(f"用户 {username} 登录成功")
-                    return {
-                        "username": user[1],
-                        "token": jwt_manager.generate_token(user[1]),
-                    }
+                    return user
                 else:
                     logger.debug(f"用户 {username} 登录失败")
                     return None

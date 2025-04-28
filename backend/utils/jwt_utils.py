@@ -8,7 +8,7 @@ class JWTManager:
         self.secret_key = secret_key
         self.algorithm = algorithm
 
-    def generate_token(self, user_id: int, expires_minutes: int = 30) -> str:
+    def generate_token(self, username: str, expires_minutes: int = 30) -> str:
         """生成JWT令牌"""
         expire = datetime.datetime.utcnow() + datetime.timedelta(
             minutes=expires_minutes
@@ -16,15 +16,15 @@ class JWTManager:
         payload = {
             "exp": expire,
             "iat": datetime.datetime.utcnow(),
-            "sub": str(user_id),
+            "sub": username,
         }
         return jwt.encode(payload, self.secret_key, algorithm=self.algorithm)
 
-    def verify_token(self, token: str) -> Optional[int]:
+    def verify_token(self, token: str) -> Optional[str]:
         """验证JWT令牌"""
         try:
             payload = jwt.decode(token, self.secret_key, algorithms=[self.algorithm])
-            return int(payload["sub"])
+            return payload["sub"]
         except (jwt.ExpiredSignatureError, jwt.InvalidTokenError) as e:
             print(f"Token验证失败: {e}")
             return None

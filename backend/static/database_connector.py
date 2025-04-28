@@ -29,6 +29,13 @@ def init_connection_pool():
     logger.debug(f"连接池初始化完成，大小: {connection_pool.pool_size}")
 
 
+def close_connection_pool():
+    global connection_pool
+    if connection_pool:
+        connection_pool = None
+        logger.debug("连接池已关闭。")
+
+
 @contextmanager
 def get_connection():
     conn = None

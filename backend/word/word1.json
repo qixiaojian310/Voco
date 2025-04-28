@@ -1,0 +1,2222 @@
+[
+  {
+      "word": "emperor",
+      "phonetic": "ˈempərə(r)",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "皇帝；君主"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The emperor's wisdom and leadership united the diverse regions of his vast empire.",
+              "translation": "皇帝的智慧和领导力将他辽阔帝国的各个地区团结在一起。"
+          },
+          {
+              "sentence": "The emperor was revered as a symbol of national unity.",
+              "translation": "皇帝被视为国家统一的象征。"
+          },
+          {
+              "sentence": "In ancient times, the emperor had absolute power over his subjects.",
+              "translation": "在古代，皇帝对臣民拥有绝对权力。"
+          },
+          {
+              "sentence": "The emperor's decree was obeyed without question throughout the kingdom.",
+              "translation": "皇帝的诏书在整个王国中无人敢违抗。"
+          }
+      ]
+  },
+  {
+      "word": "exact",
+      "phonetic": "ɪgˈzækt",
+      "translations": [
+          {
+              "abbreviation": "a.",
+              "translation": "精确的；准确的"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The scientist needed the exact measurements to ensure the experiment would yield accurate results.",
+              "translation": "科学家需要精确的测量数据，以确保实验能够得出准确的结果。"
+          },
+          {
+              "sentence": "Please provide the exact amount of money required.",
+              "translation": "请提供所需的确切金额。"
+          },
+          {
+              "sentence": "The exact location of the meeting is still being decided.",
+              "translation": "会议的确切地点仍在决定中。"
+          },
+          {
+              "sentence": "He gave an exact description of the suspect.",
+              "translation": "他给出了嫌疑人的精确描述。"
+          }
+      ]
+  },
+  {
+      "word": "traditional",
+      "phonetic": "trəˈdɪʃənl",
+      "translations": [
+          {
+              "abbreviation": "a.",
+              "translation": "传统的，惯例的；口传的，传说的"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "During the festival, the villagers performed a traditional dance that had been passed down through generations.",
+              "translation": "在节日期间，村民们表演了一种代代相传的传统舞蹈。"
+          },
+          {
+              "sentence": "Traditional medicine has been used for centuries to treat various ailments.",
+              "translation": "传统医学已经使用了数个世纪来治疗各种疾病。"
+          },
+          {
+              "sentence": "The traditional way of cooking this dish involves using fresh herbs and spices.",
+              "translation": "烹饪这道菜的传统方法是使用新鲜的香草和香料。"
+          },
+          {
+              "sentence": "She wore a traditional dress to the cultural event.",
+              "translation": "她穿着传统服装参加了文化活动。"
+          }
+      ]
+  },
+  {
+      "word": "lack",
+      "phonetic": "læk",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "缺乏，不足，没有"
+          },
+          {
+              "abbreviation": "vt.",
+              "translation": "缺乏，没有"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "Without that morning meal, the body may lack the necessary fuel for energy.",
+              "translation": "如果没有那顿早饭，身体可能会缺乏能量所需的燃料。"
+          },
+          {
+              "sentence": "The team's performance lacked consistency throughout the season.",
+              "translation": "整个赛季中，球队的表现缺乏稳定性。"
+          },
+          {
+              "sentence": "He lacks the experience to handle such a complex project.",
+              "translation": "他缺乏处理如此复杂项目的经验。"
+          },
+          {
+              "sentence": "The report lacks detailed information on the issue.",
+              "translation": "报告中缺乏关于该问题的详细信息。"
+          }
+      ]
+  },
+  {
+      "word": "pardon",
+      "phonetic": "ˈpɑːdn",
+      "translations": [
+          {
+              "abbreviation": "excl.",
+              "translation": "（用于请求别人重复某事）什么，请再说一遍"
+          },
+          {
+              "abbreviation": "n./vt.",
+              "translation": "原谅，宽恕；赦免"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "Afer accidentally stepping on his friend's foot, Jake quickly said, 'Pardon me, I didn't mean to hurt you.'",
+              "translation": "杰克不小心踩到了朋友的脚，他赶紧说：'对不起，我不是故意的。'"
+          },
+          {
+              "sentence": "Pardon me, but could you repeat what you just said?",
+              "translation": "对不起，你能重复一下你刚才说的话吗？"
+          },
+          {
+              "sentence": "The president granted a pardon to the prisoner.",
+              "translation": "总统赦免了这名囚犯。"
+          },
+          {
+              "sentence": "He asked for pardon for his mistake.",
+              "translation": "他为自己的错误请求宽恕。"
+          }
+      ]
+  },
+  {
+      "word": "regent",
+      "phonetic": "ˈriːdʒənt",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "摄政者（代国王统治者）"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "During the young king's minority, the regent managed the kingdom's affairs with wisdom and fairness.",
+              "translation": "在年轻的国王未成年期间，摄政者以智慧和公正管理着王国的事务。"
+          },
+          {
+              "sentence": "The regent was highly respected for his ability to lead the country.",
+              "translation": "摄政者因其领导国家的能力而备受尊敬。"
+          },
+          {
+              "sentence": "The regent made several important reforms during his tenure.",
+              "translation": "摄政者在其任期内推行了几项重要的改革。"
+          },
+          {
+              "sentence": "The young prince relied heavily on the regent's advice.",
+              "translation": "年轻的王子非常依赖摄政者的建议。"
+          }
+      ]
+  },
+  {
+      "word": "burgeon",
+      "phonetic": "ˈbɜːdʒən",
+      "translations": [
+          {
+              "abbreviation": "vi.",
+              "translation": "迅速成长；发展"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "With the arrival of spring, the garden begun to burgeon with vibrant flowers and lush greenery.",
+              "translation": "随着春天的到来，花园里开始长满了鲜艳的花朵和茂密的绿植。"
+          },
+          {
+              "sentence": "The company is expected to burgeon in the next few years.",
+              "translation": "预计该公司在未来几年将迅速发展。"
+          },
+          {
+              "sentence": "The city's population has burgeoned in recent decades.",
+              "translation": "该市的人口在最近几十年迅速增长。"
+          },
+          {
+              "sentence": "The new technology is expected to burgeon in the market.",
+              "translation": "预计这项新技术将在市场上迅速发展。"
+          }
+      ]
+  },
+  {
+      "word": "argue",
+      "phonetic": "ˈɑːgjuː",
+      "translations": [
+          {
+              "abbreviation": "v.",
+              "translation": "争论；说服"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "Despite their best effort to remain calm, they continued to argue about the best approach to the project.",
+              "translation": "尽管他们努力保持冷静，但他们仍然就项目的最佳方法争论不休。"
+          },
+          {
+              "sentence": "They often argue about politics.",
+              "translation": "他们经常争论政治问题。"
+          },
+          {
+              "sentence": "She tried to argue him out of his decision.",
+              "translation": "她试图说服他改变决定。"
+          },
+          {
+              "sentence": "The lawyer argued the case in court.",
+              "translation": "律师在法庭上为这个案件辩护。"
+          }
+      ]
+  },
+  {
+      "word": "barely",
+      "phonetic": "ˈbeəli",
+      "translations": [
+          {
+              "abbreviation": "ad.",
+              "translation": "仅仅，几乎不；赤裸裸地，无遮蔽地"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "She was so tired that she could barely keep her eyes open during the meeting.",
+              "translation": "她太累了，以至于在会议中几乎无法睁开眼睛。"
+          },
+          {
+              "sentence": "He barely passed the exam.",
+              "translation": "他勉强通过了考试。"
+          },
+          {
+              "sentence": "The patient was barely conscious after the accident.",
+              "translation": "事故发生后，患者几乎失去了意识。"
+          },
+          {
+              "sentence": "We barely had time to catch the train.",
+              "translation": "我们几乎来不及赶上火车。"
+          }
+      ]
+  },
+  {
+      "word": "methane",
+      "phonetic": "ˈmiːθeɪn",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "甲烷，沼气"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "Methane is a potent greenhouse gas that is released during the decomposition of organic matter in landfills.",
+              "translation": "甲烷是一种强效温室气体，它在垃圾填埋场中有机物分解时释放出来。"
+          },
+          {
+              "sentence": "The study focused on reducing methane emissions from livestock farming.",
+              "translation": "该研究专注于减少畜牧业的甲烷排放。"
+          },
+          {
+              "sentence": "Methane is one of the main components of natural gas.",
+              "translation": "甲烷是天然气的主要成分之一。"
+          },
+          {
+              "sentence": "The scientists measured the levels of methane in the atmosphere.",
+              "translation": "科学家们测量了大气中的甲烷水平。"
+          }
+      ]
+  },
+  {
+      "word": "hierarchy",
+      "phonetic": "ˈhaɪərɑːkɪ",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "领导层；层次，等级"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "In the corporate hierarchy, the decisions of the senior management team significantly influence the company's overall strategy.",
+              "translation": "在公司的层级结构中，高级管理团队的决策对公司整体战略有重大影响。"
+          },
+          {
+              "sentence": "The military has a strict hierarchy.",
+              "translation": "军队有严格的等级制度。"
+          },
+          {
+              "sentence": "The company's hierarchy includes several levels of management.",
+              "translation": "公司的层级结构包括多个管理层级。"
+          },
+          {
+              "sentence": "Understanding the hierarchy is important for effective communication within the organization.",
+              "translation": "了解层级结构对于组织内的有效沟通至关重要。"
+          }
+      ]
+  },
+  {
+      "word": "guidance",
+      "phonetic": "ˈgaɪdns",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "指引，指导"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "She sought guidance from her mentor to help navigate the challenges of her new role at work.",
+              "translation": "她向导师寻求指导，以应对工作中新角色的挑战。"
+          },
+          {
+              "sentence": "The teacher provided guidance to the students on how to prepare for the exam.",
+              "translation": "老师为学生们提供了如何备考的指导。"
+          },
+          {
+              "sentence": "The company offers career guidance to its employees.",
+              "translation": "公司为员工提供职业指导。"
+          },
+          {
+              "sentence": "He needed guidance on how to use the new software.",
+              "translation": "他需要指导如何使用新软件。"
+          }
+      ]
+  },
+  {
+      "word": "easy-going",
+      "phonetic": "ˈiːziˏgəuɪŋ",
+      "translations": [
+          {
+              "abbreviation": "a.",
+              "translation": "脾气随和的，心平气和的；随便的"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "His easy-going nature made him a favorite among his colleagues, as he always remained calm and approachable under pressure.",
+              "translation": "他随和的性格使他成为同事们最喜欢的同事之一，因为他在压力下总是保持冷静且平易近人。"
+          },
+          {
+              "sentence": "She is an easy-going person and gets along well with everyone.",
+              "translation": "她是一个随和的人，和每个人都相处得很好。"
+          },
+          {
+              "sentence": "The easy-going atmosphere made everyone feel relaxed.",
+              "translation": "这种随和的氛围让每个人都感到放松。"
+          },
+          {
+              "sentence": "He has an easy-going attitude towards life.",
+              "translation": "他对生活有一种随和的态度。"
+          }
+      ]
+  },
+  {
+      "word": "electrical",
+      "phonetic": "ɪˈlektrɪkl",
+      "translations": [
+          {
+              "abbreviation": "a.",
+              "translation": "电的，电学的，有关电的"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The electrician was called to fix a problem with the building's electrical wiring to ensure all the lights and outlets were functioning properly.",
+              "translation": "电工被叫来修理大楼的电气线路问题，以确保所有的灯和插座都能正常工作。"
+          },
+          {
+              "sentence": "The electrical storm caused a blackout in the area.",
+              "translation": "电气风暴导致该地区停电。"
+          },
+          {
+              "sentence": "He studied electrical engineering in college.",
+              "translation": "他在大学学习电气工程。"
+          },
+          {
+              "sentence": "The electrical device requires a battery to operate.",
+              "translation": "这个电气设备需要电池才能运行。"
+          }
+      ]
+  },
+  {
+      "word": "electronic",
+      "phonetic": "‚ɪlek'trɒnɪk",
+      "translations": [
+          {
+              "abbreviation": "a.",
+              "translation": "电子的"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "She prefers using electronic books because they are more convenient to carry and can be read on various devices.",
+              "translation": "她更喜欢使用电子书，因为它们携带方便，可以在各种设备上阅读。"
+          },
+          {
+              "sentence": "Electronic devices have become an essential part of modern life.",
+              "translation": "电子设备已成为现代生活的重要组成部分。"
+          },
+          {
+              "sentence": "The company specializes in electronic components.",
+              "translation": "该公司专注于电子元件。"
+          },
+          {
+              "sentence": "He uses an electronic keyboard for his music compositions.",
+              "translation": "他使用电子键盘进行音乐创作。"
+          }
+      ]
+  },
+  {
+      "word": "roll film",
+      "phonetic": "rəʊl fɪlm",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "胶卷"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "To capture the vintage aesthetic, they decided to use roll film instead of digital cameras for their photography project.",
+              "translation": "为了捕捉复古的美感，他们决定在摄影项目中使用胶卷而不是数码相机。"
+          },
+          {
+              "sentence": "He still uses roll film for his classic camera.",
+              "translation": "他仍然使用胶卷为他的老式相机拍照。"
+          },
+          {
+              "sentence": "Roll film was popular before the advent of digital photography.",
+              "translation": "在数码摄影出现之前，胶卷非常流行。"
+          },
+          {
+              "sentence": "The photographer prefers the look of images taken with roll film.",
+              "translation": "摄影师更喜欢用胶卷拍摄的图像效果。"
+          }
+      ]
+  },
+  {
+      "word": "philosophy",
+      "phonetic": "fɪˈlɔsəfɪ",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "哲学；哲理"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "Her philosophy on life emphasizes the importance of kindness and living in the present moment.",
+              "translation": "她的生活哲学强调善良和活在当下的重要性。"
+          },
+          {
+              "sentence": "The study of philosophy helps us understand different perspectives on life.",
+              "translation": "哲学研究帮助我们理解生活的不同视角。"
+          },
+          {
+              "sentence": "He has a unique philosophy about work and success.",
+              "translation": "他对工作和成功有一种独特的哲学。"
+          },
+          {
+              "sentence": "The philosophy of the company is to prioritize customer satisfaction.",
+              "translation": "公司的哲学是优先考虑客户满意度。"
+          }
+      ]
+  },
+  {
+      "word": "chronic",
+      "phonetic": "ˈkrɔnɪk",
+      "translations": [
+          {
+              "abbreviation": "a.",
+              "translation": "（疾病）慢性的；积习难改的"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "He suffers from chronic back pain that has persisted for years despite various treatments.",
+              "translation": "他患有慢性背痛，尽管接受了各种治疗，但疼痛已经持续多年。"
+          },
+          {
+              "sentence": "Chronic stress can have negative effects on one's health.",
+              "translation": "慢性压力会对健康产生负面影响。"
+          },
+          {
+              "sentence": "She has chronic insomnia and has trouble falling asleep.",
+              "translation": "她患有慢性失眠症，很难入睡。"
+          },
+          {
+              "sentence": "The chronic problem of pollution needs urgent attention.",
+              "translation": "污染这一慢性问题需要紧急关注。"
+          }
+      ]
+  },
+  {
+      "word": "desirable",
+      "phonetic": "dɪˈzaɪərəbl",
+      "translations": [
+          {
+              "abbreviation": "a.",
+              "translation": "值得拥有的；合意的；可取的，有利的"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "Having a flexible work schedule is highly desirable to many employees as it allows for better work-life balance.",
+              "translation": "拥有灵活的工作时间表对许多员工来说是非常理想的，因为它可以实现更好的工作与生活平衡。"
+          },
+          {
+              "sentence": "A desirable neighborhood is one with good schools and low crime rates.",
+              "translation": "理想的社区是那些有好学校和低犯罪率的地方。"
+          },
+          {
+              "sentence": "The property is in a desirable location near the city center.",
+              "translation": "该房产位于靠近市中心的理想位置。"
+          },
+          {
+              "sentence": "A desirable candidate for the job would have both experience and qualifications.",
+              "translation": "理想的职位候选人应具备经验和资质。"
+          }
+      ]
+  },
+  {
+      "word": "consortium",
+      "phonetic": "kənˈsɔːtɪəm",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "集团；财团；社团，协会"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The university formed a consortium with several leading technology companies to advance research in artificial intelligence.",
+              "translation": "该大学与几家领先的科技公司组成了一个联盟，以推进人工智能的研究。"
+          },
+          {
+              "sentence": "The consortium aims to promote sustainable development in the region.",
+              "translation": "该联盟旨在促进该地区的可持续发展。"
+          },
+          {
+              "sentence": "The consortium includes members from various industries.",
+              "translation": "该联盟包括来自不同行业的成员。"
+          },
+          {
+              "sentence": "The consortium's efforts led to significant advancements in the field.",
+              "translation": "该联盟的努力在该领域取得了重大进展。"
+          }
+      ]
+  },
+  {
+      "word": "buckle",
+      "phonetic": "ˈbʌkl",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "皮带扣环"
+          },
+          {
+              "abbreviation": "v.",
+              "translation": "扣紧；（使）变形；弯曲"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "Before starting the hike, make sure to buckle your backpack straps securely to avoid any discomfort on the trail.",
+              "translation": "在开始徒步之前，请确保牢固地扣紧背包的背带，以避免在途中感到不适。"
+          },
+          {
+              "sentence": "The metal buckle on the belt was shiny and new.",
+              "translation": "皮带上的金属扣环又亮又新。"
+          },
+          {
+              "sentence": "The structure began to buckle under the heavy load.",
+              "translation": "在重压下，结构开始变形。"
+          },
+          {
+              "sentence": "He buckled his seatbelt before driving off.",
+              "translation": "他开车前系好了安全带。"
+          }
+      ]
+  },
+  {
+      "word": "curry",
+      "phonetic": "ˈkʌrɪ",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "咖喱，咖喱饭菜"
+          },
+          {
+              "abbreviation": "vt.",
+              "translation": "把（肉、蔬菜等）做成咖喱食品；梳刷（马毛等）"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "Last night, I made a delicious chicken curry with a blend of aromatic spices and fresh vegetables.",
+              "translation": "昨晚，我用一串芳香的香料和新鲜蔬菜做了一道美味的咖喱鸡。"
+          },
+          {
+              "sentence": "She loves eating curry dishes.",
+              "translation": "她喜欢吃咖喱菜。"
+          },
+          {
+              "sentence": "The chef curried the vegetables with a special recipe.",
+              "translation": "厨师用一个特别的食谱做了咖喱蔬菜。"
+          },
+          {
+              "sentence": "He curried the horse's coat to make it shiny.",
+              "translation": "他刷了马的毛，使它看起来光亮。"
+          }
+      ]
+  },
+  {
+      "word": "subliminal",
+      "phonetic": "ˏsʌbˈlɪmɪnl",
+      "translations": [
+          {
+              "abbreviation": "a.",
+              "translation": "下意识的，潜意识的"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The advertisement used subliminal messages to subtly influence viewers' purchasing decisions without their conscious awareness.",
+              "translation": "该广告使用了潜意识信息，以微妙的方式影响观众的购买决策，而他们并未意识到。"
+          },
+          {
+              "sentence": "Subliminal advertising is controversial because it targets the subconscious mind.",
+              "translation": "潜意识广告存在争议，因为它针对的是潜意识。"
+          },
+          {
+              "sentence": "The study explored the effects of subliminal stimuli on human behavior.",
+              "translation": "该研究探讨了潜意识刺激对人类行为的影响。"
+          },
+          {
+              "sentence": "He believes that subliminal messages can influence people's emotions.",
+              "translation": "他认为潜意识信息可以影响人们的情绪。"
+          }
+      ]
+  },
+  {
+      "word": "chamber",
+      "phonetic": "ˈtʃeɪmbə(r)",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "室；洞穴；（枪）膛"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The scientist carefully adjusted the pressure inside the vacuum chamber before conducting the experiment.",
+              "translation": "科学家在进行实验之前仔细调整了真空室内的压力。"
+          },
+          {
+              "sentence": "The bullet was loaded into the chamber of the gun.",
+              "translation": "子弹被装入了枪膛。"
+          },
+          {
+              "sentence": "The cave had several chambers inside.",
+              "translation": "这个洞穴内有几个洞室。"
+          },
+          {
+              "sentence": "The meeting was held in the chamber of the council.",
+              "translation": "会议在议会的议事厅举行。"
+          }
+      ]
+  },
+  {
+      "word": "frequent",
+      "phonetic": "ˈfriːkwənt",
+      "translations": [
+          {
+              "abbreviation": "a.",
+              "translation": "频繁的，常见的，常用的"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "She made frequent visits to the library to study for her upcoming exams.",
+              "translation": "她经常去图书馆为即将到来的考试做准备。"
+          },
+          {
+              "sentence": "Frequent travelers often benefit from loyalty programs.",
+              "translation": "频繁旅行的人通常会从忠诚度计划中受益。"
+          },
+          {
+              "sentence": "He made frequent mistakes in his writing.",
+              "translation": "他的写作中经常出现错误。"
+          },
+          {
+              "sentence": "The bus service is frequent during rush hour.",
+              "translation": "在高峰时段，公交车服务很频繁。"
+          }
+      ]
+  },
+  {
+      "word": "prosperous",
+      "phonetic": "ˈprɔspərəs",
+      "translations": [
+          {
+              "abbreviation": "a.",
+              "translation": "繁荣的，兴旺的；成功的"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "After years of hard work and dedication, the small business became a prosperous enterprise with a growing customer base.",
+              "translation": "经过多年的努力和奉献，这家小企业发展成为一家拥有不断增长的客户群的繁荣企业。"
+          },
+          {
+              "sentence": "The city is known for its prosperous economy.",
+              "translation": "这座城市以其繁荣的经济而闻名。"
+          },
+          {
+              "sentence": "The company's new strategy led to a prosperous period for the business.",
+              "translation": "公司的新策略使业务进入了一个繁荣时期。"
+          },
+          {
+              "sentence": "The region has a prosperous agricultural industry.",
+              "translation": "该地区拥有繁荣的农业产业。"
+          }
+      ]
+  },
+  {
+      "word": "purpose",
+      "phonetic": "ˈpɜːpəs",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "目的，意图；用途，效果"
+          },
+          {
+              "abbreviation": "v.",
+              "translation": "打算，企图，决心"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "She approached her new role with a clear sense of purpose, determined to make a meaningful impact on the team.",
+              "translation": "她带着明确的目标感迎接她的新角色，决心对团队产生有意义的影响。"
+          },
+          {
+              "sentence": "The purpose of the meeting was to discuss the new project.",
+              "translation": "会议的目的是讨论新项目。"
+          },
+          {
+              "sentence": "He purposefully avoided the topic.",
+              "translation": "他有意识地回避了这个话题。"
+          },
+          {
+              "sentence": "The tool is designed for a specific purpose.",
+              "translation": "这个工具是为特定目的设计的。"
+          }
+      ]
+  },
+  {
+      "word": "variety",
+      "phonetic": "vəˈraɪətɪ",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "品种，种类；变化，多样化"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The farmer's market offers a wide variety of fresh fruits and vegetables, ensuring that there's something for everyone.",
+              "translation": "农民市场提供各种各样的新鲜水果和蔬菜，确保每个人都能找到自己喜欢的。"
+          },
+          {
+              "sentence": "A variety of factors contributed to the problem.",
+              "translation": "多种因素导致了这个问题。"
+          },
+          {
+              "sentence": "The restaurant has a great variety of dishes on the menu.",
+              "translation": "这家餐厅的菜单上有各种各样的菜肴。"
+          },
+          {
+              "sentence": "He enjoys the variety of tasks in his job.",
+              "translation": "他喜欢工作中各种各样的任务。"
+          }
+      ]
+  },
+  {
+      "word": "immigration",
+      "phonetic": "‚ɪmɪ'greɪʃn",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "外来的移民；移居"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "Immigration policies play a crucial role in shaping the demographic and economic landscape of a country.",
+              "translation": "移民政策在塑造一个国家的人口和经济格局中发挥着关键作用。"
+          },
+          {
+              "sentence": "The country has seen a significant increase in immigration in recent years.",
+              "translation": "近年来，该国的移民数量显著增加。"
+          },
+          {
+              "sentence": "Immigration has enriched the cultural diversity of the city.",
+              "translation": "移民丰富了这座城市的文化多样性。"
+          },
+          {
+              "sentence": "The government is considering new immigration laws.",
+              "translation": "政府正在考虑新的移民法。"
+          }
+      ]
+  },
+  {
+      "word": "natural",
+      "phonetic": "ˈnætʃrəl",
+      "translations": [
+          {
+              "abbreviation": "a.",
+              "translation": "正常的，普通的，自然的；自然界的，天然的；天赋的，固有的"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "She preferred using natural ingredients in her cooking to ensure the meals were both healthy and flavorful.",
+              "translation": "她更喜欢在烹饪中使用天然食材，以确保饭菜既健康又美味。"
+          },
+          {
+              "sentence": "The natural beauty of the landscape attracted many tourists.",
+              "translation": "这片风景的自然之美吸引了许多游客。"
+          },
+          {
+              "sentence": "He has a natural talent for music.",
+              "translation": "他天生具有音乐才能。"
+          },
+          {
+              "sentence": "The natural resources of the country are abundant.",
+              "translation": "该国的自然资源丰富。"
+          }
+      ]
+  },
+  {
+      "word": "bet",
+      "phonetic": "bet",
+      "translations": [
+          {
+              "abbreviation": "v.",
+              "translation": "赌，打赌"
+          },
+          {
+              "abbreviation": "n.",
+              "translation": "打赌，赌注"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "He placed a bet on the soccer match, hoping his favorite team would win.",
+              "translation": "他在足球比赛上下了注，希望他最喜欢的球队能赢。"
+          },
+          {
+              "sentence": "I'll bet you ten dollars that it will rain tomorrow.",
+              "translation": "我跟你赌十美元，明天会下雨。"
+          },
+          {
+              "sentence": "He made a safe bet by choosing the more experienced candidate.",
+              "translation": "他选择更有经验的候选人，这是一个稳妥的赌注。"
+          },
+          {
+              "sentence": "The bet was settled after the game ended.",
+              "translation": "比赛结束后，赌注就结清了。"
+          }
+      ]
+  },
+  {
+      "word": "consumer",
+      "phonetic": "kənˈsjuːmə(r)",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "消费者；用户"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "Modern companies need to understand consumer preferences to tailor their products and marketing strategies effectively.",
+              "translation": "现代公司需要了解消费者的偏好，以便有效地定制产品和营销策略。"
+          },
+          {
+              "sentence": "The consumer demand for organic products is increasing.",
+              "translation": "消费者对有机产品的需求正在增加。"
+          },
+          {
+              "sentence": "The company launched a new product aimed at young consumers.",
+              "translation": "该公司推出了一款针对年轻消费者的新产品。"
+          },
+          {
+              "sentence": "Consumer reviews are important for product development.",
+              "translation": "消费者评论对产品开发很重要。"
+          }
+      ]
+  },
+  {
+      "word": "physician",
+      "phonetic": "fɪˈzɪʃn",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "内科医生，医师"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The physician carefully reviewed the patient's medical history before recommending a treatment plan.",
+              "translation": "医生在推荐治疗方案之前仔细查看了患者的病历。"
+          },
+          {
+              "sentence": "The physician diagnosed the patient with a common cold.",
+              "translation": "医生诊断患者患有普通感冒。"
+          },
+          {
+              "sentence": "The physician prescribed medication for the patient's condition.",
+              "translation": "医生为患者的病情开了药。"
+          },
+          {
+              "sentence": "The physician is known for his expertise in internal medicine.",
+              "translation": "这位医生以内科专业知识而闻名。"
+          }
+      ]
+  },
+  {
+      "word": "equal",
+      "phonetic": "ˈiːkwəl",
+      "translations": [
+          {
+              "abbreviation": "a.",
+              "translation": "相等的"
+          },
+          {
+              "abbreviation": "vt.",
+              "translation": "比得上"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "Everyone in the team was given an equal opportunity to contribute ideas during the brainstorming session.",
+              "translation": "在头脑风暴会议中，团队中的每个人都被给予了平等的机会来提出想法。"
+          },
+          {
+              "sentence": "The two teams are equal in strength.",
+              "translation": "这两个队实力相当。"
+          },
+          {
+              "sentence": "He is equal to the task.",
+              "translation": "他能够胜任这项任务。"
+          },
+          {
+              "sentence": "The two sides reached an equal agreement.",
+              "translation": "双方达成了平等的协议。"
+          }
+      ]
+  },
+  {
+      "word": "resort",
+      "phonetic": "rɪˈzɔːt",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "求助；诉诸；胜地"
+          },
+          {
+              "abbreviation": "vi.",
+              "translation": "求助；诉诸"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "After trying various treatments without success, she decided to resort to a more advanced medical procedure.",
+              "translation": "在尝试了各种治疗方法都未成功后，她决定求助于更先进的医疗程序。"
+          },
+          {
+              "sentence": "The beach resort is a popular destination for tourists.",
+              "translation": "这个海滨胜地是游客的热门目的地。"
+          },
+          {
+              "sentence": "He resorted to legal action to resolve the dispute.",
+              "translation": "他诉诸法律行动来解决争端。"
+          },
+          {
+              "sentence": "The company resorted to cost-cutting measures to stay afloat.",
+              "translation": "公司诉诸削减成本的措施以维持运营。"
+          }
+      ]
+  },
+  {
+      "word": "leadership",
+      "phonetic": "ˈliːdəʃɪp",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "领导，领导层；领导能力"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "Effective leadership requires not only the ability to make strategic decisions but also the skill to inspire and motivate a team toward achieving common goals.",
+              "translation": "有效的领导力不仅需要做出战略决策的能力，还需要激励和带领团队实现共同目标的技能。"
+          },
+          {
+              "sentence": "The leadership of the company is focused on innovation.",
+              "translation": "该公司的领导层专注于创新。"
+          },
+          {
+              "sentence": "She showed strong leadership during the crisis.",
+              "translation": "她在危机中表现出强大的领导力。"
+          },
+          {
+              "sentence": "The team needs strong leadership to succeed.",
+              "translation": "这个团队需要强有力的领导才能成功。"
+          }
+      ]
+  },
+  {
+      "word": "equity",
+      "phonetic": "ˈekwətɪ",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "公平，公正"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The company's commitment to equity is evident in its diverse hiring practices and equal opportunity policies.",
+              "translation": "该公司对公平的承诺体现在其多样化的招聘实践和机会均等政策中。"
+          },
+          {
+              "sentence": "The principle of equity is important in all aspects of life.",
+              "translation": "公平原则在生活的各个方面都很重要。"
+          },
+          {
+              "sentence": "The court ruled in favor of equity and justice.",
+              "translation": "法院的裁决有利于公平和正义。"
+          },
+          {
+              "sentence": "The organization promotes equity among its members.",
+              "translation": "该组织在其成员中促进公平。"
+          }
+      ]
+  },
+  {
+      "word": "excavate",
+      "phonetic": "ˈekskəveɪt",
+      "translations": [
+          {
+              "abbreviation": "vt.",
+              "translation": "挖掘，开凿"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The archaeologists worked diligently to excavate the ancient ruins and uncover artifacts from the past.",
+              "translation": "考古学家们勤奋地挖掘古代遗迹，以发现过去的文物。"
+          },
+          {
+              "sentence": "The construction team excavated the site to prepare for the new building.",
+              "translation": "施工队挖掘了工地，为新建筑做准备。"
+          },
+          {
+              "sentence": "The archaeologists excavated the area to find evidence of an ancient civilization.",
+              "translation": "考古学家挖掘该地区以寻找古代文明的证据。"
+          },
+          {
+              "sentence": "The team excavated the tunnel to expand the subway system.",
+              "translation": "该团队挖掘了隧道以扩展地铁系统。"
+          }
+      ]
+  },
+  {
+      "word": "nuclear",
+      "phonetic": "ˈnjuːklɪə(r)",
+      "translations": [
+          {
+              "abbreviation": "a.",
+              "translation": "核能的，原子能的"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The nuclear reactor provides a significant portion of the country's energy needs.",
+              "translation": "核反应堆提供了该国相当一部分的能源需求。"
+          },
+          {
+              "sentence": "Nuclear power is a controversial source of energy.",
+              "translation": "核能是一种有争议的能源来源。"
+          },
+          {
+              "sentence": "The country has several nuclear power plants.",
+              "translation": "该国有多个核电站。"
+          },
+          {
+              "sentence": "Nuclear technology has both peaceful and military applications.",
+              "translation": "核技术既有和平用途，也有军事用途。"
+          }
+      ]
+  },
+  {
+      "word": "mutual",
+      "phonetic": "ˈmjuːtʃuəl",
+      "translations": [
+          {
+              "abbreviation": "a.",
+              "translation": "相互的；共同的"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "Their decision to collaborate on the project was based on mutual trust and respect.",
+              "translation": "他们决定合作开展该项目是基于相互信任和尊重。"
+          },
+          {
+              "sentence": "The two companies have a mutual agreement.",
+              "translation": "这两家公司有一个相互协议。"
+          },
+          {
+              "sentence": "The friends have mutual interests in music and sports.",
+              "translation": "这些朋友对音乐和运动有共同的兴趣。"
+          },
+          {
+              "sentence": "The mutual support among team members contributed to their success.",
+              "translation": "团队成员之间的相互支持促成了他们的成功。"
+          }
+      ]
+  },
+  {
+      "word": "hectare",
+      "phonetic": "ˈhekteə(r)",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "公顷"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The farm covers an area of 50 hectares, which allows for a diverse range of crops.",
+              "translation": "这个农场占地50公顷，可以种植多种作物。"
+          },
+          {
+              "sentence": "The new park will be 20 hectares in size.",
+              "translation": "这个新公园的面积将为20公顷。"
+          },
+          {
+              "sentence": "The vineyard spans over 30 hectares of land.",
+              "translation": "这片葡萄园占地30公顷。"
+          },
+          {
+              "sentence": "The forest reserve covers several hundred hectares.",
+              "translation": "这片森林保护区占地数百公顷。"
+          }
+      ]
+  },
+  {
+      "word": "density",
+      "phonetic": "ˈdensətɪ",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "密集；浓度，密度"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The density of the new material makes it ideal for use in lightweight, durable construction.",
+              "translation": "这种新材料的密度使其非常适合用于轻质、耐用的建筑。"
+          },
+          {
+              "sentence": "The population density of the city is very high.",
+              "translation": "这个城市的人口密度非常高。"
+          },
+          {
+              "sentence": "The density of the liquid was measured in the laboratory.",
+              "translation": "液体的密度在实验室中进行了测量。"
+          },
+          {
+              "sentence": "The forest has a high density of trees.",
+              "translation": "这片森林树木密度很高。"
+          }
+      ]
+  },
+  {
+      "word": "massive",
+      "phonetic": "ˈmæsɪv",
+      "translations": [
+          {
+              "abbreviation": "a.",
+              "translation": "大而重的，厚实的，粗大的；大量的，大规模的"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "This memorial is home to a massive statue of President Abraham Lincoln and an engraved copy of Lincoln's famous speech, the Gettysburg Address.",
+              "translation": "这座纪念馆内有一座巨大的亚伯拉罕·林肯总统雕像，以及林肯著名演讲《葛底斯堡演说》的刻字副本。"
+          },
+          {
+              "sentence": "One important similarity between Brazil and the United States is their massive size.",
+              "translation": "巴西和美国的一个重要相似之处是它们的庞大国土面积。"
+          },
+          {
+              "sentence": "The company launched a massive marketing campaign.",
+              "translation": "该公司发起了一场大规模的营销活动。"
+          },
+          {
+              "sentence": "The building has a massive foundation to support its weight.",
+              "translation": "这座建筑有一个巨大的地基来支撑其重量。"
+          }
+      ]
+  },
+  {
+      "word": "congratulate",
+      "phonetic": "kənˈgrætʃuleɪt",
+      "translations": [
+          {
+              "abbreviation": "vt.",
+              "translation": "祝贺"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "I want to congratulate you on your recent promotion; you truly deserve it!",
+              "translation": "我想祝贺你最近的晋升，你真的当之无愧！"
+          },
+          {
+              "sentence": "We congratulated the team on their victory.",
+              "translation": "我们祝贺团队取得了胜利。"
+          },
+          {
+              "sentence": "She congratulated him on his success.",
+              "translation": "她祝贺他取得了成功。"
+          },
+          {
+              "sentence": "The teacher congratulated the students on their excellent performance.",
+              "translation": "老师祝贺学生们表现出色。"
+          }
+      ]
+  },
+  {
+      "word": "companion",
+      "phonetic": "kəmˈpænɪən",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "共事者；同伴"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "She brought her loyal dog along as her companion on the long road trip.",
+              "translation": "她带着她忠诚的狗作为旅伴进行了长途旅行。"
+          },
+          {
+              "sentence": "He is a good companion to have on a journey.",
+              "translation": "在旅行中有他作为旅伴真是太好了。"
+          },
+          {
+              "sentence": "The two friends have been companions since childhood.",
+              "translation": "这两个朋友从小就是伙伴。"
+          },
+          {
+              "sentence": "She found a new companion in her neighbor.",
+              "translation": "她在邻居那里找到了一个新伙伴。"
+          }
+      ]
+  },
+  {
+      "word": "rig",
+      "phonetic": "rɪg",
+      "translations": [
+          {
+              "abbreviation": "vt.",
+              "translation": "操纵，垄断"
+          },
+          {
+              "abbreviation": "n.",
+              "translation": "船桅（或船帆等）的装置；成套器械"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The crew worked quickly to rig the sailboat for the upcoming race.",
+              "translation": "船员们迅速为即将到来的比赛装备帆船。"
+          },
+          {
+              "sentence": "The company was accused of rigging the election.",
+              "translation": "该公司被指控操纵选举。"
+          },
+          {
+              "sentence": "The sailor checked the rig of the ship.",
+              "translation": "水手检查了船的装置。"
+          },
+          {
+              "sentence": "They used a special rig to drill the hole.",
+              "translation": "他们使用一套特殊的装置来钻孔。"
+          }
+      ]
+  },
+  {
+      "word": "input",
+      "phonetic": "ˈɪnput",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "投入，输入；输入的数据"
+          },
+          {
+              "abbreviation": "vt.",
+              "translation": "把……输入计算机"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The software requires input to customize the settings according to individual preferences.",
+              "translation": "该软件需要输入以根据个人偏好定制设置。"
+          },
+          {
+              "sentence": "User input is crucial for improving the system.",
+              "translation": "用户输入对于改进系统至关重要。"
+          },
+          {
+              "sentence": "He input the data into the computer.",
+              "translation": "他将数据输入计算机。"
+          },
+          {
+              "sentence": "The machine requires constant input to function properly.",
+              "translation": "机器需要持续的输入才能正常运行。"
+          }
+      ]
+  },
+  {
+      "word": "merely",
+      "phonetic": "ˈmiəli",
+      "translations": [
+          {
+              "abbreviation": "ad.",
+              "translation": "仅仅，只不过"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "She was merely trying to help, but it was misunderstood as interference.",
+              "translation": "她只是想帮忙，但被误解为干涉。"
+          },
+          {
+              "sentence": "He merely nodded in agreement.",
+              "translation": "他只是点头表示同意。"
+          },
+          {
+              "sentence": "The solution is merely a temporary fix.",
+              "translation": "这个解决方案只是一个临时的补救措施。"
+          },
+          {
+              "sentence": "She was merely expressing her opinion.",
+              "translation": "她只是在表达她的观点。"
+          }
+      ]
+  },
+  {
+      "word": "impart",
+      "phonetic": "ɪmˈpɑːt",
+      "translations": [
+          {
+              "abbreviation": "vt.",
+              "translation": "给予，赋予；传授；告知，透露"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The teacher's goal is to impart knowledge and inspire curiosity in her students.",
+              "translation": "教师的目标是传授知识并激发学生的好奇心。"
+          },
+          {
+              "sentence": "He imparted his wisdom to the younger generation.",
+              "translation": "他将自己的智慧传授给年轻一代。"
+          },
+          {
+              "sentence": "She imparted the secret recipe to her daughter.",
+              "translation": "她把秘密食谱传给了她的女儿。"
+          },
+          {
+              "sentence": "The mentor imparted valuable advice to the new employee.",
+              "translation": "导师向新员工传授了宝贵的建议。"
+          }
+      ]
+  },
+  {
+      "word": "forfeit",
+      "phonetic": "ˈfɔːfɪt",
+      "translations": [
+          {
+              "abbreviation": "v.",
+              "translation": "（因犯规等而）丧失，失去"
+          },
+          {
+              "abbreviation": "n.",
+              "translation": "罚款；代价"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "If you fail to attend the mandatory training session, you may forfeit your eligibility for the promotion.",
+              "translation": "如果你未能参加强制性培训课程，你可能会失去晋升的资格。"
+          },
+          {
+              "sentence": "The team forfeited the game due to insufficient players.",
+              "translation": "由于球员不足，该队放弃了比赛。"
+          },
+          {
+              "sentence": "He had to pay a forfeit for breaking the rules.",
+              "translation": "他因违反规则而不得不支付罚款。"
+          },
+          {
+              "sentence": "The company imposed a forfeit on the employee for misconduct.",
+              "translation": "公司因员工行为不当而对其处以罚款。"
+          }
+      ]
+  },
+  {
+      "word": "calorie",
+      "phonetic": "ˈkælərɪ",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "卡（路里），大卡（食物的热量）"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "To maintain a healthy weight, it's important to monitor your daily calorie intake and balance it with physical activity.",
+              "translation": "为了保持健康的体重，重要的是要监测你的日常热量摄入，并将其与体育活动相平衡。"
+          },
+          {
+              "sentence": "The food label shows the calorie content per serving.",
+              "translation": "食品标签显示每份的热量含量。"
+          },
+          {
+              "sentence": "He burned 500 calories during the workout.",
+              "translation": "他在锻炼中消耗了500卡路里。"
+          },
+          {
+              "sentence": "The dietitian advised her to reduce her calorie intake.",
+              "translation": "营养师建议她减少热量摄入。"
+          }
+      ]
+  },
+  {
+      "word": "van",
+      "phonetic": "væn",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "运货车"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "We rented a van for our family vacation to fill all our luggage and make the journey more comfortable.",
+              "translation": "我们租了一辆货车用于家庭度假，以便装下所有行李，使旅程更加舒适。"
+          },
+          {
+              "sentence": "The delivery van arrived on time.",
+              "translation": "送货货车按时到达。"
+          },
+          {
+              "sentence": "The van was packed with supplies for the trip.",
+              "translation": "货车装满了旅行用品。"
+          },
+          {
+              "sentence": "They used a van to transport the equipment.",
+              "translation": "他们用货车运输设备。"
+          }
+      ]
+  },
+  {
+      "word": "ventilation",
+      "phonetic": "ˌventɪ'leɪʃn",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "空气流通；通风设备，通风方法"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "Proper ventilation in the office is essential to ensure a healthy and comfortable working environment.",
+              "translation": "办公室的良好通风对于确保健康和舒适的办公环境至关重要。"
+          },
+          {
+              "sentence": "The room needs better ventilation.",
+              "translation": "这个房间需要更好的通风。"
+          },
+          {
+              "sentence": "The ventilation system in the building was upgraded last year.",
+              "translation": "该建筑的通风系统去年进行了升级。"
+          },
+          {
+              "sentence": "Good ventilation helps to reduce indoor air pollution.",
+              "translation": "良好的通风有助于减少室内空气污染。"
+          }
+      ]
+  },
+  {
+      "word": "intermediate",
+      "phonetic": "ˏɪntəˈmiːdɪət",
+      "translations": [
+          {
+              "abbreviation": "a.",
+              "translation": "中间的，中级的"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "She enrolled in an intermediate Spanish course to improve her language skills after completing the beginner level.",
+              "translation": "她在完成初级水平后，报名参加了中级西班牙语课程以提高她的语言技能。"
+          },
+          {
+              "sentence": "The intermediate level is suitable for those who have some basic knowledge.",
+              "translation": "中级水平适合那些有一些基础知识的人。"
+          },
+          {
+              "sentence": "He is an intermediate-level programmer.",
+              "translation": "他是一个中级程序员。"
+          },
+          {
+              "sentence": "The intermediate stage of the project requires more attention to detail.",
+              "translation": "项目的中级阶段需要更多关注细节。"
+          }
+      ]
+  },
+  {
+      "word": "eternal",
+      "phonetic": "ɪˈtɜːnl",
+      "translations": [
+          {
+              "abbreviation": "a.",
+              "translation": "永恒的"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The poet described their love as eternal, lasting beyond the bounds of time and space.",
+              "translation": "诗人将他们的爱描述为永恒的，超越了时间和空间的限制。"
+          },
+          {
+              "sentence": "The monument stands as an eternal reminder of the city's history.",
+              "translation": "这座纪念碑作为城市历史的永恒纪念而矗立。"
+          },
+          {
+              "sentence": "The stars shine with an eternal light.",
+              "translation": "星星闪耀着永恒的光芒。"
+          },
+          {
+              "sentence": "The concept of eternal life has fascinated humans for centuries.",
+              "translation": "永恒生命的概念几个世纪以来一直吸引着人类。"
+          }
+      ]
+  },
+  {
+      "word": "invasion",
+      "phonetic": "ɪnˈveɪʒn",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "入侵，侵略"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The historical records describe the invasion of Normandy as a pivotal moment in World War II.",
+              "translation": "历史记录将诺曼底登陆描述为第二次世界大战的关键时刻。"
+          },
+          {
+              "sentence": "The invasion of the country led to significant changes in its political landscape.",
+              "translation": "对该国的入侵导致其政治格局发生了重大变化。"
+          },
+          {
+              "sentence": "The ancient civilization was destroyed by an invasion of foreign forces.",
+              "translation": "这个古老的文明被外国势力的入侵摧毁了。"
+          },
+          {
+              "sentence": "The invasion of privacy is a serious issue in the digital age.",
+              "translation": "在数字时代，侵犯隐私是一个严重的问题。"
+          }
+      ]
+  },
+  {
+      "word": "nevertheless",
+      "phonetic": "ˏnevəðəˈles",
+      "translations": [
+          {
+              "abbreviation": "ad.",
+              "translation": "仍然；然而"
+          },
+          {
+              "abbreviation": "conj.",
+              "translation": "然而，不过"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The weather was rainy and cold; nevertheless, the outdoor event was a great success.",
+              "translation": "天气又冷又下雨，然而户外活动仍然取得了巨大成功。"
+          },
+          {
+              "sentence": "He was tired; nevertheless, he continued working.",
+              "translation": "他很累，然而他仍然继续工作。"
+          },
+          {
+              "sentence": "The project was challenging; nevertheless, the team completed it on time.",
+              "translation": "这个项目很有挑战性，然而团队还是按时完成了。"
+          },
+          {
+              "sentence": "She was nervous; nevertheless, she gave a great presentation.",
+              "translation": "她很紧张，然而她的演讲非常出色。"
+          }
+      ]
+  },
+  {
+      "word": "celebrate",
+      "phonetic": "ˈselɪbreɪt",
+      "translations": [
+          {
+              "abbreviation": "v.",
+              "translation": "赞扬，歌颂；庆祝"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "We gathered to celebrate her promotion with a surprise party and heartfelt toasts.",
+              "translation": "我们聚集在一起，用一个惊喜派对和真诚的祝酒来庆祝她的晋升。"
+          },
+          {
+              "sentence": "The team celebrated their victory with a big feast.",
+              "translation": "团队用一场丰盛的宴席庆祝他们的胜利。"
+          },
+          {
+              "sentence": "The country celebrates its independence day with great enthusiasm.",
+              "translation": "这个国家满怀热情地庆祝独立日。"
+          },
+          {
+              "sentence": "They celebrated the New Year with fireworks and music.",
+              "translation": "他们用烟花和音乐庆祝新年。"
+          }
+      ]
+  },
+  {
+      "word": "inspiring",
+      "phonetic": "ɪn'spaɪərɪŋ",
+      "translations": [
+          {
+              "abbreviation": "a.",
+              "translation": "鼓舞（或激励）人心的；启发灵感的"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "Her speech was incredibly inspiring and motivated everyone to pursue their dreams.",
+              "translation": "她的演讲极具鼓舞人心，激励每个人去追求他们的梦想。"
+          },
+          {
+              "sentence": "The inspiring story of the athlete moved the audience to tears.",
+              "translation": "这位运动员的励志故事感动了观众，使他们热泪盈眶。"
+          },
+          {
+              "sentence": "The teacher's inspiring words encouraged the students to study harder.",
+              "translation": "老师鼓舞人心的话语鼓励学生们更加努力地学习。"
+          },
+          {
+              "sentence": "The inspiring view from the mountain top left everyone in awe.",
+              "translation": "山顶上那令人鼓舞的景色让每个人惊叹不已。"
+          }
+      ]
+  },
+  {
+      "word": "attendance",
+      "phonetic": "əˈtendəns",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "到场，出席；出勤；伺候，照料"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "Regular attendance at the meetings is crucial for staying updated on the project's progress.",
+              "translation": "定期参加会议对于了解项目进展至关重要。"
+          },
+          {
+              "sentence": "The student had perfect attendance throughout the school year.",
+              "translation": "这位学生在整个学年中出勤率完美。"
+          },
+          {
+              "sentence": "Attendance at the event was higher than expected.",
+              "translation": "活动的出席人数高于预期。"
+          },
+          {
+              "sentence": "The company tracks employee attendance closely.",
+              "translation": "公司密切跟踪员工的出勤情况。"
+          }
+      ]
+  },
+  {
+      "word": "optional",
+      "phonetic": "ˈɒpʃənl",
+      "translations": [
+          {
+              "abbreviation": "a.",
+              "translation": "可选择的，非强制的，随意的"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "Attending the workshop is optional, but it will greatly enhance your understanding of the topic.",
+              "translation": "参加这个研讨会是可选的，但它将极大地增强你对这个主题的理解。"
+          },
+          {
+              "sentence": "The extra assignment is optional.",
+              "translation": "额外的作业是可选的。"
+          },
+          {
+              "sentence": "The course includes an optional module on advanced topics.",
+              "translation": "该课程包括一个关于高级主题的可选模块。"
+          },
+          {
+              "sentence": "The software has several optional features.",
+              "translation": "该软件有几个可选功能。"
+          }
+      ]
+  },
+  {
+      "word": "enable",
+      "phonetic": "ɪˈneɪbl",
+      "translations": [
+          {
+              "abbreviation": "vt.",
+              "translation": "使能够，使成为可能"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "Advanced technology will enable us to complete the project more efficiently.",
+              "translation": "先进技术将使我们能够更有效地完成项目。"
+          },
+          {
+              "sentence": "The new law enables citizens to vote online.",
+              "translation": "新法律使公民能够在线投票。"
+          },
+          {
+              "sentence": "The scholarship enabled her to study abroad.",
+              "translation": "奖学金使她能够出国留学。"
+          },
+          {
+              "sentence": "The new system enables faster communication.",
+              "translation": "新系统实现了更快的通信。"
+          }
+      ]
+  },
+  {
+      "word": "departmental",
+      "phonetic": "‚diːpɑːt'mentl",
+      "translations": [
+          {
+              "abbreviation": "a.",
+              "translation": "部门的"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The company held a departmental meeting to discuss the new policies and their implementation.",
+              "translation": "公司召开部门会议讨论新政策及其实施。"
+          },
+          {
+              "sentence": "The departmental budget was approved by the management.",
+              "translation": "部门预算得到了管理层的批准。"
+          },
+          {
+              "sentence": "The departmental head is responsible for overseeing the team's performance.",
+              "translation": "部门负责人负责监督团队的表现。"
+          },
+          {
+              "sentence": "The new software was designed for departmental use.",
+              "translation": "新软件是为部门使用而设计的。"
+          }
+      ]
+  },
+  {
+      "word": "heal",
+      "phonetic": "hiːl",
+      "translations": [
+          {
+              "abbreviation": "v.",
+              "translation": "治愈，康复；调停"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "With time and proper care, the injured athlete was able to heal and return to the game.",
+              "translation": "随着时间的推移和适当的护理，受伤的运动员得以康复并重返赛场。"
+          },
+          {
+              "sentence": "The wound will heal in a few days.",
+              "translation": "伤口几天后就会愈合。"
+          },
+          {
+              "sentence": "The treatment helped to heal the patient's condition.",
+              "translation": "这种治疗方法有助于治愈患者的病情。"
+          },
+          {
+              "sentence": "The therapy aims to heal both body and mind.",
+              "translation": "这种疗法旨在治愈身心。"
+          }
+      ]
+  },
+  {
+      "word": "dismantle",
+      "phonetic": "dɪsˈmæntl",
+      "translations": [
+          {
+              "abbreviation": "vt.",
+              "translation": "拆除；废除，取消"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "After the festival, the team worked to dismantle the stage and clean up the area.",
+              "translation": "节日结束后，团队开始拆除舞台并清理现场。"
+          },
+          {
+              "sentence": "The government plans to dismantle the old regulations.",
+              "translation": "政府计划废除旧的法规。"
+          },
+          {
+              "sentence": "The company decided to dismantle the old factory building.",
+              "translation": "公司决定拆除旧的工厂建筑。"
+          },
+          {
+              "sentence": "The team dismantled the equipment for storage.",
+              "translation": "团队将设备拆解以便储存。"
+          }
+      ]
+  },
+  {
+      "word": "wage",
+      "phonetic": "weɪdʒ",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "工资；[常 pl.] 报酬"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The company decided to increase the minimum wage to attract more skilled workers.",
+              "translation": "公司决定提高最低工资以吸引更多的技术工人。"
+          },
+          {
+              "sentence": "The workers went on strike to demand higher wages.",
+              "translation": "工人们罢工要求更高的工资。"
+          },
+          {
+              "sentence": "The average wage in this industry is quite competitive.",
+              "translation": "这个行业中的平均工资相当有竞争力。"
+          },
+          {
+              "sentence": "He earns a good wage in his new job.",
+              "translation": "他在新工作中挣得一份可观的工资。"
+          }
+      ]
+  },
+  {
+      "word": "landscape",
+      "phonetic": "ˈlændskeɪp",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "风景"
+          },
+          {
+              "abbreviation": "vt.",
+              "translation": "对……作景观美化，美化（自然环境等）"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The artist captured the breathtaking landscape of the mountains in his latest painting.",
+              "translation": "这位艺术家在他的最新画作中捕捉到了山脉的壮丽景色。"
+          },
+          {
+              "sentence": "The landscape of the region is known for its natural beauty.",
+              "translation": "该地区的风景以其自然之美而闻名。"
+          },
+          {
+              "sentence": "The company specializes in landscape gardening.",
+              "translation": "该公司专注于景观园艺。"
+          },
+          {
+              "sentence": "The new park will feature a beautifully landscaped garden.",
+              "translation": "这个新公园将有一个设计精美的花园。"
+          }
+      ]
+  },
+  {
+      "word": "emotion",
+      "phonetic": "ɪˈməuʃn",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "感情；情绪"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "Her speech was filled with so much emotion that it moved many people to tears.",
+              "translation": "她的演讲充满了如此多的情感，以至于感动了许多人落泪。"
+          },
+          {
+              "sentence": "He had difficulty controlling his emotions during the meeting.",
+              "translation": "他在会议中很难控制自己的情绪。"
+          },
+          {
+              "sentence": "The movie evoked strong emotions in the audience.",
+              "translation": "这部电影在观众中引发了强烈的情感。"
+          },
+          {
+              "sentence": "Understanding emotions is an important part of psychology.",
+              "translation": "理解情感是心理学的一个重要部分。"
+          }
+      ]
+  },
+  {
+      "word": "commonwealth",
+      "phonetic": "ˈkɔmənwelθ",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "[the C-] 英联邦；联合体"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The Commonwealth of Nations works together to promote economic development and cultural exchange among its member countries.",
+              "translation": "英联邦国家共同努力，促进成员国之间的经济发展和文化交流。"
+          },
+          {
+              "sentence": "Australia is a member of the Commonwealth.",
+              "translation": "澳大利亚是英联邦的成员国。"
+          },
+          {
+              "sentence": "The Commonwealth countries share a common heritage.",
+              "translation": "英联邦国家共享一个共同的遗产。"
+          },
+          {
+              "sentence": "The Commonwealth promotes cooperation among its members.",
+              "translation": "英联邦促进其成员之间的合作。"
+          }
+      ]
+  },
+  {
+      "word": "newsletter",
+      "phonetic": "ˈnjuːzletə",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "时事通讯，业务通讯"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "Subscribers receive a monthly newsletter that includes updates on company news and upcoming events.",
+              "translation": "订阅者每月会收到一份包含公司新闻和即将发生的事件更新的通讯。"
+          },
+          {
+              "sentence": "The newsletter provides valuable information to its readers.",
+              "translation": "通讯为读者提供了有价值的信息。"
+          },
+          {
+              "sentence": "The company's newsletter is published quarterly.",
+              "translation": "公司的通讯每季度出版一次。"
+          },
+          {
+              "sentence": "The newsletter includes articles on various topics.",
+              "translation": "通讯包括各种主题的文章。"
+          }
+      ]
+  },
+  {
+      "word": "periodical",
+      "phonetic": "‚pɪərɪ'ɑdɪkl",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "期刊，杂志"
+          },
+          {
+              "abbreviation": "a.",
+              "translation": "周期的，定期的"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "She enjoys reading the latest issue of her favorite periodical each month.",
+              "translation": "她喜欢每月阅读她最喜欢的期刊的最新一期。"
+          },
+          {
+              "sentence": "The library has a large collection of periodicals.",
+              "translation": "图书馆收藏了大量的期刊。"
+          },
+          {
+              "sentence": "The periodical is published every two weeks.",
+              "translation": "该期刊每两周出版一次。"
+          },
+          {
+              "sentence": "He subscribes to several professional periodicals.",
+              "translation": "他订阅了几种专业期刊。"
+          }
+      ]
+  },
+  {
+      "word": "receptionist",
+      "phonetic": "rɪ'sepʃənɪst",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "接待员"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The receptionist greeted visitors with a warm smile and directed them to the appropriate office.",
+              "translation": "接待员微笑着热情地迎接访客，并将他们引导到适当的办公室。"
+          },
+          {
+              "sentence": "The receptionist answered the phone and took a message.",
+              "translation": "接待员接了电话并记下了留言。"
+          },
+          {
+              "sentence": "The receptionist helped the customer with the check-in process.",
+              "translation": "接待员帮助客户办理了入住手续。"
+          },
+          {
+              "sentence": "The receptionist was very professional and efficient.",
+              "translation": "接待员非常专业且高效。"
+          }
+      ]
+  },
+  {
+      "word": "security",
+      "phonetic": "sɪˈkjuərətɪ",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "安全，保障；抵押品；[pl.]证券"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The company invested in advanced security systems to protect sensitive information from unauthorized access.",
+              "translation": "公司投资了先进的安全系统，以防止未经授权访问敏感信息。"
+          },
+          {
+              "sentence": "Security measures were increased at the airport after the incident.",
+              "translation": "事件发生后，机场加强了安全措施。"
+          },
+          {
+              "sentence": "The security guard checked everyone's identification at the entrance.",
+              "translation": "保安在入口处检查了每个人的身份证件。"
+          },
+          {
+              "sentence": "The company's security policy is very strict.",
+              "translation": "公司的安全政策非常严格。"
+          }
+      ]
+  },
+  {
+      "word": "clip",
+      "phonetic": "klɪp",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "（弹簧）夹子，回形针，别针；弹夹；修剪；剪报，电影（或电视）片断"
+          },
+          {
+              "abbreviation": "v.",
+              "translation": "（夹子、回形针等）夹住，扣住；剪，修剪"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "She used a paper clip to keep her notes together.",
+              "translation": "她用回形针把笔记夹在一起。"
+          },
+          {
+              "sentence": "The hair clip held her hair in place.",
+              "translation": "发夹把她的头发固定住了。"
+          },
+          {
+              "sentence": "He clipped the coupon from the newspaper.",
+              "translation": "他从报纸上剪下了优惠券。"
+          },
+          {
+              "sentence": "The tailor clipped the fabric to make the dress.",
+              "translation": "裁缝剪裁了布料来制作这件连衣裙。"
+          }
+      ]
+  },
+  {
+      "word": "apace",
+      "phonetic": "əˈpeɪs",
+      "translations": [
+          {
+              "abbreviation": "ad.",
+              "translation": "快速地，急速地"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The construction of the new highway is progressing apace, with the completion expected within a few months.",
+              "translation": "新高速公路的建设进展迅速，预计几个月内完工。"
+          },
+          {
+              "sentence": "The project is moving forward apace.",
+              "translation": "项目正在迅速推进。"
+          },
+          {
+              "sentence": "The company is expanding apace.",
+              "translation": "公司正在迅速扩张。"
+          },
+          {
+              "sentence": "The technology is developing apace.",
+              "translation": "技术正在迅速发展。"
+          }
+      ]
+  },
+  {
+      "word": "yield",
+      "phonetic": "jiːld",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "产量"
+          },
+          {
+              "abbreviation": "v.",
+              "translation": "出产；放弃"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The new farming techniques increased the crop yield significantly.",
+              "translation": "新的农业技术显著提高了农作物的产量。"
+          },
+          {
+              "sentence": "The land has a high yield of wheat.",
+              "translation": "这片土地的小麦产量很高。"
+          },
+          {
+              "sentence": "He yielded to the pressure and resigned.",
+              "translation": "他屈服于压力并辞职了。"
+          },
+          {
+              "sentence": "The company yielded to the demands of the protesters.",
+              "translation": "公司屈服于抗议者的要求。"
+          }
+      ]
+  },
+  {
+      "word": "fair",
+      "phonetic": "feə(r)",
+      "translations": [
+          {
+              "abbreviation": "a./ad.",
+              "translation": "公平的/地"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The judge ensured that the trial was conducted in a fair and impartial manner.",
+              "translation": "法官确保审判以公平和公正的方式进行。"
+          },
+          {
+              "sentence": "The game was played fair by both teams.",
+              "translation": "两队都公平地进行了比赛。"
+          },
+          {
+              "sentence": "The company promotes fair trade practices.",
+              "translation": "公司提倡公平贸易实践。"
+          },
+          {
+              "sentence": "The employees believe that the boss is fair.",
+              "translation": "员工们认为老板是公平的。"
+          }
+      ]
+  }
+]
