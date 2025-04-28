@@ -1,0 +1,1994 @@
+[
+  {
+      "word": "computerize",
+      "phonetic": "kəm'pju:təraɪz",
+      "translations": [
+          {
+              "abbreviation": "vt.",
+              "translation": "使计算机化；用计算机做；用计算机储存（信息）"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The company decided to computerize its accounting system.",
+              "translation": "公司决定将其会计系统计算机化。"
+          },
+          {
+              "sentence": "The library has computerized its catalog.",
+              "translation": "图书馆已将其目录计算机化。"
+          },
+          {
+              "sentence": "We need to computerize our records for better management.",
+              "translation": "我们需要将记录计算机化以便更好地管理。"
+          }
+      ]
+  },
+  {
+      "word": "popularize",
+      "phonetic": "'pɒpjələraɪz",
+      "translations": [
+          {
+              "abbreviation": "vt.",
+              "translation": "宣扬，宣传，推广；使普及，使通俗化"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The scientist worked hard to popularize the new theory.",
+              "translation": "这位科学家努力推广这一新理论。"
+          },
+          {
+              "sentence": "The government launched a campaign to popularize healthy living.",
+              "translation": "政府发起了一场推广健康生活的运动。"
+          },
+          {
+              "sentence": "The book aims to popularize the knowledge of astronomy.",
+              "translation": "这本书旨在普及天文学知识。"
+          }
+      ]
+  },
+  {
+      "word": "devalue",
+      "phonetic": "ˏdiːˈvæljuː",
+      "translations": [
+          {
+              "abbreviation": "v.",
+              "translation": "使（货币）贬值；贬低"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The government decided to devalue its currency.",
+              "translation": "政府决定让其货币贬值。"
+          },
+          {
+              "sentence": "His comments devalue the importance of the project.",
+              "translation": "他的评论贬低了这个项目的重要性。"
+          },
+          {
+              "sentence": "The company's actions devalued the brand's reputation.",
+              "translation": "公司的行为损害了品牌的声誉。"
+          }
+      ]
+  },
+  {
+      "word": "ferry",
+      "phonetic": "ˈferɪ",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "渡船；摆渡"
+          },
+          {
+              "abbreviation": "v.",
+              "translation": "渡运"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The ferry takes passengers across the river.",
+              "translation": "渡船将乘客运到河对岸。"
+          },
+          {
+              "sentence": "We need to ferry supplies to the island.",
+              "translation": "我们需要将物资运到岛上。"
+          },
+          {
+              "sentence": "The ferry service operates every hour.",
+              "translation": "渡船服务每小时运行一次。"
+          }
+      ]
+  },
+  {
+      "word": "iron",
+      "phonetic": "ˈaɪən",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "铁；烙铁，熨斗"
+          },
+          {
+              "abbreviation": "v.",
+              "translation": "（用熨斗）熨，烫平"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "Iron is an essential element for human health.",
+              "translation": "铁是人类健康所必需的元素。"
+          },
+          {
+              "sentence": "She needs to iron her clothes before the meeting.",
+              "translation": "她需要在会议前熨烫衣服。"
+          },
+          {
+              "sentence": "The iron is hot enough to remove wrinkles.",
+              "translation": "熨斗足够热，可以熨平褶皱。"
+          }
+      ]
+  },
+  {
+      "word": "bully",
+      "phonetic": "ˈbulɪ",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "恃强凌弱者"
+          },
+          {
+              "abbreviation": "vt.",
+              "translation": "恐吓；胁迫，欺负"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The school has a zero-tolerance policy for bullies.",
+              "translation": "学校对欺凌者采取零容忍政策。"
+          },
+          {
+              "sentence": "He bullied his younger brother into giving him the toy.",
+              "translation": "他欺负弟弟，让他把玩具给他。"
+          },
+          {
+              "sentence": "The bully threatened to hurt her if she didn't comply.",
+              "translation": "那个恃强凌弱的人威胁说，如果她不顺从，就会伤害她。"
+          }
+      ]
+  },
+  {
+      "word": "storyline",
+      "phonetic": "ˈstɔ:rilaɪn",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "故事情节"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The movie has an intriguing storyline.",
+              "translation": "这部电影的故事情节很吸引人。"
+          },
+          {
+              "sentence": "The storyline of the novel revolves around a love triangle.",
+              "translation": "这部小说的故事情节围绕一个三角恋展开。"
+          },
+          {
+              "sentence": "The TV series has a complex storyline with many twists.",
+              "translation": "这部电视剧的故事情节复杂，有许多转折。"
+          }
+      ]
+  },
+  {
+      "word": "orbit",
+      "phonetic": "ˈɔːbɪt",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "轨道；影响范围，势力范围"
+          },
+          {
+              "abbreviation": "v.",
+              "translation": "沿轨道运行；围绕……运动"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The satellite is in orbit around the Earth.",
+              "translation": "卫星在地球轨道上运行。"
+          },
+          {
+              "sentence": "The planet orbits the sun every 84 years.",
+              "translation": "这颗行星每84年绕太阳运行一次。"
+          },
+          {
+              "sentence": "The spacecraft will enter orbit in a few minutes.",
+              "translation": "宇宙飞船将在几分钟后进入轨道。"
+          }
+      ]
+  },
+  {
+      "word": "combat",
+      "phonetic": "ˈkɔmbæt",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "战斗，搏斗"
+          },
+          {
+              "abbreviation": "vt.",
+              "translation": "战斗，与……搏斗；防止"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The soldiers engaged in fierce combat.",
+              "translation": "士兵们进行了激烈的战斗。"
+          },
+          {
+              "sentence": "The government is taking measures to combat crime.",
+              "translation": "政府正在采取措施打击犯罪。"
+          },
+          {
+              "sentence": "The troops were sent to the front line to combat the enemy.",
+              "translation": "部队被派往前线与敌人作战。"
+          }
+      ]
+  },
+  {
+      "word": "slothful",
+      "phonetic": "ˈsləuθfəl",
+      "translations": [
+          {
+              "abbreviation": "a.",
+              "translation": "怠惰的，懒惰的；迟钝的"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "He is too slothful to do any work.",
+              "translation": "他太懒惰了，什么工作都不做。"
+          },
+          {
+              "sentence": "Her slothful attitude towards her job cost her the promotion.",
+              "translation": "她对工作的怠惰态度使她失去了晋升的机会。"
+          },
+          {
+              "sentence": "The slothful employee was fired for not meeting the deadlines.",
+              "translation": "那个懒惰的员工因为没有按时完成任务而被解雇了。"
+          }
+      ]
+  },
+  {
+      "word": "catastrophic",
+      "phonetic": "ˌkætə'strɒfɪk",
+      "translations": [
+          {
+              "abbreviation": "a.",
+              "translation": "悲惨的；灾难性的"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The earthquake caused catastrophic damage.",
+              "translation": "地震造成了灾难性的破坏。"
+          },
+          {
+              "sentence": "The company's financial situation is catastrophic.",
+              "translation": "公司的财务状况是灾难性的。"
+          },
+          {
+              "sentence": "The catastrophic failure of the project led to its termination.",
+              "translation": "项目的灾难性失败导致了它的终止。"
+          }
+      ]
+  },
+  {
+      "word": "abide",
+      "phonetic": "əˈbaɪd",
+      "translations": [
+          {
+              "abbreviation": "v.",
+              "translation": "停留，逗留；容忍，忍受"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "You must abide by the rules.",
+              "translation": "你必须遵守规则。"
+          },
+          {
+              "sentence": "He can't abide the noise.",
+              "translation": "他无法忍受这种噪音。"
+          },
+          {
+              "sentence": "She decided to abide in the countryside.",
+              "translation": "她决定住在乡下。"
+          }
+      ]
+  },
+  {
+      "word": "allure",
+      "phonetic": "əˈluə(r)",
+      "translations": [
+          {
+              "abbreviation": "n./v.",
+              "translation": "诱惑，吸引"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The allure of the city attracted many young people.",
+              "translation": "城市的魅力吸引了许多年轻人。"
+          },
+          {
+              "sentence": "The company's high salaries allured many job seekers.",
+              "translation": "公司的高薪吸引了许多求职者。"
+          },
+          {
+              "sentence": "The beauty of the landscape allured tourists from all over the world.",
+              "translation": "风景的美丽吸引了来自世界各地的游客。"
+          }
+      ]
+  },
+  {
+      "word": "oxygen",
+      "phonetic": "ˈɔksɪdʒən",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "氧，氧气"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "Oxygen is essential for human survival.",
+              "translation": "氧气对人类生存至关重要。"
+          },
+          {
+              "sentence": "The patient needed extra oxygen.",
+              "translation": "患者需要额外的氧气。"
+          },
+          {
+              "sentence": "Oxygen is used in medical treatments.",
+              "translation": "氧气用于医疗治疗。"
+          }
+      ]
+  },
+  {
+      "word": "pervasive",
+      "phonetic": "pəˈveɪsɪv",
+      "translations": [
+          {
+              "abbreviation": "a.",
+              "translation": "遍布的，弥漫的"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The pervasive smell of flowers filled the garden.",
+              "translation": "花园里弥漫着花香。"
+          },
+          {
+              "sentence": "The pervasive influence of technology is changing our lives.",
+              "translation": "技术的广泛影响正在改变我们的生活。"
+          },
+          {
+              "sentence": "The pervasive fog made driving difficult.",
+              "translation": "弥漫的大雾使驾驶变得困难。"
+          }
+      ]
+  },
+  {
+      "word": "encroach",
+      "phonetic": "ɪnˈkrəutʃ",
+      "translations": [
+          {
+              "abbreviation": "vi.",
+              "translation": "侵入，侵占，侵犯；侵蚀，蚕食（土地）"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The company's actions encroached on the rights of the workers.",
+              "translation": "公司的行为侵犯了工人的权利。"
+          },
+          {
+              "sentence": "The new building encroached on the public park.",
+              "translation": "新建筑侵占了公共公园。"
+          },
+          {
+              "sentence": "The forest is gradually encroached by urban development.",
+              "translation": "森林正逐渐被城市发展所侵占。"
+          }
+      ]
+  },
+  {
+      "word": "fantastic",
+      "phonetic": "fænˈtæstɪk",
+      "translations": [
+          {
+              "abbreviation": "a.",
+              "translation": "极好的；荒诞的，奇异的；不切实际的"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The movie had a fantastic plot.",
+              "translation": "这部电影的剧情极好。"
+          },
+          {
+              "sentence": "His fantastic ideas are often unrealistic.",
+              "translation": "他的想法常常不切实际。"
+          },
+          {
+              "sentence": "The fantastic creature in the story is a mix of a dragon and a lion.",
+              "translation": "故事中的奇异生物是龙和狮子的混合体。"
+          }
+      ]
+  },
+  {
+      "word": "abhorrent",
+      "phonetic": "əbˈhɒrənt",
+      "translations": [
+          {
+              "abbreviation": "a.",
+              "translation": "可恶的，可恨的"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The abhorrent behavior of the criminal shocked the community.",
+              "translation": "罪犯的可恶行为震惊了社区。"
+          },
+          {
+              "sentence": "He found the idea of cheating abhorrent.",
+              "translation": "他认为作弊的想法是可恶的。"
+          },
+          {
+              "sentence": "The abhorrent treatment of animals was condemned by animal rights activists.",
+              "translation": "动物权益活动家谴责了这种对动物的可恶待遇。"
+          }
+      ]
+  },
+  {
+      "word": "inflict",
+      "phonetic": "ɪnˈflɪkt",
+      "translations": [
+          {
+              "abbreviation": "vt.",
+              "translation": "把……强加给，使遭受，使承受"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The war inflicted great suffering on the people.",
+              "translation": "战争给人民带来了巨大的痛苦。"
+          },
+          {
+              "sentence": "The punishment inflicted on the prisoner was severe.",
+              "translation": "对囚犯的惩罚是严厉的。"
+          },
+          {
+              "sentence": "The company's decision inflicted financial losses on its employees.",
+              "translation": "公司的决定给员工造成了经济损失。"
+          }
+      ]
+  },
+  {
+      "word": "tilt",
+      "phonetic": "tɪlt",
+      "translations": [
+          {
+              "abbreviation": "v.",
+              "translation": "（使）倾斜，倾侧；（使）倾向于，偏向"
+          },
+          {
+              "abbreviation": "n.",
+              "translation": "倾斜，倾侧"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "He tilted the chair back and relaxed.",
+              "translation": "他把椅子向后倾斜，放松下来。"
+          },
+          {
+              "sentence": "The ship began to tilt as it took on water.",
+              "translation": "船开始倾斜，因为它开始进水。"
+          },
+          {
+              "sentence": "The tilt of the Earth's axis causes the seasons.",
+              "translation": "地球轴的倾斜导致了四季的变化。"
+          }
+      ]
+  },
+  {
+      "word": "mosquito",
+      "phonetic": "məsˈkiːtəu",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "蚊子"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "Mosquitoes are common in the summer.",
+              "translation": "夏天蚊子很常见。"
+          },
+          {
+              "sentence": "The campsite was full of mosquitoes.",
+              "translation": "露营地到处都是蚊子。"
+          },
+          {
+              "sentence": "Mosquito bites can be very itchy.",
+              "translation": "蚊子叮咬可能会很痒。"
+          }
+      ]
+  },
+  {
+      "word": "offensive",
+      "phonetic": "əˈfensɪv",
+      "translations": [
+          {
+              "abbreviation": "a.",
+              "translation": "冒犯的；使人不快的；无礼的；攻击性的，进攻性的"
+          },
+          {
+              "abbreviation": "n.",
+              "translation": "进攻，攻击；攻势"
+          }
+      ],
+          "example_sentence": [
+              {
+                  "sentence": "His comments were highly offensive.",
+                  "translation": "他的评论非常冒犯人。"
+              },
+              {
+                  "sentence": "The team launched an offensive to take the lead.",
+                  "translation": "球队发起了进攻以取得领先。"
+              },
+              {
+                  "sentence": "The offensive operation was successful.",
+                  "translation": "进攻行动取得了成功。"
+              }
+          ]
+  },
+  {
+      "word": "extravagant",
+      "phonetic": "ɪkˈstrævəgənt",
+      "translations": [
+          {
+              "abbreviation": "a.",
+              "translation": "奢侈的，铺张的；（言行等）无节制的，过分的，放肆的"
+          }
+      ],
+          "example_sentence": [
+              {
+                  "sentence": "The party was extravagant and cost a fortune.",
+                  "translation": "这个派对非常奢华，花费了一大笔钱。"
+              },
+              {
+                  "sentence": "His extravagant lifestyle led to financial problems.",
+                  "translation": "他奢侈的生活方式导致了财务问题。"
+              },
+              {
+                  "sentence": "The extravagant decorations were unnecessary.",
+                  "translation": "这些过分的装饰是不必要的。"
+              }
+          ]
+  },
+  {
+      "word": "begrimed",
+      "phonetic": "bɪ'graɪmd",
+      "translations": [
+          {
+              "abbreviation": "a.",
+              "translation": "污秽的"
+          }
+      ],
+          "example_sentence": [
+              {
+                  "sentence": "The begrimed walls needed a good cleaning.",
+                  "translation": "那些污秽的墙壁需要好好清洗一下。"
+              },
+              {
+                  "sentence": "The begrimed machinery had not been cleaned for months.",
+                  "translation": "这些污秽的机器已经有好几个月没有清洗了。"
+              },
+              {
+                  "sentence": "The begrimed floor was covered in dirt.",
+                  "translation": "地板上满是污垢。"
+              }
+          ]
+  },
+  {
+      "word": "ruthless",
+      "phonetic": "ˈru:θləs",
+      "translations": [
+          {
+              "abbreviation": "a.",
+              "translation": "无情的，冷酷的，残忍的"
+          }
+      ],
+          "example_sentence": [
+              {
+                  "sentence": "The ruthless dictator ruled with an iron fist.",
+                  "translation": "这位无情的独裁者以铁腕统治。"
+              },
+              {
+                  "sentence": "The ruthless businessman did not care about the consequences.",
+                  "translation": "这位冷酷的商人不在乎后果。"
+              },
+              {
+                  "sentence": "The ruthless criminal showed no mercy.",
+                  "translation": "这个残忍的罪犯毫不留情。"
+              }
+          ]
+  },
+  {
+      "word": "jargon",
+      "phonetic": "ˈdʒɑːgən",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "行话，行业术语；黑话"
+          }
+      ],
+          "example_sentence": [
+              {
+                  "sentence": "The technical jargon was difficult for outsiders to understand.",
+                  "translation": "这些技术行话对于外行人来说很难理解。"
+              },
+              {
+                  "sentence": "The jargon used in the legal document was confusing.",
+                  "translation": "法律文件中使用的行话令人困惑。"
+              },
+              {
+                  "sentence": "He spoke in jargon that only his colleagues understood.",
+                  "translation": "他用只有同事能懂的行话说话。"
+              }
+          ]
+  },
+  {
+      "word": "diverse",
+      "phonetic": "daɪˈvɜːs",
+      "translations": [
+          {
+              "abbreviation": "a.",
+              "translation": "不同的，多样的"
+          }
+      ],
+          "example_sentence": [
+              {
+                  "sentence": "The company has a diverse workforce.",
+                  "translation": "公司拥有多元化的员工队伍。"
+              },
+              {
+                  "sentence": "The diverse cultures in the city enrich its social fabric.",
+                  "translation": "城市中多样的文化丰富了其社会结构。"
+              },
+              {
+                  "sentence": "The menu offers a diverse range of dishes.",
+                  "translation": "菜单提供多种多样的菜肴。"
+              }
+          ]
+  },
+  {
+      "word": "extinguish",
+      "phonetic": "ɪkˈstɪŋgwɪʃ",
+      "translations": [
+          {
+              "abbreviation": "vt.",
+              "translation": "熄灭，扑灭；消灭，使破灭"
+          }
+      ],
+          "example_sentence": [
+              {
+                  "sentence": "Firefighters worked hard to extinguish the fire.",
+                  "translation": "消防员努力扑灭了大火。"
+              },
+              {
+                  "sentence": "The hope of winning was extinguished.",
+                  "translation": "获胜的希望破灭了。"
+              },
+              {
+                  "sentence": "The candle was extinguished by a gust of wind.",
+                  "translation": "一阵风吹灭了蜡烛。"
+              }
+          ]
+  },
+  {
+      "word": "estrange",
+      "phonetic": "ɪˈstreɪndʒ",
+      "translations": [
+          {
+              "abbreviation": "vt.",
+              "translation": "使疏远，使分离"
+          }
+      ],
+          "example_sentence": [
+              {
+                  "sentence": "The argument estranged the two friends.",
+                  "translation": "这场争吵使两个朋友疏远了。"
+              },
+              {
+                  "sentence": "His behavior estranged his family from him.",
+                  "translation": "他的行为使他的家人与他疏远。"
+              },
+              {
+                  "sentence": "The misunderstanding estranged the colleagues.",
+                  "translation": "这个误解使同事们疏远了。"
+              }
+          ]
+  },
+  {
+      "word": "neoclassical",
+      "phonetic": "ˏniːəuˈklæsɪkl",
+      "translations": [
+          {
+              "abbreviation": "a.",
+              "translation": "新古典主义的"
+          }
+      ],
+          "example_sentence": [
+              {
+                  "sentence": "The neoclassical architecture is characterized by its symmetry and simplicity.",
+                  "translation": "新古典主义建筑以其对称性和简洁性为特征。"
+              },
+              {
+                  "sentence": "The neoclassical painting style was popular in the 18th century.",
+                  "translation": "新古典主义绘画风格在18世纪很流行。"
+              },
+              {
+                  "sentence": "The neoclassical sculpture reflects the influence of ancient Greek art.",
+                  "translation": "新古典主义雕塑反映了古希腊艺术的影响。"
+              }
+          ]
+  },
+  {
+      "word": "biased",
+      "phonetic": "ˈbaɪəst",
+      "translations": [
+          {
+              "abbreviation": "a.",
+              "translation": "有偏见的；片面的"
+          }
+      ],
+          "example_sentence": [
+              {
+                  "sentence": "The biased judge made an unfair decision.",
+                  "translation": "这位有偏见的法官做出了不公平的决定。"
+              },
+              {
+                  "sentence": "The biased report did not present the full picture.",
+                  "translation": "这份有偏见的报告没有呈现全貌。"
+              },
+              {
+                  "sentence": "The biased opinion was criticized by many.",
+                  "translation": "这个有偏见的观点受到了许多人的批评。"
+              }
+          ]
+  },
+  {
+      "word": "grimy",
+      "phonetic": "ˈɡraɪmɪ",
+      "translations": [
+          {
+              "abbreviation": "a.",
+              "translation": "积满污垢的，肮脏的"
+          }
+      ],
+          "example_sentence": [
+              {
+                  "sentence": "The grimy windows needed to be cleaned.",
+                  "translation": "那些积满污垢的窗户需要清洗。"
+              },
+              {
+                  "sentence": "The grimy alley was filled with trash.",
+                  "translation": "这条肮脏的小巷堆满了垃圾。"
+              },
+              {
+                  "sentence": "The grimy surface was covered in dirt.",
+                  "translation": "这个肮脏的表面满是灰尘。"
+              }
+          ]
+  },
+  {
+      "word": "enhancer",
+      "phonetic": "ɪnˈhɑ:nsə(r)",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "增强剂；放大器"
+          }
+      ],
+          "example_sentence": [
+              {
+                  "sentence": "The enhancer improved the quality of the image.",
+                  "translation": "增强剂提高了图像的质量。"
+              },
+              {
+                  "sentence": "The audio enhancer made the sound clearer.",
+                  "translation": "音频增强器使声音更清晰。"
+              },
+              {
+                  "sentence": "The flavor enhancer made the dish more delicious.",
+                  "translation": "增味剂使这道菜更加美味。"
+              }
+          ]
+  },
+  {
+      "word": "ulterior",
+      "phonetic": "ʌlˈtɪərɪə(r)",
+      "translations": [
+          {
+              "abbreviation": "a.",
+              "translation": "较远的；不可告人的，隐秘的，秘密的"
+          }
+      ],
+          "example_sentence": [
+              {
+                  "sentence": "He had an ulterior motive for helping her.",
+                  "translation": "他帮助她有不可告人的动机。"
+              },
+              {
+                  "sentence": "The ulterior plan was revealed during the investigation.",
+                  "translation": "在调查过程中，这个隐秘的计划被揭露了。"
+              },
+              {
+                  "sentence": "The ulterior goal was to gain control of the company.",
+                  "translation": "最终目标是控制这家公司。"
+              }
+          ]
+  },
+  {
+      "word": "corrupt",
+      "phonetic": "kəˈrʌpt",
+      "translations": [
+          {
+              "abbreviation": "v.",
+              "translation": "腐化，腐蚀；使堕落；破坏，损坏；（计算机文件等）出错"
+          },
+          {
+              "abbreviation": "a.",
+              "translation": "堕落的，腐化的；腐败的，贪污的"
+          }
+      ],
+          "example_sentence": [
+              {
+                  "sentence": "The corrupt official was sentenced to prison.",
+                  "translation": "这位腐败的官员被判处监禁。"
+              },
+              {
+                  "sentence": "The computer file became corrupt and could not be opened.",
+                  "translation": "计算机文件损坏，无法打开。"
+              },
+              {
+                  "sentence": "The corrupt system needs to be reformed.",
+                  "translation": "这个腐败的系统需要改革。"
+              }
+          ]
+  },
+  {
+      "word": "stringent",
+      "phonetic": "ˈstrɪndʒənt",
+      "translations": [
+          {
+              "abbreviation": "a.",
+              "translation": "（法律、规则等）严格的，苛刻的；（财政状况）紧缩的，短缺的，银根紧的；迫切的"
+          }
+      ],
+          "example_sentence": [
+              {
+                  "sentence": "The company has stringent quality control standards.",
+                  "translation": "公司有严格的质量控制标准。"
+              },
+              {
+                  "sentence": "The stringent regulations made it difficult to obtain a permit.",
+                  "translation": "严格的法规使得获得许可证变得困难。"
+              },
+              {
+                  "sentence": "The stringent budget cuts affected many departments.",
+                  "translation": "严格的预算削减影响了许多部门。"
+              }
+          ]
+  },
+  {
+      "word": "novice",
+      "phonetic": "ˈnɔvɪs",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "生手，新手；初学者；新信徒，初学修士（或修女）"
+          }
+      ],
+          "example_sentence": [
+              {
+                  "sentence": "The novice driver was nervous on the road.",
+                  "translation": "新手司机在路上很紧张。"
+              },
+              {
+                  "sentence": "The novice programmer made several mistakes.",
+                  "translation": "新手程序员犯了几个错误。"
+              },
+              {
+                  "sentence": "The novice painter was learning the basics of art.",
+                  "translation": "新手画家正在学习绘画的基础知识。"
+              }
+          ]
+  },
+  {
+      "word": "hinder",
+      "phonetic": "ˈhɪndə(r)",
+      "translations": [
+          {
+              "abbreviation": "vt.",
+              "translation": "阻碍，妨碍"
+          }
+      ],
+          "example_sentence": [
+              {
+                  "sentence": "The heavy rain hindered the construction work.",
+                  "translation": "大雨阻碍了建筑工作。"
+              },
+              {
+                  "sentence": "The traffic jam hindered our progress.",
+                  "translation": "交通堵塞阻碍了我们的行程。"
+              },
+              {
+                  "sentence": "The language barrier hindered communication.",
+                  "translation": "语言障碍阻碍了交流。"
+              }
+          ]
+  },
+  {
+      "word": "impoverished",
+      "phonetic": "ɪmˈpɒvərɪʃt",
+      "translations": [
+          {
+              "abbreviation": "a.",
+              "translation": "穷困的，赤贫的；贫乏的，贫瘠的；枯竭的"
+          }
+      ],
+          "example_sentence": [
+              {
+                  "sentence": "The impoverished family struggled to make ends meet.",
+                  "translation": "这个贫困的家庭努力维持生计。"
+              },
+              {
+                  "sentence": "The impoverished region had few resources.",
+                  "translation": "这个贫困地区资源匮乏。"
+              },
+              {
+                  "sentence": "The impoverished soil could not support crops.",
+                  "translation": "这片贫瘠的土地无法种植庄稼。"
+              }
+          ]
+  },
+  {
+      "word": "shallow",
+      "phonetic": "ˈʃæləu",
+      "translations": [
+          {
+              "abbreviation": "a.",
+              "translation": "浅的；肤浅的，浅薄的"
+          }
+      ],
+          "example_sentence": [
+              {
+                  "sentence": "The shallow pool was only a few feet deep.",
+                  "translation": "这个浅水池只有几英尺深。"
+              },
+              {
+                  "sentence": "His knowledge was shallow and superficial.",
+                  "translation": "他的知识肤浅且表面化。"
+              },
+              {
+                  "sentence": "The shallow river was easy to cross.",
+                  "translation": "这条浅河很容易过。"
+              }
+          ]
+  },
+  {
+      "word": "inundate",
+      "phonetic": "ˈɪnʌndeɪt",
+      "translations": [
+          {
+              "abbreviation": "vt.",
+              "translation": "淹没，泛滥的；使不胜负荷，使应接不暇"
+          }
+      ],
+          "example_sentence": [
+              {
+                  "sentence": "The town was inundated by the flood.",
+                  "translation": "这个城镇被洪水淹没。"
+              },
+              {
+                  "sentence": "The customer service department was inundated with complaints.",
+                  "translation": "客户服务部门被投诉淹没了。"
+              },
+              {
+                  "sentence": "The office was inundated with paperwork.",
+                  "translation": "办公室被文件淹没了。"
+              }
+          ]
+  },
+  {
+      "word": "erode",
+      "phonetic": "ɪˈrəud",
+      "translations": [
+          {
+              "abbreviation": "v.",
+              "translation": "侵蚀，腐蚀；削弱，损害"
+          }
+      ],
+          "example_sentence": [
+              {
+                  "sentence": "The river eroded the banks over time.",
+                  "translation": "河水逐渐侵蚀了河岸。"
+              },
+              {
+                  "sentence": "The constant criticism eroded his confidence.",
+                  "translation": "不断的批评削弱了他的信心。"
+              },
+              {
+                  "sentence": "The acid eroded the metal surface.",
+                  "translation": "酸腐蚀了金属表面。"
+              }
+          ]
+  },
+  {
+      "word": "doom",
+      "phonetic": "duːm",
+      "translations": [
+          {
+              "abbreviation": "vt.",
+              "translation": "注定……失败（或遭殃、死亡等），使……在劫难逃"
+          },
+          {
+              "abbreviation": "n.",
+              "translation": "毁灭；厄运，劫数"
+          }
+      ],
+          "example_sentence": [
+              {
+                  "sentence": "The company's poor management doomed it to failure.",
+                  "translation": "公司的糟糕管理注定它会失败。"
+              },
+              {
+                  "sentence": "The fate of the ship was doom from the start.",
+                  "translation": "这艘船从一开始就被注定要沉没。"
+              },
+              {
+                  "sentence": "The prophecy of doom was not fulfilled.",
+                  "translation": "关于厄运的预言没有实现。"
+              }
+          ]
+  },
+  {
+      "word": "alienate",
+      "phonetic": "ˈeɪlɪəneɪt",
+      "translations": [
+          {
+              "abbreviation": "vt.",
+              "translation": "使疏远，使不友好；转让，让渡（财产等）"
+          }
+      ],
+          "example_sentence": [
+              {
+                  "sentence": "His behavior alienated his friends.",
+                  "translation": "他的行为使他的朋友疏远了他。"
+              },
+              {
+                  "sentence": "The company alienated its customers with poor service.",
+                  "translation": "公司糟糕的服务使其客户疏远。"
+              },
+              {
+                  "sentence": "The alienated neighbor refused to speak to them.",
+                  "translation": "那个疏远的邻居拒绝和他们说话。"
+              }
+          ]
+  },
+  {
+      "word": "brazen",
+      "phonetic": "ˈbreɪzn",
+      "translations": [
+          {
+              "abbreviation": "a.",
+              "translation": "黄铜制的，黄铜色的；厚颜无耻的"
+          }
+      ],
+          "example_sentence": [
+              {
+                  "sentence": "The brazen thief was caught on the spot.",
+                  "translation": "那个厚颜无耻的小偷当场被抓。"
+              },
+              {
+                  "sentence": "The brazen politician made false promises.",
+                  "translation": "那个厚颜无耻的政治家做出了虚假承诺。"
+              },
+              {
+                  "sentence": "The brazen behavior was condemned by the public.",
+                  "translation": "这种厚颜无耻的行为受到了公众的谴责。"
+              }
+          ]
+  },
+  {
+      "word": "tortoise",
+      "phonetic": "ˈtɔːtəs",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "龟，陆龟；行动迟缓的人"
+          }
+      ],
+          "example_sentence": [
+              {
+                  "sentence": "The tortoise moved slowly across the road.",
+                  "translation": "乌龟缓慢地穿过马路。"
+              },
+              {
+                  "sentence": "The tortoise is known for its long life.",
+                  "translation": "乌龟以其长寿而闻名。"
+              },
+              {
+                  "sentence": "He was like a tortoise, always moving at a slow pace.",
+                  "translation": "他就像乌龟一样，总是行动缓慢。"
+              }
+          ]
+  },
+  {
+      "word": "commiserate",
+      "phonetic": "kəˈmɪzəreɪt",
+      "translations": [
+          {
+              "abbreviation": "vi.",
+              "translation": "同情，怜悯"
+          }
+      ],
+          "example_sentence": [
+              {
+                  "sentence": "She commiserated with her friend over the loss of the job.",
+                  "translation": "她对朋友失去工作表示同情。"
+              },
+              {
+                  "sentence": "The colleagues commiserated with him on his bad luck.",
+                  "translation": "同事们对他不走运表示同情。"
+              },
+              {
+                  "sentence": "The neighbors commiserated with the family after the accident.",
+                  "translation": "事故发生后，邻居们对这家人表示同情。"
+              }
+          ]
+  },
+  {
+      "word": "outlaw",
+      "phonetic": "ˈautlɔː",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "亡命之徒，逃犯，被剥夺法律权益者"
+          },
+          {
+              "abbreviation": "vt.",
+              "translation": "宣布……为非法，使……成为非法"
+          }
+      ],
+          "example_sentence": [
+              {
+                  "sentence": "The outlaw was wanted by the police.",
+                  "translation": "这个逃犯被警方通缉。"
+              },
+              {
+                  "sentence": "The government outlawed the illegal activities.",
+                  "translation": "政府宣布这些非法活动为非法。"
+              },
+              {
+                  "sentence": "The outlawed organization was disbanded.",
+                  "translation": "这个被取缔的组织被解散了。"
+              }
+          ]
+  },
+  {
+      "word": "pavement",
+      "phonetic": "ˈpeɪvmənt",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "人行道；地面，路面"
+          }
+      ],
+          "example_sentence": [
+              {
+                  "sentence": "The pavement was crowded with pedestrians.",
+                  "translation": "人行道上挤满了行人。"
+              },
+              {
+                  "sentence": "The new pavement made walking safer.",
+                  "translation": "新的人行道使步行更安全。"
+              },
+              {
+                  "sentence": "The pavement was covered with snow.",
+                  "translation": "人行道上覆盖着雪。"
+              }
+          ]
+  },
+  {
+      "word": "antiquated",
+      "phonetic": "ˈæntɪkweɪtɪd",
+      "translations": [
+          {
+              "abbreviation": "a.",
+              "translation": "陈旧的，过时的；废弃的"
+          }
+      ],
+          "example_sentence": [
+              {
+                  "sentence": "The antiquated machinery was replaced with new equipment.",
+                  "translation": "陈旧的机器被新设备取代了。"
+              },
+              {
+                  "sentence": "The antiquated laws needed to be updated.",
+                  "translation": "这些过时的法律需要更新。"
+              },
+              {
+                  "sentence": "The antiquated building was demolished to make way for a new one.",
+                  "translation": "这座废弃的建筑被拆除，为新建筑让路。"
+              }
+          ]
+  },
+  {
+      "word": "coral",
+      "phonetic": "ˈkɔrəl",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "珊瑚；珊瑚虫"
+          },
+          {
+              "abbreviation": "a.",
+              "translation": "珊瑚色的，红色的"
+          }
+      ],
+          "example_sentence": [
+              {
+                  "sentence": "The coral reefs are home to many marine species.",
+                  "translation": "珊瑚礁是许多海洋生物的栖息地。"
+              },
+              {
+                  "sentence": "The coral necklace was a beautiful gift.",
+                  "translation": "这条珊瑚项链是一件美丽的礼物。"
+              },
+              {
+                  "sentence": "The coral-colored dress was very fashionable.",
+                  "translation": "这条珊瑚色的裙子非常时尚。"
+              }
+          ]
+  },
+  {
+      "word": "incinerate",
+      "phonetic": "ɪnˈsɪnəreɪt",
+      "translations": [
+          {
+              "abbreviation": "vt.",
+              "translation": "焚化，焚毁，把……烧成灰烬"
+          }
+      ],
+          "example_sentence": [
+              {
+                  "sentence": "The waste was incinerated in the furnace.",
+                  "translation": "垃圾在熔炉中被焚化。"
+              },
+              {
+                  "sentence": "The incinerated documents left no trace.",
+                  "translation": "焚毁的文件没有留下痕迹。"
+              },
+              {
+                  "sentence": "The incinerator was used to dispose of medical waste.",
+                  "translation": "焚化炉被用来处理医疗废物。"
+              }
+          ]
+  },
+  {
+      "word": "renewable",
+      "phonetic": "rɪˈnju:əbl",
+      "translations": [
+          {
+              "abbreviation": "a.",
+              "translation": "可更新的，可再生的，可恢复的；可延长有效期的，可续期的"
+          }
+      ],
+          "example_sentence": [
+              {
+                  "sentence": "Solar energy is a renewable resource.",
+                  "translation": "太阳能是一种可再生能源。"
+              },
+              {
+                  "sentence": "The renewable contract can be extended for another year.",
+                  "translation": "这份可续期的合同可以再延长一年。"
+              },
+              {
+                  "sentence": "The company focuses on renewable materials for its products.",
+                  "translation": "公司专注于使用可再生材料生产产品。"
+              }
+          ]
+  },
+  {
+      "word": "shin",
+      "phonetic": "ʃɪn",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "胫，胫部，胫骨"
+          },
+          {
+              "abbreviation": "v.",
+              "translation": "（手脚并用沿某物）爬"
+          }
+      ],
+          "example_sentence": [
+              {
+                  "sentence": "He had a bruise on his shin.",
+                  "translation": "他的胫部有一块瘀青。"
+              },
+              {
+                  "sentence": "The athlete injured his shin during the game.",
+                  "translation": "运动员在比赛中伤到了胫部。"
+              },
+              {
+                  "sentence": "He shinned up the tree to get a better view.",
+                  "translation": "他手脚并用爬上了树，以便看得更清楚。"
+              }
+          ]
+  },
+  {
+      "word": "enslave",
+      "phonetic": "ɪnˈsleɪv",
+      "translations": [
+          {
+              "abbreviation": "vt.",
+              "translation": "奴役，征服，使受控制"
+          }
+      ],
+          "example_sentence": [
+              {
+                  "sentence": "The ancient civilization enslaved its enemies.",
+                  "translation": "这个古老的文明奴役了它的敌人。"
+              },
+              {
+                  "sentence": "The dictator enslaved the population.",
+                  "translation": "独裁者奴役了人民。"
+              },
+              {
+                  "sentence": "The workers felt enslaved by the harsh working conditions.",
+                  "translation": "工人们觉得艰苦的工作条件使他们受到了奴役。"
+              }
+          ]
+  },
+  {
+      "word": "timid",
+      "phonetic": "ˈtɪmɪd",
+      "translations": [
+          {
+              "abbreviation": "a.",
+              "translation": "胆小的；羞怯的"
+          }
+      ],
+          "example_sentence": [
+              {
+                  "sentence": "The timid student was afraid to ask questions.",
+                  "translation": "这个胆小的学生不敢提问。"
+              },
+              {
+                  "sentence": "She was too timid to speak in front of the class.",
+                  "translation": "她太害羞了，不敢在全班面前讲话。"
+              },
+              {
+                  "sentence": "The timid animal ran away at the slightest noise.",
+                  "translation": "这个胆小的动物在听到一点动静就跑开了。"
+              }
+          ]
+  },
+  {
+      "word": "vile",
+      "phonetic": "vaɪl",
+      "translations": [
+          {
+              "abbreviation": "a.",
+              "translation": "糟糕透顶的，可恶的；恶劣的，卑鄙的"
+          }
+      ],
+          "example_sentence": [
+              {
+                  "sentence": "The vile behavior was condemned by everyone.",
+                  "translation": "这种恶劣的行为受到了众人的谴责。"
+              },
+              {
+                  "sentence": "The vile smell made it hard to stay in the room.",
+                  "translation": "这种难闻的气味让人难以待在房间里。"
+              },
+              {
+                  "sentence": "The vile insult offended the audience.",
+                  "translation": "这种卑鄙的侮辱冒犯了观众。"
+              }
+          ]
+  },
+  {
+      "word": "diesel",
+      "phonetic": "ˈdiːzl",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "柴油；柴油机；柴油车"
+          }
+      ],
+          "example_sentence": [
+              {
+                  "sentence": "The diesel engine is known for its efficiency.",
+                  "translation": "柴油机以其高效而闻名。"
+              },
+              {
+                  "sentence": "The diesel fuel is cheaper than gasoline.",
+                  "translation": "柴油比汽油便宜。"
+              },
+              {
+                  "sentence": "The diesel truck was used for heavy-duty transportation.",
+                  "translation": "这辆柴油卡车被用于重型运输。"
+              }
+          ]
+  },
+  {
+      "word": "guzzle",
+      "phonetic": "ˈgʌzl",
+      "translations": [
+          {
+              "abbreviation": "v.",
+              "translation": "狂饮，暴饮；大量消耗"
+          }
+      ],
+          "example_sentence": [
+              {
+                  "sentence": "The car guzzles fuel on long trips.",
+                  "translation": "这辆车在长途旅行中大量消耗燃料。"
+              },
+              {
+                  "sentence": "He guzzled the beer in one go.",
+                  "translation": "他一口气喝光了啤酒。"
+              },
+              {
+                  "sentence": "The machine guzzles electricity when it's running.",
+                  "translation": "这台机器运行时大量消耗电力。"
+              }
+          ]
+  },
+  {
+      "word": "torment",
+      "phonetic": "ˈtɔːment",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "痛苦，折磨；令人痛苦的东西"
+          },
+          {
+              "abbreviation": "vt.",
+              "translation": "折磨，使痛苦，烦扰；纠缠；戏弄，捉弄"
+          }
+      ],
+          "example_sentence": [
+              {
+                  "sentence": "The torment of losing a loved one is unbearable.",
+                  "translation": "失去亲人的痛苦是难以忍受的。"
+              },
+              {
+                  "sentence": "The child was tormented by nightmares.",
+                  "translation": "这个孩子被噩梦折磨。"
+              },
+              {
+                  "sentence": "The torment of the situation made her cry.",
+                  "translation": "这种痛苦的情况让她哭了。"
+              }
+          ]
+  },
+  {
+      "word": "revive",
+      "phonetic": "rɪˈvaɪv",
+      "translations": [
+          {
+              "abbreviation": "v.",
+              "translation": "（使）苏醒，复活；重新使用"
+          }
+      ],
+          "example_sentence": [
+              {
+                  "sentence": "The patient was revived after the surgery.",
+                  "translation": "手术后患者苏醒了。"
+              },
+              {
+                  "sentence": "The old tradition was revived in the village.",
+                  "translation": "这个古老的习俗在村里被重新使用。"
+              },
+              {
+                  "sentence": "The company revived its old marketing strategy.",
+                  "translation": "公司重新使用了旧的营销策略。"
+              }
+          ]
+  },
+  {
+      "word": "inhumane",
+      "phonetic": "ˏɪnhjuːˈmeɪn",
+      "translations": [
+          {
+              "abbreviation": "a.",
+              "translation": "不近人情的，残忍的，不人道的"
+          }
+      ],
+          "example_sentence": [
+              {
+                  "sentence": "The inhumane treatment of prisoners was condemned.",
+                  "translation": "对囚犯的不人道待遇受到了谴责。"
+              },
+              {
+                  "sentence": "The inhumane experiment caused suffering to animals.",
+                  "translation": "这个残忍的实验使动物遭受了痛苦。"
+              },
+              {
+                  "sentence": "The inhumane policy was criticized by human rights groups.",
+                  "translation": "这个不人道的政策受到了人权组织的批评。"
+              }
+          ]
+  },
+  {
+      "word": "imperil",
+      "phonetic": "ɪmˈperəl",
+      "translations": [
+          {
+              "abbreviation": "vt.",
+              "translation": "使陷于危险，危及"
+          }
+      ],
+          "example_sentence": [
+              {
+                  "sentence": "The reckless driving imperiled the lives of the passengers.",
+                  "translation": "鲁莽驾驶危及了乘客的生命。"
+              },
+              {
+                  "sentence": "The endangered species is imperiled by habitat loss.",
+                  "translation": "这个濒危物种因栖息地丧失而面临危险。"
+              },
+              {
+                  "sentence": "The company's future is imperiled by financial problems.",
+                  "translation": "公司的未来因财务问题而受到威胁。"
+              }
+          ]
+  },
+  {
+      "word": "diverge",
+      "phonetic": "daɪˈvɜːdʒ",
+      "translations": [
+          {
+              "abbreviation": "vi.",
+              "translation": "（道路，线条等）分开，岔开；（意见、观点等）分歧，相异；偏离，违背"
+          }
+      ],
+          "example_sentence": [
+              {
+                  "sentence": "The two roads diverge at the fork.",
+                  "translation": "这两条路在岔路口分开。"
+              },
+              {
+                  "sentence": "Their opinions diverged on the issue.",
+                  "translation": "他们在这一问题上的意见分歧。"
+              },
+              {
+                  "sentence": "The path diverged into two directions.",
+                  "translation": "这条小路分成了两个方向。"
+              }
+          ]
+  },
+  {
+      "word": "irrational",
+      "phonetic": "ɪˈræʃənl",
+      "translations": [
+          {
+              "abbreviation": "a.",
+              "translation": "不合理的，不合逻辑的，荒谬的"
+          },
+          {
+              "abbreviation": "n.",
+              "translation": "无理数"
+          }
+      ],
+          "example_sentence": [
+              {
+                  "sentence": "His irrational behavior was hard to understand.",
+                  "translation": "他的不合理行为很难理解。"
+              },
+              {
+                  "sentence": "The irrational fear kept her awake at night.",
+                  "translation": "这种无理的恐惧让她晚上睡不着觉。"
+              },
+              {
+                  "sentence": "The irrational number cannot be expressed as a fraction.",
+                  "translation": "无理数无法表示为分数。"
+              }
+          ]
+  },
+  {
+      "word": "verbal",
+      "phonetic": "ˈvɜːbl",
+      "translations": [
+          {
+              "abbreviation": "a.",
+              "translation": "口头的；言辞的，文字的，词语的；动词的"
+          }
+      ],
+          "example_sentence": [
+              {
+                  "sentence": "The verbal agreement was not written down.",
+                  "translation": "口头协议没有写下来。"
+              },
+              {
+                  "sentence": "The verbal description was very detailed.",
+                  "translation": "这个口头描述非常详细。"
+              },
+              {
+                  "sentence": "The verbal test focused on vocabulary and grammar.",
+                  "translation": "这个语言测试专注于词汇和语法。"
+              }
+          ]
+  },
+  {
+      "word": "saline",
+      "phonetic": "ˈseɪlaɪn",
+      "translations": [
+          {
+              "abbreviation": "a.",
+              "translation": "含盐的，咸的"
+          },
+          {
+              "abbreviation": "n.",
+              "translation": "盐水"
+          }
+      ],
+          "example_sentence": [
+              {
+                  "sentence": "The saline solution is used for medical treatments.",
+                  "translation": "盐水用于医疗治疗。"
+              },
+              {
+                  "sentence": "The saline water is not suitable for drinking.",
+                  "translation": "咸水不适合饮用。"
+              },
+              {
+                  "sentence": "The saline content in the ocean is high.",
+                  "translation": "海洋中的盐分含量很高。"
+              }
+          ]
+  },
+  {
+      "word": "disable",
+      "phonetic": "dɪsˈeɪbl",
+      "translations": [
+          {
+              "abbreviation": "vt.",
+              "translation": "使丧失能力，使伤残；使不能正常运转，使无效"
+          }
+      ],
+          "example_sentence": [
+              {
+                  "sentence": "The injury disabled him from playing sports.",
+                  "translation": "这个伤势使他无法参加体育运动。"
+              },
+              {
+                  "sentence": "The device was disabled due to a technical fault.",
+                  "translation": "由于技术故障，这个设备无法正常运转。"
+              },
+              {
+                  "sentence": "The disabled person used a wheelchair to move around.",
+                  "translation": "这个残疾人使用轮椅来行动。"
+              }
+          ]
+  },
+  {
+      "word": "seduce",
+      "phonetic": "sɪˈdjuːs",
+      "translations": [
+          {
+              "abbreviation": "vt.",
+              "translation": "勾引，引诱；诱使，唆使"
+          }
+      ],
+          "example_sentence": [
+              {
+                  "sentence": "He was seduced by the promise of a high salary.",
+                  "translation": "他被高薪的承诺所引诱。"
+              },
+              {
+                  "sentence": "The advertisement seduced many people into buying the product.",
+                  "translation": "这则广告引诱了许多人购买该产品。"
+              },
+              {
+                  "sentence": "She was seduced into revealing the secret.",
+                  "translation": "她被引诱透露了这个秘密。"
+              }
+          ]
+  },
+  {
+      "word": "relocate",
+      "phonetic": "ˏriːləuˈkeɪt",
+      "translations": [
+          {
+              "abbreviation": "v.",
+              "translation": "重新安置，（使）搬迁，迁移"
+          }
+      ],
+          "example_sentence": [
+              {
+                  "sentence": "The company decided to relocate its headquarters.",
+                  "translation": "公司决定搬迁总部。"
+              },
+              {
+                  "sentence": "The family had to relocate to another city for work.",
+                  "translation": "这个家庭因工作需要搬到了另一个城市。"
+              },
+              {
+                  "sentence": "The relocated community was given new housing.",
+                  "translation": "搬迁后的社区被分配了新的住房。"
+              }
+          ]
+  },
+  {
+      "word": "angle",
+      "phonetic": "ˈæŋgl",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "角；角度；观点，立场"
+          },
+          {
+              "abbreviation": "v.",
+              "translation": "移向；使成角度移动；从（某角度）报道"
+          }
+      ],
+          "example_sentence": [
+              {
+                  "sentence": "The angle of the roof is 45 degrees.",
+                  "translation": "屋顶的角度是45度。"
+              },
+              {
+                  "sentence": "He looked at the problem from a different angle.",
+                  "translation": "他从不同的角度看待这个问题。"
+              },
+              {
+                  "sentence": "The photographer angled the camera to get a better shot.",
+                  "translation": "摄影师调整了相机的角度以获得更好的拍摄效果。"
+              }
+          ]
+  },
+  {
+      "word": "legitimate",
+      "phonetic": "lɪˈdʒɪtɪmət",
+      "translations": [
+          {
+              "abbreviation": "a.",
+              "translation": "合法的，法定的；正当的，合情合理的"
+          },
+          {
+              "abbreviation": "vt.",
+              "translation": "使合法"
+          }
+      ],
+          "example_sentence": [
+              {
+                  "sentence": "The legitimate business operates within the law.",
+                  "translation": "合法的商业活动在法律范围内进行。"
+              },
+              {
+                  "sentence": "The legitimate claim was recognized by the court.",
+                  "translation": "法院承认了这个正当的诉求。"
+              },
+              {
+                  "sentence": "The government took steps to legitimate the new policy.",
+                  "translation": "政府采取措施使新政策合法化。"
+              }
+          ]
+  },
+  {
+      "word": "sedentary",
+      "phonetic": "ˈsedntrɪ",
+      "translations": [
+          {
+              "abbreviation": "a.",
+              "translation": "（工作、活动等）需要久坐的；（人）惯于久坐不动的；（人或动物）定居的，不迁徙的；沉积的"
+          }
+      ],
+          "example_sentence": [
+              {
+                  "sentence": "A sedentary lifestyle can lead to health problems.",
+                  "translation": "久坐不动的生活方式可能导致健康问题。"
+              },
+              {
+                  "sentence": "The sedentary job made him feel stiff after a long day.",
+                  "translation": "这份需要久坐的工作让他在一天结束后感到身体僵硬。"
+              },
+              {
+                  "sentence": "The sedentary animals do not migrate.",
+                  "translation": "这些定居的动物不会迁徙。"
+              }
+          ]
+  },
+  {
+      "word": "water-borne",
+      "phonetic": "ˈwɔːtəbɔːn",
+      "translations": [
+          {
+              "abbreviation": "a.",
+              "translation": "水运的，水传播的，饮水传染的"
+          }
+      ],
+          "example_sentence": [
+              {
+                  "sentence": "The water-borne disease spread quickly in the village.",
+                  "translation": "这种通过饮水传播的疾病在村子里迅速蔓延。"
+              },
+              {
+                  "sentence": "The water-borne transport is efficient for heavy goods.",
+                  "translation": "水运对于重型货物运输非常高效。"
+              },
+              {
+                  "sentence": "The water-borne infection caused a public health crisis.",
+                  "translation": "这种通过水传播的感染引发了公共卫生危机。"
+              }
+          ]
+  },
+  {
+      "word": "kindergarten",
+      "phonetic": "ˈkɪndəgɑːtn",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "幼儿园"
+          }
+      ],
+          "example_sentence": [
+              {
+                  "sentence": "The kindergarten is a place for young children to learn and play.",
+                  "translation": "幼儿园是孩子们学习和玩耍的地方。"
+              },
+              {
+                  "sentence": "The kindergarten teacher is very patient with the children.",
+                  "translation": "幼儿园老师对孩子们非常耐心。"
+              },
+              {
+                  "sentence": "The kindergarten organized a fun activity for the kids.",
+                  "translation": "幼儿园为孩子们组织了一次有趣的活动。"
+              }
+          ]
+  },
+  {
+      "word": "molten",
+      "phonetic": "ˈməultən",
+      "translations": [
+          {
+              "abbreviation": "a.",
+              "translation": "熔化的"
+          }
+      ],
+          "example_sentence": [
+              {
+                  "sentence": "The molten metal was poured into the mold.",
+                  "translation": "熔化的金属被倒入模具中。"
+              },
+              {
+                  "sentence": "The molten lava flowed down the volcano.",
+                  "translation": "熔化的岩浆从火山口流下。"
+              },
+              {
+                  "sentence": "The molten glass was shaped into a beautiful vase.",
+                  "translation": "熔化的玻璃被制成了一只美丽的花瓶。"
+              }
+          ]
+  },
+  {
+      "word": "processor",
+      "phonetic": "ˈprəʊsesə(r)",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "加工机；加工工人；处理器"
+          }
+      ],
+          "example_sentence": [
+              {
+                  "sentence": "The computer processor handles all the calculations.",
+                  "translation": "计算机处理器处理所有的计算任务。"
+              },
+              {
+                  "sentence": "The food processor made cooking easier.",
+                  "translation": "食品加工机使烹饪变得更简单。"
+              },
+              {
+                  "sentence": "The processor was upgraded to improve performance.",
+                  "translation": "处理器被升级以提高性能。"
+              }
+          ]
+  },
+  {
+      "word": "saturate",
+      "phonetic": "ˈsætʃəreɪt",
+      "translations": [
+          {
+              "abbreviation": "vt.",
+              "translation": "使湿透，浸透；使充满，使饱和"
+          }
+      ],
+          "example_sentence": [
+              {
+                  "sentence": "The cloth was saturated with water.",
+                  "translation": "这块布被水浸透了。"
+              },
+              {
+                  "sentence": "The market was saturated with similar products.",
+                  "translation": "市场上充斥着类似的产品。"
+              },
+              {
+                  "sentence": "The air was saturated with moisture.",
+                  "translation": "空气中充满了湿气。"
+              }
+          ]
+  },
+  {
+      "word": "trivialize",
+      "phonetic": "'trɪvɪəlaɪz",
+      "translations": [
+          {
+              "abbreviation": "vt.",
+              "translation": "使显得不重要，轻视，淡化"
+          }
+      ],
+          "example_sentence": [
+              {
+                  "sentence": "He trivialized the problem, thinking it was not serious.",
+                  "translation": "他轻视了这个问题，认为它并不严重。"
+              },
+              {
+                  "sentence": "The trivialized issue was not given proper attention.",
+                  "translation": "这个问题被淡化了，没有得到应有的关注。"
+              },
+              {
+                  "sentence": "She trivialized the complaint, which led to further problems.",
+                  "translation": "她轻视了这个投诉，结果导致了更多的问题。"
+              }
+          ]
+  },
+  {
+      "word": "assault",
+      "phonetic": "əˈsɔːlt",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "（武力或口头上的）攻击，袭击；侵犯人身罪；冲击；抨击"
+          },
+          {
+              "abbreviation": "vt.",
+              "translation": "攻击，袭击；使难受"
+          }
+      ],
+          "example_sentence": [
+              {
+                  "sentence": "The assault caused serious injuries to the victim.",
+                  "translation": "这次袭击使受害者受了重伤。"
+              },
+              {
+                  "sentence": "The police launched an assault on the criminal hideout.",
+                  "translation": "警察对犯罪分子的藏身之处发动了袭击。"
+              },
+              {
+                  "sentence": "The assault on his reputation was unjustified.",
+                  "translation": "对他声誉的攻击是毫无根据的。"
+              }
+          ]
+  }
+]
