@@ -1,0 +1,1840 @@
+[
+  {
+      "word": "atmosphere",
+      "phonetic": "ˈætməsfɪə(r)",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "大气；气氛；环境"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The atmosphere is essential for life on Earth.",
+              "translation": "大气对地球上的生命至关重要。"
+          },
+          {
+              "sentence": "The restaurant had a cozy atmosphere.",
+              "translation": "这家餐厅有一种舒适的氛围。"
+          },
+          {
+              "sentence": "The atmosphere was charged with excitement.",
+              "translation": "气氛充满了兴奋。"
+          }
+      ]
+  },
+  {
+      "word": "appoint",
+      "phonetic": "əˈpɔɪnt",
+      "translations": [
+          {
+              "abbreviation": "vt.",
+              "translation": "任命，委任；指定（时间、地点等）"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The board appointed a new CEO.",
+              "translation": "董事会任命了一位新的首席执行官。"
+          },
+          {
+              "sentence": "We appointed a meeting time for tomorrow.",
+              "translation": "我们约定了明天的会议时间。"
+          },
+          {
+              "sentence": "She was appointed to the committee.",
+              "translation": "她被任命为委员会成员。"
+          }
+      ]
+  },
+  {
+      "word": "characteristic",
+      "phonetic": "ˏkærəktəˈrɪstɪk",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "特性；特征；a special quality"
+          },
+          {
+              "abbreviation": "a.",
+              "translation": "特有的；典型的"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "One of the characteristics of this plant is its ability to grow in the shade.",
+              "translation": "这种植物的一个特点是它能在阴凉处生长。"
+          },
+          {
+              "sentence": "He has a characteristic way of speaking.",
+              "translation": "他有一种独特的说话方式。"
+          },
+          {
+              "sentence": "This is characteristic of his style.",
+              "translation": "这是他风格的典型特征。"
+          }
+      ]
+  },
+  {
+      "word": "identify",
+      "phonetic": "aɪˈdentɪfaɪ",
+      "translations": [
+          {
+              "abbreviation": "v.",
+              "translation": "认出，识别；辨别；查明；确定；视……（与……）为同一事物"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The police asked witnesses to identify the suspect.",
+              "translation": "警方要求目击者指认嫌疑人。"
+          },
+          {
+              "sentence": "Can you identify the bird in the tree?",
+              "translation": "你能认出树上的那只鸟吗？"
+          },
+          {
+              "sentence": "The study aims to identify the causes of the problem.",
+              "translation": "这项研究旨在查明问题的原因。"
+          }
+      ]
+  },
+  {
+      "word": "altitude",
+      "phonetic": "ˈæltɪtjuːd",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "海拔，高度；[pl.] 高地，高处"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The altitude of the mountain is over 3,000 meters.",
+              "translation": "这座山的海拔超过3000米。"
+          },
+          {
+              "sentence": "At high altitudes, the air is thinner.",
+              "translation": "在高海拔地区，空气更稀薄。"
+          },
+          {
+              "sentence": "The plane flew at an altitude of 35,000 feet.",
+              "translation": "飞机在35000英尺的高度飞行。"
+          }
+      ]
+  },
+  {
+      "word": "possess",
+      "phonetic": "pəˈzes",
+      "translations": [
+          {
+              "abbreviation": "vt.",
+              "translation": "具有；拥有"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "He possesses a great deal of knowledge.",
+              "translation": "他拥有丰富的知识。"
+          },
+          {
+              "sentence": "She possesses a talent for music.",
+              "translation": "她具有音乐天赋。"
+          },
+          {
+              "sentence": "The house possesses a beautiful garden.",
+              "translation": "这所房子有一个美丽的花园。"
+          }
+      ]
+  },
+  {
+      "word": "excitement",
+      "phonetic": "ɪkˈsaɪtmənt",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "激动；兴奋；令人兴奋的事"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The children were full of excitement.",
+              "translation": "孩子们充满了兴奋。"
+          },
+          {
+              "sentence": "The news caused great excitement.",
+              "translation": "这个消息引起了极大的兴奋。"
+          },
+          {
+              "sentence": "The excitement of the game was palpable.",
+              "translation": "比赛的兴奋感是显而易见的。"
+          }
+      ]
+  },
+  {
+      "word": "contradiction",
+      "phonetic": "ˌkɒntrəˈdɪkʃn",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "矛盾，不一致；否认，反驳"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "There is a contradiction in your statements.",
+              "translation": "你的陈述中有矛盾。"
+          },
+          {
+              "sentence": "The evidence presented a clear contradiction.",
+              "translation": "证据显示了明显的矛盾。"
+          },
+          {
+              "sentence": "He found a contradiction in the theory.",
+              "translation": "他在理论中发现了一个矛盾。"
+          }
+      ]
+  },
+  {
+      "word": "painstaking",
+      "phonetic": "ˈpeɪnzteɪkɪŋ",
+      "translations": [
+          {
+              "abbreviation": "a.",
+              "translation": "需细心的，辛苦的，煞费苦心的；勤勉的；刻苦的"
+          },
+          {
+              "abbreviation": "n.",
+              "translation": "辛苦；勤勉；刻苦"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The project required painstaking effort.",
+              "translation": "这个项目需要付出极大的努力。"
+          },
+          {
+              "sentence": "He is known for his painstaking attention to detail.",
+              "translation": "他以对细节的精心关注而闻名。"
+          },
+          {
+              "sentence": "The painstaking work paid off in the end.",
+              "translation": "最终，辛苦的工作得到了回报。"
+          }
+      ]
+  },
+  {
+      "word": "pursuit",
+      "phonetic": "pəˈsjuːt",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "追求，寻求；[常pl.] 花时间和精力等做的事；消遣，爱好"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The pursuit of happiness is a fundamental human right.",
+              "translation": "追求幸福是基本的人权。"
+          },
+          {
+              "sentence": "He dedicated his life to the pursuit of knowledge.",
+              "translation": "他将一生致力于追求知识。"
+          },
+          {
+              "sentence": "Photography is one of his many pursuits.",
+              "translation": "摄影是他的众多爱好之一。"
+          }
+      ]
+  },
+  {
+      "word": "humanistic",
+      "phonetic": "ˌhju:mə'nɪstɪk",
+      "translations": [
+          {
+              "abbreviation": "a.",
+              "translation": "人文主义的，人性的"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The humanistic approach emphasizes the value of human beings.",
+              "translation": "人文主义方法强调人的价值。"
+          },
+          {
+              "sentence": "The course covers humanistic psychology.",
+              "translation": "这门课程涵盖了人文主义心理学。"
+          },
+          {
+              "sentence": "Humanistic values are important in modern society.",
+              "translation": "人文主义价值观在现代社会中很重要。"
+          }
+      ]
+  },
+  {
+      "word": "coherent",
+      "phonetic": "kəʊ'hɪərənt",
+      "translations": [
+          {
+              "abbreviation": "a.",
+              "translation": "条理清楚的，连贯的；一致的，协调的"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The argument was coherent and convincing.",
+              "translation": "这个论点是连贯且令人信服的。"
+          },
+          {
+              "sentence": "She presented a coherent plan.",
+              "translation": "她提出了一个连贯的计划。"
+          },
+          {
+              "sentence": "The team worked in a coherent manner.",
+              "translation": "团队以协调的方式工作。"
+          }
+      ]
+  },
+  {
+      "word": "outlook",
+      "phonetic": "ˈautluk",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "观点，见解；展望，前景"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "His outlook on life is very positive.",
+              "translation": "他对生活的看法非常积极。"
+          },
+          {
+              "sentence": "The economic outlook is uncertain.",
+              "translation": "经济前景不确定。"
+          },
+          {
+              "sentence": "She has a broad outlook.",
+              "translation": "她有广阔的视野。"
+          }
+      ]
+  },
+  {
+      "word": "apportion",
+      "phonetic": "əˈpɔːʃn",
+      "translations": [
+          {
+              "abbreviation": "vt.",
+              "translation": "分派，（按比例或计划）分配"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The costs were apportioned among the members.",
+              "translation": "成本在成员之间进行了分摊。"
+          },
+          {
+              "sentence": "The budget was apportioned for different departments.",
+              "translation": "预算被分配给不同的部门。"
+          },
+          {
+              "sentence": "The responsibility was apportioned equally.",
+              "translation": "责任被平均分配。"
+          }
+      ]
+  },
+  {
+      "word": "finitude",
+      "phonetic": "'faɪnɪtju:d",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "有限；限定，界限"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "Human life is characterized by finitude.",
+              "translation": "人类生命具有有限性。"
+          },
+          {
+              "sentence": "The concept of finitude is fundamental in philosophy.",
+              "translation": "有限性的概念在哲学中是基础的。"
+          },
+          {
+              "sentence": "We must accept the finitude of our resources.",
+              "translation": "我们必须接受资源的有限性。"
+          }
+      ]
+  },
+  {
+      "word": "exhaustible",
+      "phonetic": "ɪg'zɔ:stəbl",
+      "translations": [
+          {
+              "abbreviation": "a.",
+              "translation": "可耗尽的，会枯竭的"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "Natural resources are exhaustible.",
+              "translation": "自然资源是可耗尽的。"
+          },
+          {
+              "sentence": "The fuel supply is exhaustible.",
+              "translation": "燃料供应是有限的。"
+          },
+          {
+              "sentence": "We need to conserve exhaustible resources.",
+              "translation": "我们需要节约有限的资源。"
+          }
+      ]
+  },
+  {
+      "word": "revelation",
+      "phonetic": "ˏrevəˈleɪʃn",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "被揭示的真相，（惊人的）新发现；揭示，显示；泄露"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The revelation shocked everyone.",
+              "translation": "这一揭示震惊了所有人。"
+          },
+          {
+              "sentence": "The revelation of the truth brought relief.",
+              "translation": "真相大白带来了解脱。"
+          },
+          {
+              "sentence": "The revelation of the secret caused a scandal.",
+              "translation": "秘密的泄露引发了丑闻。"
+          }
+      ]
+  },
+  {
+      "word": "resistance",
+      "phonetic": "rɪˈzɪstəns",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "反抗，抵制；抵抗力，抵抗性；阻力；电阻"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The people showed strong resistance to the new law.",
+              "translation": "人们对新法律表现出强烈的抵制。"
+          },
+          {
+              "sentence": "The material has high resistance to heat.",
+              "translation": "这种材料对热有很高的抵抗力。"
+          },
+          {
+              "sentence": "The resistance in the circuit is too high.",
+              "translation": "电路中的电阻过高。"
+          }
+      ]
+  },
+  {
+      "word": "attainable",
+      "phonetic": "əˈteɪnəbl",
+      "translations": [
+          {
+              "abbreviation": "a.",
+              "translation": "可获得的，可达到的，可实现的"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The goal is attainable with hard work.",
+              "translation": "通过努力，这个目标是可以实现的。"
+          },
+          {
+              "sentence": "The dream seemed attainable at last.",
+              "translation": "这个梦想终于看起来可以实现了。"
+          },
+          {
+              "sentence": "The solution is attainable through research.",
+              "translation": "通过研究可以找到解决方案。"
+          }
+      ]
+  },
+  {
+      "word": "indispensable",
+      "phonetic": "ˏɪndɪˈspensəbl",
+      "translations": [
+          {
+              "abbreviation": "a.",
+              "translation": "必不可少的，必需的"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "Water is indispensable for life.",
+              "translation": "水对生命是必不可少的。"
+          },
+          {
+              "sentence": "His expertise is indispensable to the team.",
+              "translation": "他的专业知识对团队是不可或缺的。"
+          },
+          {
+              "sentence": "The tool is indispensable for this job.",
+              "translation": "这个工具对这项工作是必需的。"
+          }
+      ]
+  },
+  {
+      "word": "cuisine",
+      "phonetic": "kwɪˈziːn",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "烹饪；烹调法，烹调风格；菜肴"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "French cuisine is famous worldwide.",
+              "translation": "法国菜闻名于世。"
+          },
+          {
+              "sentence": "The restaurant offers a variety of cuisines.",
+              "translation": "这家餐厅提供多种菜肴。"
+          },
+          {
+              "sentence": "I love Italian cuisine.",
+              "translation": "我喜欢意大利菜。"
+          }
+      ]
+  },
+  {
+      "word": "reputable",
+      "phonetic": "ˈrepjutəbl",
+      "translations": [
+          {
+              "abbreviation": "a.",
+              "translation": "名声好的，高尚的；受尊敬的；值得信赖的"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "He is a reputable lawyer.",
+              "translation": "他是一位声誉良好的律师。"
+          },
+          {
+              "sentence": "The company is highly reputable.",
+              "translation": "这家公司声誉很高。"
+          },
+          {
+              "sentence": "A reputable business will always keep its promises.",
+              "translation": "一家声誉良好的企业总会信守承诺。"
+          }
+      ]
+  },
+  {
+      "word": "overshadow",
+      "phonetic": "ˏəuvəˈʃædəu",
+      "translations": [
+          {
+              "abbreviation": "vt.",
+              "translation": "给……蒙上阴影；使扫兴；使黯然失色"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The scandal overshadowed his career.",
+              "translation": "丑闻使他的职业生涯蒙上了阴影。"
+          },
+          {
+              "sentence": "The bad news overshadowed the celebration.",
+              "translation": "坏消息使庆祝活动变得扫兴。"
+          },
+          {
+              "sentence": "His achievements were overshadowed by his brother's success.",
+              "translation": "他的成就被他哥哥的成功掩盖了。"
+          }
+      ]
+  },
+  {
+      "word": "unparalleled",
+      "phonetic": "ʌnˈpærəleld",
+      "translations": [
+          {
+              "abbreviation": "a.",
+              "translation": "无双的，无比的，空前的"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The beauty of the scene is unparalleled.",
+              "translation": "这景色之美是无与伦比的。"
+          },
+          {
+              "sentence": "His skill is unparalleled in the field.",
+              "translation": "他在这一领域的技能是空前的。"
+          },
+          {
+              "sentence": "The event was unparalleled in its impact.",
+              "translation": "这一事件的影响是空前的。"
+          }
+      ]
+  },
+  {
+      "word": "opulence",
+      "phonetic": "'ɒpjələns",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "财富，富裕；丰富，富饶"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The palace displayed opulence in its decorations.",
+              "translation": "宫殿的装饰展现了奢华。"
+          },
+          {
+              "sentence": "The opulence of the event was breathtaking.",
+              "translation": "活动的奢华令人惊叹。"
+          },
+          {
+              "sentence": "The region is known for its opulence in natural resources.",
+              "translation": "这个地区以其丰富的自然资源而闻名。"
+          }
+      ]
+  },
+  {
+      "word": "supersede",
+      "phonetic": "ˏsuːpəˈsiːd",
+      "translations": [
+          {
+              "abbreviation": "vt.",
+              "translation": "代替，取代"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The new model will supersede the old one.",
+              "translation": "新模型将取代旧模型。"
+          },
+          {
+              "sentence": "The new law supersedes the previous regulations.",
+              "translation": "新法律取代了之前的法规。"
+          },
+          {
+              "sentence": "This version of the software supersedes all earlier versions.",
+              "translation": "这个软件版本取代了所有早期版本。"
+          }
+      ]
+  },
+  {
+      "word": "exploitation",
+      "phonetic": "ˌeksplɔɪˈteɪʃn",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "开采，开发；剥削，榨取；自私的利用"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The exploitation of natural resources must be sustainable.",
+              "translation": "自然资源的开发必须是可持续的。"
+          },
+          {
+              "sentence": "The exploitation of workers is a serious issue.",
+              "translation": "工人的剥削是一个严重的问题。"
+          },
+          {
+              "sentence": "The company was accused of exploitation of its employees.",
+              "translation": "该公司被指控剥削其员工。"
+          }
+      ]
+  },
+  {
+      "word": "passionate",
+      "phonetic": "ˈpæʃənət",
+      "translations": [
+          {
+              "abbreviation": "a.",
+              "translation": "充满激情的，热切的，狂热的 enthusiastic; adoring"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "She is passionate about her work.",
+              "translation": "她对自己的工作充满激情。"
+          },
+          {
+              "sentence": "He is passionate about music.",
+              "translation": "他对音乐充满热情。"
+          },
+          {
+              "sentence": "The passionate speech moved the audience.",
+              "translation": "充满激情的演讲感动了观众。"
+          }
+      ]
+  },
+  {
+      "word": "poisonous",
+      "phonetic": "ˈpɔɪzənəs",
+      "translations": [
+          {
+              "abbreviation": "a.",
+              "translation": "有毒的，有害的；恶毒的，邪恶的"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The plant is poisonous to humans.",
+              "translation": "这种植物对人类有毒。"
+          },
+          {
+              "sentence": "The water was found to be poisonous.",
+              "translation": "发现这水是有毒的。"
+          },
+          {
+              "sentence": "Her words were poisonous.",
+              "translation": "她的话充满了恶意。"
+          }
+      ]
+  },
+  {
+      "word": "strip",
+      "phonetic": "strɪp",
+      "translations": [
+          {
+              "abbreviation": "v.",
+              "translation": "剥夺；夺去，使空无一物；拆卸，拆开"
+          },
+          {
+              "abbreviation": "n.",
+              "translation": "带状物；条纹；狭长地带，带状水域"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "He was stripped of his title.",
+              "translation": "他被剥夺了头衔。"
+          },
+          {
+              "sentence": "The machine was stripped down for maintenance.",
+              "translation": "机器被拆开进行维护。"
+          },
+          {
+              "sentence": "The strip of land was covered with trees.",
+              "translation": "这片狭长地带被树木覆盖。"
+          }
+      ]
+  },
+  {
+      "word": "exhaust",
+      "phonetic": "ɪgˈzɔːst",
+      "translations": [
+          {
+              "abbreviation": "v.",
+              "translation": "使非常疲倦，使疲惫不堪；用尽，耗尽"
+          },
+          {
+              "abbreviation": "n.",
+              "translation": "（机器排出的）废气，蒸汽"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The long journey exhausted him.",
+              "translation": "长途旅行使他筋疲力尽。"
+          },
+          {
+              "sentence": "The car's exhaust was polluting the air.",
+              "translation": "汽车的尾气正在污染空气。"
+          },
+          {
+              "sentence": "The engine exhaust was very loud.",
+              "translation": "发动机的排气声非常大。"
+          }
+      ]
+  },
+  {
+      "word": "mysterious",
+      "phonetic": "mɪˈstɪərɪəs",
+      "translations": [
+          {
+              "abbreviation": "a.",
+              "translation": "神秘的，诡秘的"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The mysterious figure disappeared into the night.",
+              "translation": "那个神秘的身影消失在夜色中。"
+          },
+          {
+              "sentence": "The case remains mysterious.",
+              "translation": "这个案件仍然神秘。"
+          },
+          {
+              "sentence": "The mysterious message puzzled everyone.",
+              "translation": "那条神秘的信息让每个人都感到困惑。"
+          }
+      ]
+  },
+  {
+      "word": "spite",
+      "phonetic": "spaɪt",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "恶意，怨恨"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "He did it out of spite.",
+              "translation": "他是出于恶意才这么做的。"
+          },
+          {
+              "sentence": "There was a lot of spite in her words.",
+              "translation": "她的话充满了怨恨。"
+          },
+          {
+              "sentence": "He acted in spite of the danger.",
+              "translation": "他不顾危险采取了行动。"
+          }
+      ]
+  },
+  {
+      "word": "passport",
+      "phonetic": "ˈpɑːspɔːt",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "护照；途径，路子，手段"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "He forgot his passport at home.",
+              "translation": "他把护照忘在家里了。"
+          },
+          {
+              "sentence": "A good education is a passport to success.",
+              "translation": "良好的教育是成功的关键。"
+          },
+          {
+              "sentence": "You need a passport to travel abroad.",
+              "translation": "出国旅行需要护照。"
+          }
+      ]
+  },
+  {
+      "word": "divert",
+      "phonetic": "daɪˈvɜːt",
+      "translations": [
+          {
+              "abbreviation": "vt.",
+              "translation": "使绕道，转移；娱乐，供消遣"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The traffic was diverted due to the accident.",
+              "translation": "由于事故，交通被分流了。"
+          },
+          {
+              "sentence": "He tried to divert attention from the problem.",
+              "translation": "他试图转移对这个问题的注意力。"
+          },
+          {
+              "sentence": "The game helped to divert her mind from the stress.",
+              "translation": "游戏帮助她从压力中分散了注意力。"
+          }
+      ]
+  },
+  {
+      "word": "dissemination",
+      "phonetic": "dɪˌsemɪ'neɪʃn",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "散布，传播"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The dissemination of information is crucial in today's world.",
+              "translation": "在当今世界，信息的传播至关重要。"
+          },
+          {
+              "sentence": "The project aims at the dissemination of new technologies.",
+              "translation": "该项目旨在推广新技术。"
+          },
+          {
+              "sentence": "The dissemination of knowledge can change lives.",
+              "translation": "知识的传播可以改变生活。"
+          }
+      ]
+  },
+  {
+      "word": "perpetual",
+      "phonetic": "pəˈpetʃuəl",
+      "translations": [
+          {
+              "abbreviation": "a.",
+              "translation": "连续不断的；长期的；永久的"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The machine runs with perpetual motion.",
+              "translation": "这台机器持续运转。"
+          },
+          {
+              "sentence": "Perpetual change is a feature of modern life.",
+              "translation": "持续变化是现代生活的一个特点。"
+          },
+          {
+              "sentence": "The contract includes a perpetual license.",
+              "translation": "合同包括永久许可。"
+          }
+      ]
+  },
+  {
+      "word": "contradict",
+      "phonetic": "ˏkɔntrəˈdɪkt",
+      "translations": [
+          {
+              "abbreviation": "v.",
+              "translation": "反驳，驳斥；与……发生矛盾；相抵触"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "His words contradict his actions.",
+              "translation": "他的言行不一致。"
+          },
+          {
+              "sentence": "The evidence contradicts his claim.",
+              "translation": "证据反驳了他的说法。"
+          },
+          {
+              "sentence": "She contradicted him in front of everyone.",
+              "translation": "她当众反驳了他。"
+          }
+      ]
+  },
+  {
+      "word": "organize",
+      "phonetic": "ˈɔːgənaɪz",
+      "translations": [
+          {
+              "abbreviation": "v.",
+              "translation": "组织，使有条理；成立"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "They organized a charity event.",
+              "translation": "他们组织了一场慈善活动。"
+          },
+          {
+              "sentence": "The company needs to organize its resources better.",
+              "translation": "公司需要更好地组织其资源。"
+          },
+          {
+              "sentence": "The students organized a protest.",
+              "translation": "学生们组织了一场抗议活动。"
+          }
+      ]
+  },
+  {
+      "word": "column",
+      "phonetic": "ˈkɔləm",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "柱；柱状物；专栏（文章），栏目"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The building has beautiful columns.",
+              "translation": "这座建筑有漂亮的柱子。"
+          },
+          {
+              "sentence": "She writes a weekly column for the newspaper.",
+              "translation": "她为报纸写每周的专栏。"
+          },
+          {
+              "sentence": "The data is organized in columns and rows.",
+              "translation": "数据以列和行的形式组织。"
+          }
+      ]
+  },
+  {
+      "word": "source",
+      "phonetic": "sɔːs",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "来源，出处；（河的）源头，发源地；根源，起源"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The source of the river is in the mountains.",
+              "translation": "这条河的源头在山里。"
+          },
+          {
+              "sentence": "The information came from an unknown source.",
+              "translation": "信息来自一个未知的来源。"
+          },
+          {
+              "sentence": "The source of the problem needs to be identified.",
+              "translation": "需要确定问题的根源。"
+          }
+      ]
+  },
+  {
+      "word": "cater",
+      "phonetic": "ˈkeɪtə(r)",
+      "translations": [
+          {
+              "abbreviation": "v.",
+              "translation": "提供饮食；迎合，满足需要（或欲望）"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The company catered the event.",
+              "translation": "公司为活动提供了餐饮。"
+          },
+          {
+              "sentence": "The restaurant caters to a variety of tastes.",
+              "translation": "这家餐厅迎合各种口味。"
+          },
+          {
+              "sentence": "The service aims to cater to all customers' needs.",
+              "translation": "这项服务旨在满足所有客户的需求。"
+          }
+      ]
+  },
+  {
+      "word": "lobby",
+      "phonetic": "ˈlɔbɪ",
+      "translations": [
+          {
+              "abbreviation": "v.",
+              "translation": "游说"
+          },
+          {
+              "abbreviation": "n.",
+              "translation": "大厅；游说团"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The group lobbied for environmental protection laws.",
+              "translation": "该团体游说通过环境保护法。"
+          },
+          {
+              "sentence": "The hotel lobby was crowded with guests.",
+              "translation": "酒店大厅里挤满了客人。"
+          },
+          {
+              "sentence": "The lobby group had a significant influence on the decision.",
+              "translation": "游说团对这一决定有很大影响。"
+          }
+      ]
+  },
+  {
+      "word": "flexible",
+      "phonetic": "ˈfleksəbl",
+      "translations": [
+          {
+              "abbreviation": "a.",
+              "translation": "易弯曲的；柔韧的；灵活的 able to change easily"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The material is very flexible.",
+              "translation": "这种材料很柔韧。"
+          },
+          {
+              "sentence": "A flexible schedule is important for students.",
+              "translation": "灵活的时间表对学生很重要。"
+          },
+          {
+              "sentence": "The company needs to be more flexible in its approach.",
+              "translation": "公司需要在其方法上更加灵活。"
+          }
+      ]
+  },
+  {
+      "word": "penalty",
+      "phonetic": "ˈpenltɪ",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "惩罚；罚金"
+          }
+      ], "example_sentence": [
+      {
+          "sentence": "The driver was given a penalty for speeding.",
+          "translation": "司机因超速被罚款。"
+      },
+      {
+          "sentence": "The company faced a severe penalty for violating regulations.",
+          "translation": "公司因违反规定面临严厉的惩罚。"
+      },
+      {
+          "sentence": "The penalty for theft is imprisonment.",
+          "translation": "盗窃的惩罚是监禁。"
+      }
+  ]
+},
+  {
+      "word": "comply",
+      "phonetic": "kəmˈplaɪ",
+      "translations": [
+          {
+              "abbreviation": "vi.",
+              "translation": "遵从；服从"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The company complies with all regulations.",
+              "translation": "公司遵守所有规定。"
+          },
+          {
+              "sentence": "You must comply with the rules.",
+              "translation": "你必须遵守规则。"
+          },
+          {
+              "sentence": "The employees were asked to comply with the new policy.",
+              "translation": "员工被要求遵守新政策。"
+          }
+      ]
+  },
+  {
+      "word": "racket",
+      "phonetic": "ˈrækɪt",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "（网球、羽毛球等的）球拍"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "He broke his tennis racket.",
+              "translation": "他弄坏了网球拍。"
+          },
+          {
+              "sentence": "The racket was made of carbon fiber.",
+              "translation": "球拍是碳纤维制成的。"
+          },
+          {
+              "sentence": "She bought a new racket for the match.",
+              "translation": "她为比赛买了一副新球拍。"
+          }
+      ]
+  },
+  {
+      "word": "wire",
+      "phonetic": "ˈwaɪə(r)",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "金属丝；电线"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The wire was used to connect the devices.",
+              "translation": "电线被用来连接设备。"
+          },
+          {
+              "sentence": "The fence was made of barbed wire.",
+              "translation": "篱笆是用铁丝网制成的。"
+          },
+          {
+              "sentence": "He fixed the broken wire.",
+              "translation": "他修好了断掉的电线。"
+          }
+      ]
+  },
+  {
+      "word": "capsule",
+      "phonetic": "ˈkæpsjuːl",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "胶囊；航天舱，太空舱"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "He took a vitamin capsule.",
+              "translation": "他服用了一粒维生素胶囊。"
+          },
+          {
+              "sentence": "The astronauts entered the capsule.",
+              "translation": "宇航员进入了太空舱。"
+          },
+          {
+              "sentence": "The capsule was launched into space.",
+              "translation": "太空舱被发射到太空。"
+          }
+      ]
+  },
+  {
+      "word": "canteen",
+      "phonetic": "kænˈtiːn",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "餐厅，食堂"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The canteen serves a variety of meals.",
+              "translation": "食堂提供各种饭菜。"
+          },
+          {
+              "sentence": "The canteen is open from 8 a.m. to 2 p.m.",
+              "translation": "食堂从上午8点到下午2点开放。"
+          },
+          {
+              "sentence": "The canteen is located in the school building.",
+              "translation": "食堂位于学校大楼内。"
+          }
+      ]
+  },
+  {
+      "word": "aeronautics",
+      "phonetic": "ˏeərəˈnɔːtɪks",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "航空学"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "He studied aeronautics at university.",
+              "translation": "他在大学学习航空学。"
+          },
+          {
+              "sentence": "The department of aeronautics is well-known.",
+              "translation": "航空系很有名。"
+          },
+          {
+              "sentence": "Aeronautics is a rapidly developing field.",
+              "translation": "航空学是一个迅速发展的领域。"
+          }
+      ]
+  },
+  {
+      "word": "adopt",
+      "phonetic": "əˈdɔpt",
+      "translations": [
+          {
+              "abbreviation": "v.",
+              "translation": "采用，采取，采纳；收养，领养；正式通过，批准"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The company adopted a new strategy.",
+              "translation": "公司采用了新策略。"
+          },
+          {
+              "sentence": "They decided to adopt a child.",
+              "translation": "他们决定领养一个孩子。"
+          },
+          {
+              "sentence": "The proposal was adopted by the committee.",
+              "translation": "委员会通过了这一提议。"
+          }
+      ]
+  },
+  {
+      "word": "lease",
+      "phonetic": "liːs",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "租约"
+          },
+          {
+              "abbreviation": "vt.",
+              "translation": "出租，租用"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "He signed a one-year lease.",
+              "translation": "他签了一年的租约。"
+          },
+          {
+              "sentence": "The company leases office space.",
+              "translation": "公司租用了办公空间。"
+          },
+          {
+              "sentence": "The landlord offered a lease renewal.",
+              "translation": "房东提供了租约续签。"
+          }
+      ]
+  },
+  {
+      "word": "bit",
+      "phonetic": "bɪt",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "少许；小片；小块"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "He ate just a bit of cake.",
+              "translation": "他只吃了一小块蛋糕。"
+          },
+          {
+              "sentence": "There was a bit of paper on the floor.",
+              "translation": "地板上有一小片纸。"
+          },
+          {
+              "sentence": "Can you give me a bit of advice?",
+              "translation": "你能给我一点建议吗？"
+          }
+      ]
+  },
+  {
+      "word": "conceal",
+      "phonetic": "kənˈsiːl",
+      "translations": [
+          {
+              "abbreviation": "vt.",
+              "translation": "隐藏；隐瞒；掩盖"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "He tried to conceal his emotions.",
+              "translation": "他试图隐藏自己的情感。"
+          },
+          {
+              "sentence": "The truth was concealed from the public.",
+              "translation": "真相被隐瞒了公众。"
+          },
+          {
+              "sentence": "She concealed the letter in her pocket.",
+              "translation": "她把信藏在口袋里。"
+          }
+      ]
+  },
+  {
+      "word": "compromise",
+      "phonetic": "ˈkɔmprəmaɪz",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "妥协，折中办法"
+          },
+          {
+              "abbreviation": "v.",
+              "translation": "妥协，放弃（原则、理想等）；危及"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The two parties reached a compromise.",
+              "translation": "双方达成了妥协。"
+          },
+          {
+              "sentence": "He refused to compromise on his principles.",
+              "translation": "他拒绝在原则上妥协。"
+          },
+          {
+              "sentence": "The agreement is a fair compromise for both sides.",
+              "translation": "这一协议对双方来说是一个公平的折中方案。"
+          }
+      ]
+  },
+  {
+      "word": "haphazard",
+      "phonetic": "hæpˈhæzəd",
+      "translations": [
+          {
+              "abbreviation": "a.",
+              "translation": "无秩序的，无计划的，组织混乱的"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The project was managed in a haphazard manner.",
+              "translation": "项目管理得毫无章法。"
+          },
+          {
+              "sentence": "The books were piled up in a haphazard way.",
+              "translation": "书被随意堆在一起。"
+          },
+          {
+              "sentence": "The haphazard arrangement caused confusion.",
+              "translation": "这种杂乱无章的安排造成了混乱。"
+          }
+      ]
+  },
+  {
+      "word": "essential",
+      "phonetic": "ɪˈsenʃl",
+      "translations": [
+          {
+              "abbreviation": "a.",
+              "translation": "本质的，基本的；必要的，必不可少的；极其重要的"
+          },
+          {
+              "abbreviation": "n.",
+              "translation": "要素；实质，本质；要点"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "Water is essential for life.",
+              "translation": "水对生命是必不可少的。"
+          },
+          {
+              "sentence": "The essential point is to stay calm.",
+              "translation": "关键是要保持冷静。"
+          },
+          {
+              "sentence": "The essentials of the plan were clear.",
+              "translation": "计划的要点很明确。"
+          }
+      ]
+  },
+  {
+      "word": "urge",
+      "phonetic": "ɜːdʒ",
+      "translations": [
+          {
+              "abbreviation": "v.",
+              "translation": "敦促，力劝；鼓励；竭力主张"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "He urged her to apply for the job.",
+              "translation": "他敦促她申请这份工作。"
+          },
+          {
+              "sentence": "The doctor urged him to quit smoking.",
+              "translation": "医生劝他戒烟。"
+          },
+          {
+              "sentence": "She urged that we take immediate action.",
+              "translation": "她主张我们立即采取行动。"
+          }
+      ]
+  },
+  {
+      "word": "feasible",
+      "phonetic": "ˈfiːzəbl",
+      "translations": [
+          {
+              "abbreviation": "a.",
+              "translation": "可行的，可能的；可做的，可实行的"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The plan is feasible with enough resources.",
+              "translation": "只要有足够的资源，这个计划是可行的。"
+          },
+          {
+              "sentence": "The solution seemed feasible to the team.",
+              "translation": "这个解决方案对团队来说似乎可行。"
+          },
+          {
+              "sentence": "Is it feasible to complete the project by next month?",
+              "translation": "下个月完成这个项目是否可行？"
+          }
+      ]
+  },
+  {
+      "word": "cereal",
+      "phonetic": "ˈsɪərɪəl",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "谷类植物；谷物；谷类食物"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "Wheat is a common cereal crop.",
+              "translation": "小麦是一种常见的谷物作物。"
+          },
+          {
+              "sentence": "He had cereal for breakfast.",
+              "translation": "他早餐吃了谷类食品。"
+          },
+          {
+              "sentence": "The store sells a variety of cereals.",
+              "translation": "这家商店出售各种谷物食品。"
+          }
+      ]
+  },
+  {
+      "word": "existence",
+      "phonetic": "ɪɡ'zɪstəns",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "存在；生活（方式）"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The existence of extraterrestrial life is still unknown.",
+              "translation": "外星生命的存在仍然是未知的。"
+          },
+          {
+              "sentence": "His existence was a mystery to many.",
+              "translation": "他的存在对许多人来说是个谜。"
+          },
+          {
+              "sentence": "The existence of the species is threatened.",
+              "translation": "这个物种的存在受到威胁。"
+          }
+      ]
+  },
+  {
+      "word": "apply",
+      "phonetic": "əˈplaɪ",
+      "translations": [
+          {
+              "abbreviation": "v.",
+              "translation": "申请；应用，使用；涉及"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "She applied for a job at the company.",
+              "translation": "她向公司申请了一份工作。"
+          },
+          {
+              "sentence": "The new law applies to all citizens.",
+              "translation": "新法律适用于所有公民。"
+          },
+          {
+              "sentence": "The principle can be applied in many situations.",
+              "translation": "这一原则可以应用于许多情况。"
+          }
+      ]
+  },
+  {
+      "word": "slurry",
+      "phonetic": "ˈslʌrɪ",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "泥浆"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The construction site was covered in slurry.",
+              "translation": "建筑工地上满是泥浆。"
+          },
+          {
+              "sentence": "The slurry was used to fill the hole.",
+              "translation": "泥浆被用来填满这个洞。"
+          },
+          {
+              "sentence": "The workers had to clean up the slurry spill.",
+              "translation": "工人们不得不清理泥浆泄漏。"
+          }
+      ]
+  },
+  {
+      "word": "admission",
+      "phonetic": "ədˈmɪʃn",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "允许进入，加入权，进入权；招供，招认；入场券"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The admission fee is $10.",
+              "translation": "入场费是10美元。"
+          },
+          {
+              "sentence": "He made a full admission of his mistake.",
+              "translation": "他完全承认了自己的错误。"
+          },
+          {
+              "sentence": "The university has a strict admission policy.",
+              "translation": "这所大学有严格的招生政策。"
+          }
+      ]
+  },
+  {
+      "word": "attempt",
+      "phonetic": "əˈtempt",
+      "translations": [
+          {
+              "abbreviation": "n./v.",
+              "translation": "尝试，试图；努力"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "He made several attempts to contact her.",
+              "translation": "他多次尝试联系她。"
+          },
+          {
+              "sentence": "She attempted to solve the problem but failed.",
+              "translation": "她试图解决这个问题，但失败了。"
+          },
+          {
+              "sentence": "The team made a last-minute attempt to win the game.",
+              "translation": "团队在最后一分钟尝试赢得比赛。"
+          }
+      ]
+  },
+  {
+      "word": "jaw",
+      "phonetic": "dʒɔː",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "颌"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "He suffered a jaw injury in the accident.",
+              "translation": "他在事故中下巴受伤。"
+          },
+          {
+              "sentence": "The dentist examined her jaw.",
+              "translation": "牙医检查了她的下巴。"
+          },
+          {
+              "sentence": "He clenched his jaw in frustration.",
+              "translation": "他因沮丧而咬紧牙关。"
+          }
+      ]
+  },
+  {
+      "word": "inference",
+      "phonetic": "ˈɪnfərəns",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "推论；推断"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The inference was based on solid evidence.",
+              "translation": "这一推论基于确凿的证据。"
+          },
+          {
+              "sentence": "We can make an inference from the data.",
+              "translation": "我们可以从这些数据中做出推断。"
+          },
+          {
+              "sentence": "The inference was logical and convincing.",
+              "translation": "这一推论是合逻辑且令人信服的。"
+          }
+      ]
+  },
+  {
+      "word": "loop",
+      "phonetic": "luːp",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "圈环；环状物；环路；循环"
+          },
+          {
+              "abbreviation": "v.",
+              "translation": "（使）成环，（使）成圈；成环形运动"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The wire formed a loop.",
+              "translation": "电线形成了一个环。"
+          },
+          {
+              "sentence": "The program includes a loop to repeat the process.",
+              "translation": "程序中包含一个循环以重复这一过程。"
+          },
+          {
+              "sentence": "The loop was used to hold the rope.",
+              "translation": "这个环被用来固定绳子。"
+          }
+      ]
+  },
+  {
+      "word": "subtract",
+      "phonetic": "səbˈtrækt",
+      "translations": [
+          {
+              "abbreviation": "vt.",
+              "translation": "减去；去掉"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "Subtract 5 from 10 to get 5.",
+              "translation": "从10中减去5得到5。"
+          },
+          {
+              "sentence": "The teacher asked the students to subtract the numbers.",
+              "translation": "老师让学生们做减法。"
+          },
+          {
+              "sentence": "Subtracting the cost from the revenue gives the profit.",
+              "translation": "从收入中减去成本得到利润。"
+          }
+      ]
+  },
+  {
+      "word": "linguistic",
+      "phonetic": "lɪŋˈgwɪstɪk",
+      "translations": [
+          {
+              "abbreviation": "a.",
+              "translation": "语言的；语言学的"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "Linguistic research is fascinating.",
+              "translation": "语言学研究很有趣。"
+          },
+          {
+              "sentence": "The linguistic differences are significant.",
+              "translation": "语言差异是显著的。"
+          },
+          {
+              "sentence": "He has a strong background in linguistic studies.",
+              "translation": "他在语言学研究方面有很强的背景。"
+          }
+      ]
+  },
+  {
+      "word": "aptitude",
+      "phonetic": "ˈæptɪtjuːd",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "天资，天赋，天生的才能"
+          }
+      ], "example_sentence": [
+      {
+          "sentence": "She has an aptitude for music.",
+          "translation": "她有音乐天赋。"
+      },
+      {
+          "sentence": "The test measures aptitude in mathematics.",
+          "translation": "这个测试衡量数学天赋。"
+      },
+      {
+          "sentence": "His aptitude for languages is remarkable.",
+          "translation": "他对语言的天赋令人惊叹。"
+      }
+  ]
+},
+  {
+      "word": "lava",
+      "phonetic": "ˈlɑːvə",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "岩浆，熔岩"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The volcano erupted and lava flowed down the mountain.",
+              "translation": "火山喷发，熔岩从山上流下来。"
+          },
+          {
+              "sentence": "The lava hardened into rock.",
+              "translation": "熔岩冷却后变成了岩石。"
+          },
+          {
+              "sentence": "The area was covered with lava from the eruption.",
+              "translation": "该地区被火山喷发的熔岩覆盖。"
+          }
+      ]
+  },
+  {
+      "word": "premier",
+      "phonetic": "ˈpremɪə(r)",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "总理；首相"
+          },
+          {
+              "abbreviation": "a.",
+              "translation": "首要的，第一位的；最著名的"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The premier announced a new policy.",
+              "translation": "总理宣布了一项新政策。"
+          },
+          {
+              "sentence": "The premier is the head of government.",
+              "translation": "总理是政府首脑。"
+          },
+          {
+              "sentence": "The premier city in the region is known for its culture.",
+              "translation": "该地区的主要城市以其文化而闻名。"
+          }
+      ]
+  },
+  {
+      "word": "enquiry",
+      "phonetic": "ɪn'kwaɪərɪ",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "询问；调查；探索"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "He made an enquiry about the price.",
+              "translation": "他询问了价格。"
+          },
+          {
+              "sentence": "The police launched an enquiry into the incident.",
+              "translation": "警方对这一事件展开了调查。"
+          },
+          {
+              "sentence": "The enquiry revealed some surprising facts.",
+              "translation": "调查揭示了一些令人惊讶的事实。"
+          }
+      ]
+  }
+]
