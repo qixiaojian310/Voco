@@ -27,48 +27,53 @@ def get_etymology(word):
         print(f"Error: Status code {response.status_code}")
         return None
     soup = BeautifulSoup(response.text, "html.parser")
-    section = soup.find("section", {"class": "word__defination--2q7ZH"})
+    section = soup.find("section", {"class": "-mt-4 -mb-2 lg:-mb-2"})
     if section:
         return section.text.strip()
     return None
 
 
 def insert_word_records():
-    # 3. 读取JSON文件
-    with open("../word/word1.json", "r", encoding="utf-8") as f:
-        data = json.load(f)  # 这是一个list，每个元素是一个单词的字典
-    with get_connection() as conn:
-        with conn.cursor(dictionary=True) as cursor:
-            for entry in data:
-                word = entry["word"]
-                phonetic = entry.get("phonetic", "")
-                print(word, phonetic)
-
-                # 插入到 word 表
-                cursor.execute(
-                    "INSERT INTO words (phonetic, word, etymology) VALUES (%s, %s, %s)",
-                    (phonetic, word, get_etymology(word)),
-                )
-                word_id = cursor.lastrowid  # 获取刚插入的word的id
-
-                # 插入 translations
-                translations = entry.get("translations", [])
-                for trans in translations:
-                    abbreviation = trans.get("abbreviation", "")
-                    translation_text = trans.get("translation", "")
+    for i in range(2, 48):
+        print(f"正在插入第{i}个文件")
+        # 3. 读取JSON文件
+        with open(f"../word/word{i}.json", "r", encoding="utf-8") as f:
+            data = json.load(f)  # 这是一个list，每个元素是一个单词的字典
+        with get_connection() as conn:
+            with conn.cursor(dictionary=True) as cursor:
+                for entry in data:
+                    word = entry["word"]
+                    phonetic = entry.get("phonetic", "")
+                    print(word, phonetic)
+                    cursor.execute("SELECT word_id FROM words WHERE word = %s", (word,))
+                    existing_word = cursor.fetchone()
+                    if existing_word:
+                        continue  # 如果单词已经存在，跳过
+                    # 插入到 word 表
                     cursor.execute(
-                        "INSERT INTO translation (abbreviation, translation, word_id) VALUES (%s, %s, %s)",
-                        (abbreviation, translation_text, word_id),
+                        "INSERT INTO words (phonetic, word, etymology) VALUES (%s, %s, %s)",
+                        (phonetic, word, get_etymology(word)),
                     )
+                    word_id = cursor.lastrowid  # 获取刚插入的word的id
 
-                # 插入 example_sentences
-                examples = entry.get("example_sentence", [])
-                for ex in examples:
-                    sentence = ex.get("sentence", "")
-                    translation = ex.get("translation", "")
-                    cursor.execute(
-                        "INSERT INTO example_sentence (sentence, translation, word_id) VALUES (%s, %s, %s)",
-                        (sentence, translation, word_id),
-                    )
+                    # 插入 translations
+                    translations = entry.get("translations", [])
+                    for trans in translations:
+                        abbreviation = trans.get("abbreviation", "")
+                        translation_text = trans.get("translation", "")
+                        cursor.execute(
+                            "INSERT INTO translation (abbreviation, translation, word_id) VALUES (%s, %s, %s)",
+                            (abbreviation, translation_text, word_id),
+                        )
 
-                conn.commit()  # 提交事务
+                    # 插入 example_sentences
+                    examples = entry.get("example_sentence", [])
+                    for ex in examples:
+                        sentence = ex.get("sentence", "")
+                        translation = ex.get("translation", "")
+                        cursor.execute(
+                            "INSERT INTO example_sentence (sentence, translation, word_id) VALUES (%s, %s, %s)",
+                            (sentence, translation, word_id),
+                        )
+
+                    conn.commit()  # 提交事务

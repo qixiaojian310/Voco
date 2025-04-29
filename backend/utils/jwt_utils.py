@@ -1,6 +1,10 @@
 from typing import Optional, Dict, Any
+from fastapi import Depends, HTTPException
+from fastapi.security import HTTPAuthorizationCredentials, HTTPBearer
 import jwt
 import datetime
+
+security = HTTPBearer()
 
 
 class JWTManager:
@@ -30,5 +34,15 @@ class JWTManager:
             return None
 
 
-# 初始化
-jwt_manager = JWTManager(secret_key="your-secret-key-here")
+# 初始化 JWT
+jwt_manager = JWTManager(secret_key="voco")
+
+
+def get_current_user(
+    credentials: HTTPAuthorizationCredentials = Depends(security),
+) -> int:
+    token = credentials.credentials
+    user_id = jwt_manager.verify_token(token)
+    if user_id is None:
+        raise HTTPException(status_code=401, detail="Invalid or expired token")
+    return user_id

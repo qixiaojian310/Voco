@@ -1,14 +1,9 @@
 from fastapi import APIRouter, HTTPException, Depends
-from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
 from pydantic import BaseModel
 from static.user import user_login
-from utils.jwt_utils import JWTManager
+from utils.jwt_utils import get_current_user, jwt_manager
 
 router = APIRouter()  # 这里注意不是 app，是 router！
-security = HTTPBearer()
-
-# 初始化 JWT
-jwt_manager = JWTManager(secret_key="voco")
 
 
 class LoginRequest(BaseModel):
@@ -23,16 +18,6 @@ def login(request: LoginRequest):
         raise HTTPException(status_code=401, detail="Invalid username or password")
     token = jwt_manager.generate_token(user["username"])
     return {"access_token": token, "token_type": "bearer"}
-
-
-def get_current_user(
-    credentials: HTTPAuthorizationCredentials = Depends(security),
-) -> int:
-    token = credentials.credentials
-    user_id = jwt_manager.verify_token(token)
-    if user_id is None:
-        raise HTTPException(status_code=401, detail="Invalid or expired token")
-    return user_id
 
 
 @router.get("/protected")
