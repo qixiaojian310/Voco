@@ -18,7 +18,7 @@ function StatisticsScreen() {
           backgroundColor: 'white',
           height: 3,
         }}
-        variant="primary">
+        variant="default">
         <Tab.Item
           title="Forget curve"
           titleStyle={{fontSize: 12}}
@@ -37,13 +37,13 @@ function StatisticsScreen() {
       </Tab>
 
       <TabView value={index} onChange={setIndex} animationType="spring">
-        <TabView.Item style={{backgroundColor: '#ffffff52', width: '100%'}}>
+        <TabView.Item style={{backgroundColor: '#00000052', width: '100%'}}>
           <ForgetCurve />
         </TabView.Item>
-        <TabView.Item style={{backgroundColor: '#ffffff52', width: '100%'}}>
+        <TabView.Item style={{backgroundColor: '#00000052', width: '100%'}}>
           <Schedule />
         </TabView.Item>
-        <TabView.Item style={{backgroundColor: '#ffffff52', width: '100%'}}>
+        <TabView.Item style={{backgroundColor: '#00000052', width: '100%'}}>
           <Text>Cart</Text>
         </TabView.Item>
       </TabView>
@@ -53,7 +53,7 @@ function StatisticsScreen() {
 
 const styles = StyleSheet.create({
   toolbar: {
-    backgroundColor: '#a2bfc3c5',
+    backgroundColor: '#d784ec6e',
     paddingTop: Platform.OS === 'android' ? StatusBar.currentHeight : 0,
     boxSizing: 'content-box',
   },

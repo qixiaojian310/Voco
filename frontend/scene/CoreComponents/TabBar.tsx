@@ -9,7 +9,7 @@ function TabBar({state, descriptors, navigation}: BottomTabBarProps) {
   const {buildHref} = useLinkBuilder();
 
   return (
-    <View style={{flexDirection: 'row', backgroundColor: '#ffffff99'}}>
+    <View style={{flexDirection: 'row', backgroundColor: '#00000099'}}>
       {state.routes.map((route, index) => {
         const {options} = descriptors[route.key];
         const label =

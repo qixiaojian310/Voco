@@ -1,6 +1,6 @@
 import {StyleSheet, Text, TouchableHighlight, View} from 'react-native';
 import {RemRecords, RemStatus} from '../../types/Word';
-import {useMemo} from 'react';
+import React, {useMemo} from 'react';
 
 function WordRemButton({
   status,

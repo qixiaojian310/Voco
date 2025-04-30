@@ -13,14 +13,13 @@ const BASE_URL = 'http://192.168.1.104:8000';
  */
 export const requestWrapper = async (
   requestURL: string,
-  body: object,
+  body?: object,
   options?: {
     method?: methodType
     signal?: AbortSignal
   },
 ): Promise<number | Response> => {
   const { method, signal } = options ?? {};
-  const bodyString = JSON.stringify(body);
   const requestOptions: any = {
     method: method ?? 'POST',
     headers: {
@@ -33,7 +32,7 @@ export const requestWrapper = async (
       BASE_URL + requestURL,
       {
         ...requestOptions,
-        body: bodyString,
+        body: body ? JSON.stringify(body) : null,
         signal,
       },
     );

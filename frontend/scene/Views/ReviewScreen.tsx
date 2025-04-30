@@ -88,7 +88,7 @@ function ReviewScreen() {
   return (
     <View style={{flex: 1}}>
       <View style={styles.toolbar} />
-      <View style={{height: 80, backgroundColor: '#66cadb8e'}}>
+      <View style={{height: 80, backgroundColor: '#8684ec6d'}}>
         <Text style={styles.mainWord}>{word.rawWord}</Text>
         <View style={styles.WordHintBox}>
           <Badge
@@ -109,12 +109,12 @@ function ReviewScreen() {
                   style={{flexDirection: 'row', gap: 5}}
                   key={translation.meaning}>
                   <Badge value={` ${translation.property} `} />
-                  <Text>{translation.meaning}</Text>
+                  <Text style={{color: '#ffffff'}}>{translation.meaning}</Text>
                 </View>
               );
             })}
           </View>
-          <ScrollView style={{flex: 1, backgroundColor: '#ffffffc3'}}>
+          <ScrollView style={{flex: 1, backgroundColor: '#00000027'}}>
             <WordContentCard title={'Example Sentences 例句'}>
               <>
                 {word.sentences.map(sentence => {
@@ -126,10 +126,10 @@ function ReviewScreen() {
                         paddingBottom: 10,
                       }}
                       key={sentence.sentence}>
-                      <Text style={{fontSize: 12, color: '#313131'}}>
+                      <Text style={{fontSize: 12, color: '#cbcbcb'}}>
                         {sentence.sentence}
                       </Text>
-                      <Text style={{fontSize: 12, color: '#313131'}}>
+                      <Text style={{fontSize: 12, color: '#cbcbcb'}}>
                         {sentence.translation}
                       </Text>
                     </View>
@@ -148,7 +148,7 @@ function ReviewScreen() {
                         paddingBottom: 10,
                       }}
                       key={helper}>
-                      <Text style={{fontSize: 12, color: '#313131'}}>
+                      <Text style={{fontSize: 12, color: '#cbcbcb'}}>
                         {helper}
                       </Text>
                     </View>
@@ -157,7 +157,7 @@ function ReviewScreen() {
               </>
             </WordContentCard>
             <WordContentCard title={'记忆记录 Remember History'}>
-              <Text style={{fontSize: 12, color: '#313131'}}>
+              <Text style={{fontSize: 12, color: '#cbcbcb'}}>
                 Record Range: {rem_day_range[0]} ➡️ {rem_day_range[1]}
               </Text>
               <View style={{flexWrap: 'wrap', gap: 2, flexDirection: 'row', paddingTop: 10, paddingBottom: 10}}>
@@ -169,8 +169,8 @@ function ReviewScreen() {
               </View>
             </WordContentCard>
           </ScrollView>
-          <Divider width={4} color="#c4c4c4" />
-          <View style={{flexDirection: 'row', backgroundColor: '#ffffffc3', padding: 20, gap: 20}}>
+          <Divider width={4} color="#383838" />
+          <View style={{flexDirection: 'row', backgroundColor: '#00000045', padding: 20, gap: 20}}>
             {
               Object.keys(word.rem_date).map(key => {
                 return (
@@ -203,7 +203,7 @@ function ReviewScreen() {
 
 const styles = StyleSheet.create({
   toolbar: {
-    backgroundColor: '#a2bfc3c5',
+    backgroundColor: '#8684ec6d',
     paddingTop: Platform.OS === 'android' ? StatusBar.currentHeight : 0,
     boxSizing: 'content-box',
     height: 40,
@@ -211,7 +211,7 @@ const styles = StyleSheet.create({
   mainWord: {
     fontSize: 30,
     fontWeight: 900,
-    color: '#000000',
+    color: '#bbbbbb',
     textAlign: 'center',
     fontFamily: 'arial',
   },
@@ -225,12 +225,12 @@ const styles = StyleSheet.create({
   WordHint: {
     fontSize: 10,
     fontWeight: 900,
-    color: '#313131',
+    color: '#bbbbbb',
   },
   translation: {
     padding: 10,
     gap: 5,
-    backgroundColor: '#92cbd6c3',
+    backgroundColor: '#54539cab',
   },
 });
 

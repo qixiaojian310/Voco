@@ -16,7 +16,7 @@ import Toast from 'react-native-toast-message';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import userStore from '../stores/UserStore';
 import { observer } from 'mobx-react';
-import BookScreen from './Views/BookScreen';
+import WordbookScreen from './Views/WordbookScreen';
 
 const RootStack = createNativeStackNavigator();
 const MainTab = createBottomTabNavigator();
@@ -25,7 +25,7 @@ function HomeTabs() {
     <MainTab.Navigator tabBar={props => <TabBar {...props} />}>
       <MainTab.Screen
         name="Book"
-        component={BookScreen}
+        component={WordbookScreen}
         options={{
           headerShown: false,
           tabBarIcon: props => (
@@ -85,7 +85,9 @@ const navTheme = {
   ...DefaultTheme,
   colors: {
     ...DefaultTheme.colors,
-    background: '#ffffff40',
+    background: '#00000040',
+    primary: '#54539c',
+    text: '#8f8f8f',
   },
 };
 

@@ -10,7 +10,7 @@ function WordContentCard({
   title: string;
 }) {
   return (
-    <View style={{borderColor: '#b5b5b5'}}>
+    <View style={{borderColor: '#d5d0d0', marginBottom: 10}}>
       <View
         style={{
           paddingLeft: 10,
@@ -18,18 +18,17 @@ function WordContentCard({
           paddingTop: 5,
           paddingEnd: 5,
         }}>
-        <Text style={{fontSize: 12, color: '#000000'}}>{title}</Text>
+        <Text style={{fontSize: 12, color: '#ffffff'}}>{title}</Text>
       </View>
-      <Divider width={2} color="#e0e0e0" />
+      <Divider width={2} color="#383838" />
       <View
         style={{
           paddingLeft: 10,
           paddingRight: 10,
-          backgroundColor: '#ffffff57',
+          backgroundColor: '#00000056',
         }}>
         {children}
       </View>
-      <Divider width={4} color="#c4c4c4" />
     </View>
   );
 }

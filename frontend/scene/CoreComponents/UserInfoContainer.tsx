@@ -94,10 +94,10 @@ function UserInfoContainer() {
         <Input
           placeholder="Account"
           leftIcon={
-            <Icon name="user" type="font-awesome" size={24} color="#424242" />
+            <Icon name="user" type="font-awesome" size={24} color="#cbcbcb" />
           }
-          inputStyle={{fontSize: 12, height: 50}}
-          label={<Text style={{color: '#000000'}}>Account</Text>}
+          inputStyle={{fontSize: 12, height: 50, color: '#ffffff'}}
+          label={<Text style={{color: '#ffffff'}}>Account</Text>}
           onChangeText={text => setUsername(text)}
           errorMessage={usernameErrorMessage}
           renderErrorMessage={false}
@@ -105,27 +105,27 @@ function UserInfoContainer() {
         <Input
           placeholder="Password"
           leftIcon={
-            <Icon name="lock" type="font-awesome" size={24} color="#424242" />
+            <Icon name="lock" type="font-awesome" size={24} color="#cbcbcb" />
           }
-          label={<Text style={{color: '#000000'}}>Password</Text>}
+          label={<Text style={{color: '#ffffff'}}>Password</Text>}
           secureTextEntry={true}
           errorMessage={passwordErrorMessage}
           renderErrorMessage={false}
           errorStyle={{color: '#b43027'}}
-          inputStyle={{fontSize: 12, height: 50}}
+          inputStyle={{fontSize: 12, height: 50, color: '#ffffff'}}
           onChangeText={text => setPassword(text)}
         />
         {isSignup && (
           <Input
             placeholder="Repeat Password"
             leftIcon={
-              <Icon name="lock" type="font-awesome" size={24} color="#424242" />
+              <Icon name="lock" type="font-awesome" size={24} color="#cbcbcb" />
             }
-            label={<Text style={{color: '#000000'}}>Password</Text>}
+            label={<Text style={{color: '#ffffff'}}>Password</Text>}
             secureTextEntry={true}
             renderErrorMessage={false}
             errorStyle={{color: '#b43027'}}
-            inputStyle={{fontSize: 12, height: 50}}
+            inputStyle={{fontSize: 12, height: 50, color: '#ffffff'}}
             onChangeText={text => setRepeatPassword(text)}
           />
         )}
@@ -155,7 +155,7 @@ function UserInfoContainer() {
 const styles = StyleSheet.create({
   controllerBox: {
     width: 300,
-    backgroundColor: '#ffffffbf',
+    backgroundColor: '#000000be',
     borderRadius: 10,
     padding: 20,
   },
