@@ -16,7 +16,7 @@ def get_user_count():
         return None
 
 
-def create_user(username, password_hash, is_test=True):
+def create_user(username, password_hash, is_test=False):
     if is_test:
         password_hash = hashlib.sha1(password_hash.encode("utf-8")).hexdigest()
     try:
@@ -28,8 +28,10 @@ def create_user(username, password_hash, is_test=True):
                 )
                 conn.commit()
                 logger.debug(f"用户 {username} 插入成功")
+                return username
     except mysql.connector.Error as err:
         logger.debug(f"插入失败: {err}")
+        return None
 
 
 def user_login(username, password_hash, is_test=False):

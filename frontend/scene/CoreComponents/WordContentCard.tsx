@@ -1,5 +1,6 @@
 import {Divider} from '@rneui/themed';
 import {Text, View} from 'react-native';
+import React from 'react';
 
 function WordContentCard({
   children,

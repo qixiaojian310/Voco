@@ -10,7 +10,7 @@ logger = loguru.logger
 dbconfig = {
     "user": "root",
     "password": "123456",
-    "host": "120.76.53.217",
+    "host": "localhost",
     "database": "voco",
     "port": 3306,
     "connect_timeout": 5,

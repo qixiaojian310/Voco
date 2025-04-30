@@ -11,13 +11,31 @@ import BackgroundView from './CoreComponents/BackgroundView';
 import TabBar from './CoreComponents/TabBar';
 import StatisticsScreen from './Views/StatisticsScreen';
 import ProfileScreen from './Views/ProfileScreen';
-import { Icon } from '@rneui/themed';
+import {Icon} from '@rneui/themed';
+import Toast from 'react-native-toast-message';
+import AsyncStorage from '@react-native-async-storage/async-storage';
+import userStore from '../stores/UserStore';
+import { observer } from 'mobx-react';
+import BookScreen from './Views/BookScreen';
 
 const RootStack = createNativeStackNavigator();
 const MainTab = createBottomTabNavigator();
 function HomeTabs() {
   return (
     <MainTab.Navigator tabBar={props => <TabBar {...props} />}>
+      <MainTab.Screen
+        name="Book"
+        component={BookScreen}
+        options={{
+          headerShown: false,
+          tabBarIcon: props => (
+            <Icon name="book" size={24} color={props.color} />
+          ),
+          tabBarLabelStyle: {
+            marginBottom: 10,
+          },
+        }}
+      />
       <MainTab.Screen
         name="Review"
         component={ReviewScreen}
@@ -50,7 +68,12 @@ function HomeTabs() {
         options={{
           headerShown: false,
           tabBarIcon: props => (
-            <Icon name="user" type='font-awesome' size={24} color={props.color} />
+            <Icon
+              name="user"
+              type="font-awesome"
+              size={24}
+              color={props.color}
+            />
           ),
         }}
       />
@@ -66,8 +89,18 @@ const navTheme = {
   },
 };
 
-export default function App() {
+const App = observer(() => {
   const [blur, setBlur] = React.useState(2);
+
+  React.useEffect(() => {
+    const userLoginWIthToken = async () => {
+      const access_token = await AsyncStorage.getItem('access_token');
+      if (access_token) {
+        userStore.login();
+      }
+    };
+    userLoginWIthToken();
+  });
   return (
     <KeyboardAvoidingView
       style={{flex: 1}}
@@ -81,26 +114,34 @@ export default function App() {
           const currentRoute = state!.routes[state!.index];
           if (currentRoute.name === 'Home') {
             setBlur(8);
-          } else if(currentRoute.name === 'Register'){
+          } else if (currentRoute.name === 'Register') {
             setBlur(2);
           }
         }}>
         <RootStack.Navigator>
-          <RootStack.Screen
-            name="Register"
-            options={{
-              title: 'Register',
-              headerShown: false,
-            }}
-            component={RegisterScreen}
-          />
-          <RootStack.Screen
-            name="Home"
-            options={{headerShown: false}}
-            component={HomeTabs}
-          />
+          {
+            userStore.isLoggedIn ? (
+              <RootStack.Screen
+              name="Home"
+              options={{headerShown: false}}
+              component={HomeTabs}
+            />
+            ) : (
+              <RootStack.Screen
+              name="Register"
+              options={{
+                title: 'Register',
+                headerShown: false,
+              }}
+              component={RegisterScreen}
+            />
+            )
+          }
         </RootStack.Navigator>
       </NavigationContainer>
+      <Toast position="top" topOffset={20} />
     </KeyboardAvoidingView>
   );
-}
+});
+
+export default App;

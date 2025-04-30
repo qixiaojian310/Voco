@@ -1,5 +1,5 @@
 import json
-from database_connector import get_connection
+from .database_connector import get_connection
 
 
 def get_words_brief(keyword=None):
@@ -38,7 +38,7 @@ def get_words_with_trans(keyword=None):
 
 
 def get_words_details(keyword):
-    """根据关键词模糊查询单词及其翻译和例句，如果keyword为空，返回全部"""
+    """根据关键词查询单词及其翻译和例句，如果keyword为空，返回全部"""
     with get_connection() as conn:
         with conn.cursor(dictionary=True) as cursor:
             cursor.execute("SELECT * FROM words WHERE word = %s", (keyword,))
@@ -57,16 +57,19 @@ def get_words_details(keyword):
             return word
 
 
-def create_wordbook_records(
+def create_wordbook(
     username: str, wordbook_name: str, description: str, is_public: bool
 ):
     """创建一个单词本"""
     with get_connection() as conn:
         with conn.cursor(dictionary=True) as cursor:
+            # 检查用户是否存在
+            cursor.execute("SELECT user_id FROM users WHERE username = %s", (username,))
+            user = cursor.fetchone()
             # 插入到 wordbook 表
             cursor.execute(
-                "INSERT INTO wordbooks (name, description, is_public, created_at, updated_at) VALUES (%s, %s, %s, NOW(), NOW())",
-                (wordbook_name, description, is_public),
+                "INSERT INTO wordbooks (name, description, is_public, created_at, updated_at, publisher) VALUES (%s, %s, %s, NOW(), NOW(), %s)",
+                (wordbook_name, description, is_public, user["user_id"]),
             )
             wordbook_id = cursor.lastrowid  # 获取刚插入的wordbook的id
             cursor.execute("SELECT user_id FROM users WHERE username = %s", (username,))
@@ -77,6 +80,26 @@ def create_wordbook_records(
                 (wordbook_id, user_id),
             )
             conn.commit()  # 提交事务
+            return wordbook_id
+
+
+def get_words_from_wordbook(wordbook_id):
+    """根据单词本id获取单词"""
+    with get_connection() as conn:
+        with conn.cursor(dictionary=True) as cursor:
+            cursor.execute(
+                "SELECT word_id FROM wordbook_contents WHERE wordbook_id = %s",
+                (wordbook_id,),
+            )
+            word_ids = cursor.fetchall()
+            words = []
+            for word_id in word_ids:
+                cursor.execute(
+                    "SELECT word FROM words WHERE word_id = %s", (word_id["word_id"],)
+                )
+                word = cursor.fetchone()
+                words.append(word["word"])
+            return words
 
 
 # 添加单词到单词本
@@ -111,39 +134,53 @@ def add_words_to_wordbook_from_json_data(wordbook_id, json_file_path):
         words = json.load(f)
     with get_connection() as conn:
         with conn.cursor(dictionary=True) as cursor:
-            for word in words:
-                # 先查 words 表
-                cursor.execute("SELECT word_id FROM words WHERE word = %s", (word,))
-                result = cursor.fetchone()
-
-                if not result:
-                    # 不存在words表
-                    not_found_words.append(word)
-                    continue
-
-                word_id = result["word_id"]
-
-                # 再查 wordbook_contents 是否已经有这个word_id
-                cursor.execute(
-                    "SELECT 1 FROM wordbook_contents WHERE wordbook_id = %s AND word_id = %s",
-                    (wordbook_id, word_id),
-                )
-                exist = cursor.fetchone()
-
-                if exist:
-                    # 已经存在wordbook_contents
-                    already_in_wordbook.append(word)
-                else:
-                    # 可以插入
+            word_id_err = 1
+            try:
+                for res in words:
+                    # 先查 words 表
                     cursor.execute(
-                        "INSERT INTO wordbook_contents (word_id, wordbook_id, added_at) VALUES (%s, %s, NOW())",
-                        (word_id, wordbook_id),
+                        "SELECT word_id FROM words WHERE word = %s", (res["word"],)
                     )
-                    final_add_words.append(word)
+                    result = cursor.fetchone()
+                    if not result:
+                        # 不存在words表
+                        not_found_words.append(res["word"])
+                        continue
 
-            conn.commit()
+                    word_id = result["word_id"]
+                    # 再查 wordbook_contents 是否已经有这个word_id
+                    cursor.execute(
+                        "SELECT 1 FROM wordbook_contents WHERE wordbook_id = %s AND word_id = %s",
+                        (wordbook_id, word_id),
+                    )
+                    word_id_err = word_id
+                    exist = cursor.fetchone()
+                    if exist:
+                        # 已经存在wordbook_contents
+                        already_in_wordbook.append(res["word"])
+                    else:
+                        # 可以插入
+                        cursor.execute(
+                            "INSERT INTO wordbook_contents (word_id, wordbook_id, added_at) VALUES (%s, %s, NOW())",
+                            (word_id, wordbook_id),
+                        )
+                        final_add_words.append(res["word"])
+
+                conn.commit()
+            except Exception as e:
+                print("word", word_id_err)
+                return not_found_words, already_in_wordbook, final_add_words
 
     return not_found_words, already_in_wordbook, final_add_words
+
+
+def get_all_books():
+    """获取用户的单词本"""
+    with get_connection() as conn:
+        with conn.cursor(dictionary=True) as cursor:
+            cursor.execute("SELECT * FROM wordbooks WHERE is_public = 1")
+            books = cursor.fetchall()
+            return books
 
 
 def get_books_by_user(username):
@@ -153,7 +190,7 @@ def get_books_by_user(username):
             cursor.execute("SELECT user_id FROM users WHERE username = %s", (username,))
             user_id = cursor.fetchone()["user_id"]
             cursor.execute(
-                "SELECT * FROM wordbooks WHERE wordbook_id IN (SELECT wordbook_id FROM wordbook_user_record WHERE user_id = %s)",
+                "SELECT * FROM wordbooks WHERE publisher = %s",
                 (user_id,),
             )
             books = cursor.fetchall()
@@ -183,7 +220,7 @@ __all__ = [
     "get_words_brief",
     "get_words_with_trans",
     "get_words_details",
-    "create_wordbook_records",
+    "create_wordbook",
     "add_word_to_wordbook",
     "add_words_to_wordbook_from_json_data",
     "get_books_by_user",

@@ -33,8 +33,36 @@ def get_etymology(word):
     return None
 
 
+def get_trans(word):
+    """爬取单词翻译"""
+    url = (
+        f"https://dictionary.cambridge.org/dictionary/english-chinese-simplified/{word}"
+    )
+
+    headers = {
+        "User-Agent": random.choice(USER_AGENTS),
+    }
+    response = requests.get(url, headers=headers)
+    if response.status_code != 200:
+        print(f"Error: Status code {response.status_code}")
+        return None
+    soup = BeautifulSoup(response.text, "html.parser")
+    divs = soup.find_all("div", {"class": "pr dsense"})
+    if divs:
+        translations = []
+        for div in divs:
+            abbr_span = div.find("span", {"class": "pos dsense_pos"})
+            if abbr_span:
+                translations.append(abbr_span.text.strip())  # 提取子div中的文本
+        return translations  # 返回一个包含所有翻译的列表
+    return None
+
+
+print(get_trans("fire"))
+
+
 def insert_word_records():
-    for i in range(2, 48):
+    for i in range(1, 48):
         print(f"正在插入第{i}个文件")
         # 3. 读取JSON文件
         with open(f"../word/word{i}.json", "r", encoding="utf-8") as f:

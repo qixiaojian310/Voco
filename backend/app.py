@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from static.database_connector import init_connection_pool, close_connection_pool
-from routers import auth
+from routers import auth, word
 import uvicorn
 from contextlib import asynccontextmanager
 
@@ -22,6 +22,7 @@ app = FastAPI(lifespan=lifespan)
 
 # 挂载 auth 路由
 app.include_router(auth.router)
+app.include_router(word.router)
 
 
 def main():

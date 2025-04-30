@@ -1,15 +1,87 @@
-import {Button, Input} from '@rneui/themed';
-import Icon from 'react-native-vector-icons/FontAwesome';
+import {Button, Input, Icon} from '@rneui/themed';
 import {StyleSheet, Text, View} from 'react-native';
+import React, {useEffect, useMemo} from 'react';
 import {useState} from 'react';
-import { useNavigation } from '@react-navigation/native';
+import {signin, signup} from '../../request/authorization';
+import Toast from 'react-native-toast-message';
+import AsyncStorage from '@react-native-async-storage/async-storage';
+import userStore from '../../stores/UserStore';
 
 function UserInfoContainer() {
-  const [isRegister, setIsRegister] = useState(false);
-  const navigation = useNavigation<any>();
-  const register = () => {
-    navigation.navigate('Home');
+  const [isSignup, setIsSignup] = useState(false);
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
+  const [repeatPassword, setRepeatPassword] = useState('');
+  const signupHandler = async () => {
+    // TODO: signup
+    const res = await signup({
+      username: username,
+      password: password,
+    });
+    console.log(res);
+
+    if (typeof res === 'number') {
+      Toast.show({
+        text1: 'Signup Failed',
+        type: 'error',
+      });
+    } else {
+      Toast.show({
+        text1: `User ${res.username} Signup Success`,
+        type: 'success',
+      });
+      userStore.login();
+    }
   };
+
+  const signinHandler = async () => {
+    const res = await signin({
+      username: username,
+      password: password,
+    });
+
+    if (typeof res === 'number') {
+      Toast.show({
+        text1: 'Signin Failed',
+        type: 'error',
+      });
+    } else {
+      Toast.show({
+        text1: 'Signin Success',
+        type: 'success',
+      });
+      userStore.login();
+      console.log(userStore.isLoggedIn);
+
+    }
+  };
+
+  const passwordErrorMessage = useMemo(() => {
+    if (repeatPassword !== password && isSignup) {
+      return 'Your password is not same';
+    } else {
+      return undefined;
+    }
+  }, [repeatPassword, password, isSignup]);
+  const usernameErrorMessage = useMemo(() => {
+    if (username.length < 4 && isSignup) {
+      return 'Your username is too short';
+    } else {
+      return undefined;
+    }
+  }, [username, isSignup]);
+
+  useEffect(()=>{
+    const userLoginWIthToken = async () => {
+      const access_token = await AsyncStorage.getItem('access_token');
+      if (access_token) {
+        userStore.login();
+      }else{
+        userStore.logout();
+      }
+    };
+    userLoginWIthToken();
+  });
   return (
     <View
       style={{
@@ -21,24 +93,40 @@ function UserInfoContainer() {
       <View style={styles.controllerBox}>
         <Input
           placeholder="Account"
-          leftIcon={<Icon name="user" size={24} color="#424242" />}
+          leftIcon={
+            <Icon name="user" type="font-awesome" size={24} color="#424242" />
+          }
           inputStyle={{fontSize: 12, height: 50}}
           label={<Text style={{color: '#000000'}}>Account</Text>}
+          onChangeText={text => setUsername(text)}
+          errorMessage={usernameErrorMessage}
+          renderErrorMessage={false}
         />
         <Input
           placeholder="Password"
-          leftIcon={<Icon name="lock" size={24} color="#424242" />}
+          leftIcon={
+            <Icon name="lock" type="font-awesome" size={24} color="#424242" />
+          }
           label={<Text style={{color: '#000000'}}>Password</Text>}
           secureTextEntry={true}
+          errorMessage={passwordErrorMessage}
+          renderErrorMessage={false}
+          errorStyle={{color: '#b43027'}}
           inputStyle={{fontSize: 12, height: 50}}
+          onChangeText={text => setPassword(text)}
         />
-        {isRegister && (
+        {isSignup && (
           <Input
             placeholder="Repeat Password"
-            leftIcon={<Icon name="lock" size={24} color="#424242" />}
+            leftIcon={
+              <Icon name="lock" type="font-awesome" size={24} color="#424242" />
+            }
             label={<Text style={{color: '#000000'}}>Password</Text>}
             secureTextEntry={true}
-            inputStyle={{fontSize: 10}}
+            renderErrorMessage={false}
+            errorStyle={{color: '#b43027'}}
+            inputStyle={{fontSize: 12, height: 50}}
+            onChangeText={text => setRepeatPassword(text)}
           />
         )}
         <View
@@ -49,12 +137,16 @@ function UserInfoContainer() {
           }}>
           <Button
             titleStyle={{fontSize: 12}}
-            title={isRegister ? 'Back to Login' : 'Register Account'}
+            title={isSignup ? 'Back to Login' : 'Register Account'}
             type="clear"
-            onPress={() => setIsRegister(!isRegister)}
+            onPress={() => setIsSignup(!isSignup)}
           />
         </View>
-        <Button title="Register" onPress={register}/>
+        {isSignup ? (
+          <Button title="Create Voco" onPress={signupHandler} />
+        ) : (
+          <Button title="Start Voco" onPress={signinHandler} />
+        )}
       </View>
     </View>
   );
