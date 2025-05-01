@@ -2,13 +2,13 @@ import json
 from .database_connector import get_connection
 
 
-def get_words_brief(keyword=None):
+def get_words_brief(word=None):
     """根据关键词模糊查询单词（简要版），如果keyword为空，返回全部"""
     with get_connection() as conn:
         with conn.cursor(dictionary=True) as cursor:
-            if keyword:
+            if word:
                 sql = "SELECT word_id, word, phonetic FROM words WHERE word LIKE %s"
-                like_keyword = f"%{keyword}%"
+                like_keyword = f"%{word}%"
                 cursor.execute(sql, (like_keyword,))
             else:
                 sql = "SELECT * FROM words"
@@ -17,13 +17,13 @@ def get_words_brief(keyword=None):
             return words
 
 
-def get_words_with_trans(keyword=None):
+def get_words_with_trans(word=None):
     """根据关键词模糊查询单词及其翻译，如果keyword为空，返回全部"""
     with get_connection() as conn:
         with conn.cursor(dictionary=True) as cursor:
-            if keyword:
+            if word:
                 sql = "SELECT word_id, word, phonetic FROM words WHERE word LIKE %s"
-                like_keyword = f"%{keyword}%"
+                like_keyword = f"%{word}%"
                 cursor.execute(sql, (like_keyword,))
             else:
                 sql = "SELECT word_id, word, phonetic FROM words"
@@ -37,11 +37,11 @@ def get_words_with_trans(keyword=None):
             return words
 
 
-def get_words_details(keyword):
+def get_words_details(word, username):
     """根据关键词查询单词及其翻译和例句，如果keyword为空，返回全部"""
     with get_connection() as conn:
         with conn.cursor(dictionary=True) as cursor:
-            cursor.execute("SELECT * FROM words WHERE word = %s", (keyword,))
+            cursor.execute("SELECT * FROM words WHERE word = %s", (word,))
             word = cursor.fetchone()
             if word:
                 cursor.execute(
@@ -54,6 +54,33 @@ def get_words_details(keyword):
                     (word["word_id"],),
                 )
                 word["example_sentence"] = cursor.fetchall()
+                # 获取记忆记录
+                cursor.execute(
+                    """
+                    SELECT * FROM user_words
+                    JOIN users ON users.user_id = user_words.user_id
+                    WHERE users.username = %s AND user_words.word_id = %s
+                    """,
+                    (username, word["word_id"]),
+                )
+                user_word = cursor.fetchone()
+                if user_word:
+                    word["user_word"] = {
+                        "memory_status": user_word["memory_status"],
+                        "review_count": user_word["review_count"],
+                        "current_review": user_word["current_review"],
+                        "easiness": user_word["easiness"],
+                        "review_interval": user_word["review_interval"],
+                        "next_review": user_word["next_review"],
+                    }
+                    cursor.execute(
+                        "SELECT * FROM study_records WHERE user_word_id = %s",
+                        (user_word["user_word_id"],),
+                    )
+                    word["study_records"] = cursor.fetchall()
+                else:
+                    word["user_word"] = None
+                    word["study_records"] = []
             return word
 
 
@@ -174,25 +201,41 @@ def add_words_to_wordbook_from_json_data(wordbook_id, json_file_path):
     return not_found_words, already_in_wordbook, final_add_words
 
 
-def get_all_books():
+def get_all_books(wordbook_name=None):
     """获取用户的单词本"""
     with get_connection() as conn:
         with conn.cursor(dictionary=True) as cursor:
-            cursor.execute("SELECT * FROM wordbooks WHERE is_public = 1")
+            if wordbook_name:
+                # 模糊匹配：包含输入词
+                cursor.execute(
+                    "SELECT * FROM wordbooks WHERE is_public = 1 AND name LIKE %s",
+                    (f"%{wordbook_name}%",),
+                )
+            else:
+                # 如果没传入名字，就查所有公开单词本
+                cursor.execute("SELECT * FROM wordbooks WHERE is_public = 1")
             books = cursor.fetchall()
             return books
 
 
-def get_books_by_user(username):
+def get_books_by_user(username, wordbook_name=None):
     """获取用户的单词本"""
     with get_connection() as conn:
         with conn.cursor(dictionary=True) as cursor:
             cursor.execute("SELECT user_id FROM users WHERE username = %s", (username,))
             user_id = cursor.fetchone()["user_id"]
-            cursor.execute(
-                "SELECT * FROM wordbooks WHERE publisher = %s",
-                (user_id,),
-            )
+            if wordbook_name:
+                # 模糊匹配：包含输入词
+                cursor.execute(
+                    "SELECT * FROM wordbooks WHERE publisher = %s AND name LIKE %s",
+                    (user_id, f"%{wordbook_name}%"),
+                )
+            else:
+                # 如果没传入名字，就查所有公开单词本
+                cursor.execute(
+                    "SELECT * FROM wordbooks WHERE publisher = %s",
+                    (user_id,),
+                )
             books = cursor.fetchall()
             return books
 

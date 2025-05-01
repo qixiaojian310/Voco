@@ -1,5 +1,5 @@
 import {Badge, Divider} from '@rneui/themed';
-import React, { useMemo } from 'react';
+import React, {useCallback, useEffect, useMemo} from 'react';
 import {
   Platform,
   ScrollView,
@@ -9,28 +9,34 @@ import {
   TouchableOpacity,
   View,
 } from 'react-native';
-import {RemStatus, Word} from '../../types/Word';
+import {RemDate, RemStatus, Word} from '../../types/Word';
 import WordContentCard from '../CoreComponents/WordContentCard';
 import WordRemBadge from '../Review/WordRemBadge';
 import WordRemButton from '../Review/WordRemButton';
+import {observer} from 'mobx-react';
+import wordbookStore from '../../stores/WordbookStore';
+import AsyncStorage from '@react-native-async-storage/async-storage';
+import {computeSM2, firstReview} from '../../utils/sm2';
+import {get_word_info} from '../../request/word';
 
-function ReviewScreen() {
+const ReviewScreen = observer(() => {
   const [showTrans, setShowTrans] = React.useState(false);
-  const [word, setWord] = React.useState<Word>({
-    rawWord: 'abandon',
+  const [allTodayWords, setAllTodayWords] = React.useState<string[]>([]);
+  const [reqWord, setReqWord] = React.useState<Word>({
+    word: 'abandon',
     phonetic: '/əˈbændən/',
     translations: [
       {
-        property: 'v.',
-        meaning:
+        abbreviation: 'v.',
+        translation:
           '抛弃，遗弃；（因危险）离开，舍弃；中止，不再有；放弃（信念、信仰或看法）；陷入，沉湎于（某种情感）',
       },
       {
-        property: 'n.',
-        meaning: '放任，放纵',
+        abbreviation: 'n.',
+        translation: '放任，放纵',
       },
     ],
-    sentences: [
+    example_sentence: [
       {
         sentence: 'I abandoned my job after I found a better one.',
         translation: '我在找到更好的工作后就放弃了我的工作。',
@@ -40,56 +46,178 @@ function ReviewScreen() {
         translation: '她放弃了她的工作，开始了一个新的工作。',
       },
     ],
-    helpers: [
+    etymology:
       'abandon : 来自法语短语a bandon.a-词源同ad-,去，往，-band,说话，命令，词源同ban,phone.原指置于别人的命令之下，任人处置，后喻指遗弃。',
-      'abandon:(a不+ban+don给予→不禁止给出去→放弃)',
-    ],
-    rem_records: [
-      {
-        time: 18,
-        status: 'remember',
-      },
-      {
-        time: 32,
-        status: 'forgot',
-      },
-    ],
-    rem_date: {
-      remember: 65,
-      vague: 3,
-      forgot: 1,
-    },
+    study_records: [],
+    user_word: null,
   });
 
-  const rem_day_range = useMemo(() => {
-    if (!word.rem_records || word.rem_records.length === 0) {return [];}
+  const rem_date = useMemo<RemDate>(() => {
+    if (!reqWord.user_word) {
+      return {
+        remembered: firstReview('remembered', new Date()),
+        forgot: firstReview('forgot', new Date()),
+        vague: firstReview('vague', new Date()),
+      };
+    } else {
+      return {
+        remembered: computeSM2({
+          qualityText: 'remembered',
+          easiness: reqWord.user_word.easiness,
+          interval: reqWord.user_word.review_interval,
+          review_count: reqWord.user_word.review_count,
+          review_datetime: reqWord.user_word.current_review,
+        }),
+        forgot: computeSM2({
+          qualityText: 'forgot',
+          easiness: reqWord.user_word.easiness,
+          interval: reqWord.user_word.review_interval,
+          review_count: reqWord.user_word.review_count,
+          review_datetime: reqWord.user_word.current_review,
+        }),
+        vague: computeSM2({
+          qualityText: 'vague',
+          easiness: reqWord.user_word.easiness,
+          interval: reqWord.user_word.review_interval,
+          review_count: reqWord.user_word.review_count,
+          review_datetime: reqWord.user_word.current_review,
+        }),
+      };
+    }
+  }, [reqWord]);
 
-    const baseDate = new Date();
-    const times = word.rem_records.map(r => r.time);
+  const rem_day_range = useMemo(() => {
+    if (!reqWord.study_records || reqWord.study_records.length === 0) {
+      return [];
+    }
+
+    const times = reqWord.study_records.map(r =>
+      new Date(r.record_time).getTime(),
+    );
 
     const minTime = Math.min(...times);
     const maxTime = Math.max(...times);
 
-    const startDate = new Date(baseDate.getTime() + minTime * 1000);
-    const endDate = new Date(baseDate.getTime() + maxTime * 1000);
+    const startDate = new Date(minTime);
+    const endDate = new Date(maxTime);
     const formatDate = (date: Date) => date.toISOString().split('T')[0];
 
     return [formatDate(startDate), formatDate(endDate)];
+  }, [reqWord]);
 
-  },[word]);
+  const WordsChoose = useCallback(async () => {
+    const todayStr = new Date().toISOString().slice(0, 10); // "YYYY-MM-DD"
+    const lastGeneratedDate = await AsyncStorage.getItem(
+      'today_word_generated_date',
+    );
+
+    if (lastGeneratedDate !== todayStr) {
+      await AsyncStorage.removeItem('today_all_words');
+      await AsyncStorage.setItem('today_word_generated_date', todayStr);
+    }
+
+    const res = await AsyncStorage.getItem('today_all_words');
+    if (res) {
+      setAllTodayWords(JSON.parse(res));
+    } else {
+      const userInfoJSON = await AsyncStorage.getItem('userInfo');
+      const userInfo = JSON.parse(userInfoJSON!);
+      const dailyGoal = userInfo.daily_goal;
+
+      // Step 1: 筛选需要复习的词（根据复习间隔）
+      const today = new Date();
+      today.setHours(0, 0, 0, 0);
+      const review_word_list = wordbookStore.review_word_list
+        .filter((wordItem: any) => {
+          const lastReviewDate = new Date(wordItem.word_metric.current_review);
+          const nextReviewDate = new Date(lastReviewDate);
+          nextReviewDate.setDate(
+            lastReviewDate.getDate() + wordItem.word_metric.review_interval,
+          );
+          return today.getDay() >= nextReviewDate.getDay();
+        })
+        .map((wordItem: any) => wordItem.word);
+      console.log('review_word_list', review_word_list);
+
+      // Step 2: 打乱数组的函数
+      const shuffle = (array: any[]) => {
+        return array.sort(() => Math.random() - 0.5);
+      };
+
+      const shuffled_review = shuffle(review_word_list);
+      const shuffled_new = shuffle(wordbookStore.unlearned_word_list);
+
+      // Step 3: 按比例选择复习词和新词
+      const targetReviewCount = Math.min(
+        Math.floor((3 / 5) * dailyGoal),
+        shuffled_review.length,
+      );
+      const targetNewCount = dailyGoal - targetReviewCount;
+
+      const selectedReview = shuffled_review.slice(0, targetReviewCount);
+      console.log('selectedReview', selectedReview);
+
+      const selectedNew = shuffled_new.slice(0, targetNewCount);
+
+      const todayAllWords = [...selectedReview, ...selectedNew];
+
+      await AsyncStorage.setItem(
+        'today_all_words',
+        JSON.stringify(todayAllWords),
+      );
+      console.log('todayAllWords', todayAllWords);
+
+      setAllTodayWords(todayAllWords);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [wordbookStore.review_word_list, wordbookStore.unlearned_word_list]);
 
   const showTransHandler = () => {
     setShowTrans(true);
   };
 
-  const submitWordStatus = (status: RemStatus) => {
-    console.log(status);
-  };
+  const submitWordStatus = useCallback(async (status: RemStatus) => {
+    const request = rem_date[status];
+    console.log(request);
+
+    // 提交单词状态
+    // request.word,
+    //     request.is_review,
+    //     request.memory_status,
+    //     request.current_review,
+    //     request.easiness,
+    //     request.review_interval,
+    //     request.next_review,
+    // const req = {
+    //   word: reqWord.word,
+    //   memory_status: status,
+    //   is_review: true,
+    //   current_review: new Date().toISOString(),
+    //   easiness: 2.5,
+    //   review_interval: parseInt(rem_date[status]),
+    // };
+  }, [rem_date]);
+
+  useEffect(() => {
+    const initWord = async () => {
+      if (allTodayWords.length === 0) {
+        return;
+      }
+      const res = await get_word_info(allTodayWords[0]);
+      // console.log(res);
+      setReqWord(res);
+    };
+    initWord();
+  }, [allTodayWords]);
+
+  useEffect(() => {
+    WordsChoose();
+  }, [WordsChoose]);
   return (
     <View style={{flex: 1}}>
       <View style={styles.toolbar} />
       <View style={{height: 80, backgroundColor: '#8684ec6d'}}>
-        <Text style={styles.mainWord}>{word.rawWord}</Text>
+        <Text style={styles.mainWord}>{reqWord.word}</Text>
         <View style={styles.WordHintBox}>
           <Badge
             badgeStyle={{backgroundColor: '#c2c1c1'}}
@@ -97,19 +225,21 @@ function ReviewScreen() {
             status="success"
             value=" 英 "
           />
-          <Text style={styles.WordHint}>{word.phonetic}</Text>
+          <Text style={styles.WordHint}>{reqWord.phonetic}</Text>
         </View>
       </View>
       {showTrans ? (
         <>
           <View style={styles.translation}>
-            {word.translations.map(translation => {
+            {reqWord.translations.map(translation => {
               return (
                 <View
                   style={{flexDirection: 'row', gap: 5}}
-                  key={translation.meaning}>
-                  <Badge value={` ${translation.property} `} />
-                  <Text style={{color: '#ffffff'}}>{translation.meaning}</Text>
+                  key={translation.translation}>
+                  <Badge value={` ${translation.abbreviation} `} />
+                  <Text style={{color: '#ffffff'}}>
+                    {translation.translation}
+                  </Text>
                 </View>
               );
             })}
@@ -117,67 +247,88 @@ function ReviewScreen() {
           <ScrollView style={{flex: 1, backgroundColor: '#00000027'}}>
             <WordContentCard title={'Example Sentences 例句'}>
               <>
-                {word.sentences.map(sentence => {
-                  return (
-                    <View
-                      style={{
-                        gap: 5,
-                        paddingTop: 10,
-                        paddingBottom: 10,
-                      }}
-                      key={sentence.sentence}>
-                      <Text style={{fontSize: 12, color: '#cbcbcb'}}>
-                        {sentence.sentence}
-                      </Text>
-                      <Text style={{fontSize: 12, color: '#cbcbcb'}}>
-                        {sentence.translation}
-                      </Text>
-                    </View>
-                  );
-                })}
+                {reqWord.example_sentence ? (
+                  reqWord.example_sentence.map(sentence => {
+                    return (
+                      <View
+                        style={{
+                          gap: 5,
+                          paddingTop: 10,
+                          paddingBottom: 10,
+                        }}
+                        key={sentence.sentence}>
+                        <Text style={{fontSize: 12, color: '#cbcbcb'}}>
+                          {sentence.sentence}
+                        </Text>
+                        <Text style={{fontSize: 12, color: '#cbcbcb'}}>
+                          {sentence.translation}
+                        </Text>
+                      </View>
+                    );
+                  })
+                ) : (
+                  <Text>暂无例句</Text>
+                )}
               </>
             </WordContentCard>
             <WordContentCard title={'助记 Helper'}>
-              <>
-                {word.helpers.map(helper => {
-                  return (
-                    <View
-                      style={{
-                        gap: 5,
-                        paddingTop: 10,
-                        paddingBottom: 10,
-                      }}
-                      key={helper}>
-                      <Text style={{fontSize: 12, color: '#cbcbcb'}}>
-                        {helper}
-                      </Text>
-                    </View>
-                  );
-                })}
-              </>
+              <View
+                style={{
+                  gap: 5,
+                  paddingTop: 10,
+                  paddingBottom: 10,
+                }}>
+                <Text style={{fontSize: 12, color: '#cbcbcb'}}>
+                  {reqWord.etymology}
+                </Text>
+              </View>
             </WordContentCard>
             <WordContentCard title={'记忆记录 Remember History'}>
               <Text style={{fontSize: 12, color: '#cbcbcb'}}>
                 Record Range: {rem_day_range[0]} ➡️ {rem_day_range[1]}
               </Text>
-              <View style={{flexWrap: 'wrap', gap: 2, flexDirection: 'row', paddingTop: 10, paddingBottom: 10}}>
-                {word.rem_records.map(rem_record => {
-                  return (
-                    <WordRemBadge key={rem_record.time} status={rem_record.status} time={rem_record.time}/>
-                  );
-                })}
+              <View
+                style={{
+                  flexWrap: 'wrap',
+                  gap: 2,
+                  flexDirection: 'row',
+                  paddingTop: 10,
+                  paddingBottom: 10,
+                }}>
+                {reqWord.study_records.length ? (
+                  reqWord.study_records.map(study_record => {
+                    return (
+                      <WordRemBadge
+                        key={study_record.record_time}
+                        memory_status={study_record.memory_status}
+                        record_time={study_record.record_time}
+                      />
+                    );
+                  })
+                ) : (
+                  <Text>暂无记录</Text>
+                )}
               </View>
             </WordContentCard>
           </ScrollView>
           <Divider width={4} color="#383838" />
-          <View style={{flexDirection: 'row', backgroundColor: '#00000045', padding: 20, gap: 20}}>
-            {
-              Object.keys(word.rem_date).map(key => {
-                return (
-                  <WordRemButton key={key} status={key as RemStatus} time={word.rem_date[key as RemStatus]} clickHandler={submitWordStatus}/>
-                );
-              })
-            }
+          <View
+            style={{
+              flexDirection: 'row',
+              backgroundColor: '#00000045',
+              padding: 20,
+              gap: 20,
+            }}>
+            {Object.keys(rem_date).map(key => {
+              return (
+                <WordRemButton
+                  key={key}
+                  memory_status={key as RemStatus}
+                  record_time={rem_date[key as RemStatus].interval.toString()}
+                  clickHandler={submitWordStatus}
+                />
+              );
+            })}
           </View>
         </>
       ) : (
@@ -199,7 +350,7 @@ function ReviewScreen() {
       )}
     </View>
   );
-}
+});
 
 const styles = StyleSheet.create({
   toolbar: {

@@ -17,18 +17,16 @@ def login(request: LoginRequest):
     if not user:
         raise HTTPException(status_code=401, detail="Invalid username or password")
     token = jwt_manager.generate_token(user["username"])
-    return {"access_token": token, "token_type": "bearer"}
+    return {"access_token": token, "token_type": "bearer", "user": user}
 
 
 @router.post("/register")
 def register(request: LoginRequest):
-    username = create_user(
-        username=request.username, password_hash=request.password_hash
-    )
-    if not username:
+    user = create_user(username=request.username, password_hash=request.password_hash)
+    if not user["username"]:
         raise HTTPException(status_code=401, detail="Invalid username or password")
-    token = jwt_manager.generate_token(username)
-    return {"access_token": token, "token_type": "bearer", "username": username}
+    token = jwt_manager.generate_token(user["username"])
+    return {"access_token": token, "token_type": "bearer", "user": user}
 
 
 @router.get("/protected")

@@ -10,9 +10,10 @@ interface MobileDimension{
 function BackgroundView({ blur, style }: { blur: number, style?: StyleProp<ViewStyle> }) {
   const image = useImage(require('../../assets/main-bg.jpg'));
   const [dimension, _setDimension] = React.useState<MobileDimension>({
-    width: Dimensions.get('window').width,
-    height: Dimensions.get('window').height,
+    width: Dimensions.get('screen').width,
+    height: Dimensions.get('screen').height,
   });
+
   if (!image) {
     return null;
   }
@@ -25,7 +26,7 @@ function BackgroundView({ blur, style }: { blur: number, style?: StyleProp<ViewS
         width={dimension.width}
         height={dimension.height}
         image={image}
-        fit="cover">
+        fit="fill">
         <Blur blur={blur} />
       </Image>
     </Canvas>

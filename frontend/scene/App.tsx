@@ -107,7 +107,7 @@ const App = observer(() => {
     <KeyboardAvoidingView
       style={{flex: 1}}
       behavior={'padding'}
-      keyboardVerticalOffset={-50}>
+      keyboardVerticalOffset={0}>
       <BackgroundView blur={blur} />
       <StatusBar backgroundColor="transparent" hidden={true} />
       <NavigationContainer

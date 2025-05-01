@@ -20,11 +20,12 @@ export const requestWrapper = async (
   },
 ): Promise<number | Response> => {
   const { method, signal } = options ?? {};
+  const auth = await AsyncStorage.getItem('access_token');
   const requestOptions: any = {
     method: method ?? 'POST',
     headers: {
       'Content-Type': 'application/json',
-      Authorization: 'Bearer ' + (AsyncStorage.getItem('access_token') || ''),
+      Authorization: 'Bearer ' + (auth || ''),
     },
   };
   try {

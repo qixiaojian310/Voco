@@ -16,8 +16,9 @@ def answer_word_status(
     is_review: bool,
     memory_status: MemoryStatus,
     current_review: datetime.datetime,
-    familiarity_score: int,
+    easiness: int,
     review_interval: int,
+    next_review: datetime.datetime,
 ):
     try:
         with get_connection() as conn:
@@ -40,13 +41,14 @@ def answer_word_status(
                 user_word_id = 0
                 if user_word:
                     cursor.execute(
-                        "UPDATE user_words SET memory_status = %s, review_count = %s, current_review = %s, familiarity_score = %s, review_interval = %s WHERE user_id = %s AND word_id = %s",
+                        "UPDATE user_words SET memory_status = %s, review_count = %s, current_review = %s, easiness = %s, review_interval = %s, next_review = %s WHERE user_id = %s AND word_id = %s",
                         (
                             memory_status,
                             user_word["review_count"] + 1,
                             current_review,
-                            familiarity_score,
+                            easiness,
                             review_interval,
+                            next_review,
                             user_id,
                             word_id,
                         ),
@@ -54,31 +56,34 @@ def answer_word_status(
                     user_word_id = user_word["user_word_id"]
                 else:
                     cursor.execute(
-                        "INSERT INTO user_words (user_id, word_id, memory_status, review_count, current_review, familiarity_score, review_interval) VALUES (%s, %s, %s, %s, %s, %s, %s)",
+                        "INSERT INTO user_words (user_id, word_id, memory_status, review_count, current_review, easiness, review_interval, next_review) VALUES (%s, %s, %s, %s, %s, %s, %s, %s)",
                         (
                             user_id,
                             word_id,
                             memory_status,
                             1,
                             current_review,
-                            familiarity_score,
+                            easiness,
                             review_interval,
+                            next_review,
                         ),
                     )
                     user_word_id = cursor.lastrowid
                 cursor.execute(
-                    "INSERT INTO study_records (user_word_id, memory_status, is_review, record_time) VALUES (%s, %s, %s, NOW())",
-                    (user_word_id, memory_status, is_review),
+                    "INSERT INTO study_records (user_word_id, memory_status, is_review, record_time) VALUES (%s, %s, %s, %s)",
+                    (user_word_id, memory_status, is_review, current_review),
                 )
                 conn.commit()
                 logger.debug(
                     f"用户 {username} 对单词 {word} 的状态 {memory_status} 插入成功"
                 )
+                return True
     except Exception as e:
         logger.debug(f"插入失败: {e}")
+        return False
 
 
-def get_all_unlearnd_words(username: str, wordbook_id: int):
+def get_all_unlearned_words(username: str, wordbook_id: int):
     unlearnd_words = []
     try:
         with get_connection() as conn:
@@ -137,7 +142,10 @@ def get_all_reviewed_words(username: str, wordbook_id: int):
                     )
                     word_status = {
                         "word": cursor.fetchone()["word"],
-                        "memory_status": word_metric["memory_status"],
+                        "word_metric": {
+                            "current_review": word_metric["current_review"],
+                            "review_interval": word_metric["review_interval"],
+                        },
                         "history_status": [],
                     }
                     for record in study_records:
@@ -148,7 +156,6 @@ def get_all_reviewed_words(username: str, wordbook_id: int):
                             }
                         )
                     reviewed_words.append(word_status)
-                print(reviewed_words)
                 return reviewed_words
     except Exception as e:
         logger.debug(f"查询失败: {e}")

@@ -28,7 +28,14 @@ def create_user(username, password_hash, is_test=False):
                 )
                 conn.commit()
                 logger.debug(f"用户 {username} 插入成功")
-                return username
+                user_id = cursor.lastrowid
+                # 获取插入的完整记录
+                cursor.execute(
+                    "SELECT username, daily_goal, total_words_learned, daily_reminder, reminder_time FROM users WHERE id = %s",
+                    (user_id,),
+                )
+                user_record = cursor.fetchone()
+                return user_record
     except mysql.connector.Error as err:
         logger.debug(f"插入失败: {err}")
         return None
@@ -41,7 +48,7 @@ def user_login(username, password_hash, is_test=False):
         with get_connection() as conn:
             with conn.cursor(dictionary=True) as cursor:
                 cursor.execute(
-                    "SELECT * FROM users WHERE username = %s AND password_hash = %s",
+                    "SELECT username, daily_goal, total_words_learned, daily_reminder, reminder_time FROM users WHERE username = %s AND password_hash = %s",
                     (username, password_hash),
                 )
                 user = cursor.fetchone()

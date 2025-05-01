@@ -29,8 +29,9 @@ export const signin = async (
   );
   if (typeof res !== 'number') {
     const body = await res.json();
-    AsyncStorage.setItem('access_token', body.access_token);
-    return body.content;
+    await AsyncStorage.setItem('access_token', body.access_token);
+    await AsyncStorage.setItem('userInfo', JSON.stringify(body.user));
+    return body;
   } else {
     return res;
   }
@@ -52,7 +53,8 @@ export const signup = async (
   );
   if (typeof res !== 'number') {
     const body = await res.json();
-    AsyncStorage.setItem('access_token', body.access_token);
+    await AsyncStorage.setItem('access_token', body.access_token);
+    await AsyncStorage.setItem('userInfo', JSON.stringify(body.user));
     return body;
   } else {
     return res;

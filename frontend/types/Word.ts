@@ -1,26 +1,13 @@
-export type Property =
-  | 'n.'      // noun
-  | 'v.'      // verb
-  | 'adj.'    // adjective
-  | 'adv.'    // adverb
-  | 'pron.'   // pronoun
-  | 'prep.'   // preposition
-  | 'conj.'   // conjunction
-  | 'int.'    // interjection
-  | 'art.'    // article
-  | 'det.'    // determiner
-  | 'modal.'  // modal verb
-  | 'aux.'    // auxiliary verb
-  | 'phr.v.'; // phrasal verb
+import { ReviewResult } from '../utils/sm2';
 
 export type RemStatus =
-  | 'remember'
+  | 'remembered'
   | 'forgot'
   | 'vague'
 
 export interface Translation {
-  property: Property;
-  meaning: string;
+  abbreviation: string;
+  translation: string;
 }
 
 export interface Sentence {
@@ -29,21 +16,30 @@ export interface Sentence {
 }
 
 export interface RemRecords{
-  time: number;
-  status: RemStatus;
+  record_time: string;
+  memory_status: RemStatus;
 }
 
 export interface RemDate {
-  remember: number;
-  forgot: number;
-  vague: number;
+  remembered: ReviewResult;
+  forgot: ReviewResult;
+  vague: ReviewResult;
+}
+
+export interface UserWord {
+  memory_status: RemStatus;
+  review_count: number;
+  easiness: number;
+  next_review: string;
+  current_review: string;
+  review_interval: number;
 }
 export interface Word {
-  rawWord: string;
+  word: string;
   phonetic: string;
   translations: Translation[];
-  sentences: Sentence[];
-  helpers: string[];
-  rem_records: RemRecords[];
-  rem_date: RemDate;
+  example_sentence: Sentence[];
+  etymology: string;
+  study_records: RemRecords[];
+  user_word: UserWord | null;
 }
