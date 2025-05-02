@@ -44,7 +44,7 @@ const WordbookItem = ({
           marginRight: 10,
           borderRadius: 5,
           width: 90,
-          height: 120,
+          height: 80,
         }}
         resizeMode="cover"
         source={require('../../assets/wordbook_cover.png')}
@@ -89,11 +89,11 @@ function WordbookScreen() {
 
   const pressWordbookHandler = async (wordbook_id: number) => {
     // 点击跳转到单词本
-    console.log(wordbook_id);
     const res = await get_words_from_wordbook(wordbook_id);
     wordbookStore.setUnlearnedWordList(res.unlearned_word_list);
     wordbookStore.setReviewWordList(res.review_word_list);
     await AsyncStorage.setItem('wordbook_id', wordbook_id.toString());
+    wordbookStore.setWordbookId(wordbook_id);
     navigation.navigate('Review');
   };
   return (
@@ -179,16 +179,16 @@ const styles = StyleSheet.create({
     marginVertical: 8,
     marginHorizontal: 16,
     gap: 10,
-    height: 120,
+    height: 80,
     flexDirection: 'row',
   },
   wordbook_title: {
-    fontSize: 16,
+    fontSize: 14,
     fontWeight: 'bold',
   },
   wordbook_subtitle: {
-    fontSize: 14,
-    color: '#666',
+    fontSize: 10,
+    color: '#1f1f1f',
   },
 });
 export default WordbookScreen;

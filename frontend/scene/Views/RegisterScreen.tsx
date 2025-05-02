@@ -1,5 +1,6 @@
 import {StyleSheet, View, Text, Image} from 'react-native';
 import UserInfoContainer from '../CoreComponents/UserInfoContainer';
+import React from 'react';
 
 function RegisterScreen() {
   return (

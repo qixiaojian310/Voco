@@ -198,3 +198,68 @@ def check_word_status(username: str, word: str):
     except Exception as e:
         logger.debug(f"查询失败: {e}")
         return MemoryStatus.UNLEARNED.value
+
+
+def get_word_detail_from_wordbook(wordbook_id, search_word, username):
+    """根据单词本id获取单词"""
+    with get_connection() as conn:
+        with conn.cursor(dictionary=True) as cursor:
+            cursor.execute(
+                """
+                SELECT wc.word_id
+                FROM wordbook_contents wc
+                JOIN words w ON wc.word_id = w.word_id
+                WHERE wc.wordbook_id = %s
+                AND w.word LIKE %s
+                """,
+                (wordbook_id, f"%{search_word}%"),
+            )
+            word_ids = cursor.fetchall()
+            words = []
+            for word_id in word_ids:
+                word_status = {
+                    "word": "",
+                    "translations": [],
+                    "user_word": {},
+                    "study_records": [],
+                }
+                cursor.execute(
+                    "SELECT word FROM words WHERE word_id = %s", (word_id["word_id"],)
+                )
+                word = cursor.fetchone()["word"]
+                word_status["word"] = word
+                cursor.execute(
+                    "SELECT translation, abbreviation, translation_id FROM translation WHERE word_id = %s",
+                    (word_id["word_id"],),
+                )
+                word_status["translations"] = cursor.fetchall()
+                cursor.execute(
+                    "SELECT user_id FROM users WHERE username = %s", (username,)
+                )
+                user_id = cursor.fetchone()["user_id"]
+                cursor.execute("SELECT word_id FROM words WHERE word = %s", (word,))
+                word_id = cursor.fetchone()["word_id"]
+                cursor.execute(
+                    "SELECT memory_status,review_count, easiness,review_interval,user_word_id FROM user_words WHERE user_id = %s AND word_id = %s",
+                    (user_id, word_id),
+                )
+                user_word = cursor.fetchone()
+                if user_word:
+                    word_status["user_word"] = user_word
+                    cursor.execute(
+                        "SELECT memory_status, record_time FROM study_records WHERE user_word_id = %s",
+                        (user_word["user_word_id"],),
+                    )
+                    study_records = cursor.fetchall()
+                    for record in study_records:
+                        word_status["study_records"].append(
+                            {
+                                "memory_status": record["memory_status"],
+                                "record_time": record["record_time"],
+                            }
+                        )
+                else:
+                    word_status["user_word"] = {}
+                    word_status["study_records"] = []
+                words.append(word_status)
+            return words

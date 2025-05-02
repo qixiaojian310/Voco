@@ -29,11 +29,8 @@ function HomeTabs() {
         options={{
           headerShown: false,
           tabBarIcon: props => (
-            <Icon name="book" size={24} color={props.color} />
+            <Icon name="book" type="font-awesome" size={24} color={props.color} />
           ),
-          tabBarLabelStyle: {
-            marginBottom: 10,
-          },
         }}
       />
       <MainTab.Screen
@@ -42,11 +39,8 @@ function HomeTabs() {
         options={{
           headerShown: false,
           tabBarIcon: props => (
-            <Icon name="book" size={24} color={props.color} />
+            <Icon name="flag-checkered" type="font-awesome" size={24} color={props.color} />
           ),
-          tabBarLabelStyle: {
-            marginBottom: 10,
-          },
         }}
       />
       <MainTab.Screen
@@ -55,11 +49,8 @@ function HomeTabs() {
         options={{
           headerShown: false,
           tabBarIcon: props => (
-            <Icon name="area-chart" size={24} color={props.color} />
+            <Icon name="area-chart" type="font-awesome" size={24} color={props.color} />
           ),
-          tabBarLabelStyle: {
-            marginBottom: 10,
-          },
         }}
       />
       <MainTab.Screen

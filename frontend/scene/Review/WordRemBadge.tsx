@@ -24,6 +24,7 @@ function WordRemBadge({record_time, memory_status}: RemRecords) {
     <Badge badgeStyle={{
       backgroundColor: color,
       borderRadius: 5,
+      marginRight: 5,
     }}
     value={`${time} days before`} />
   );

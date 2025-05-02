@@ -84,6 +84,28 @@ def get_words_details(word, username):
             return word
 
 
+def get_study_status_statistics(username, record_time):
+    """获取用户的学习状态统计"""
+    with get_connection() as conn:
+        with conn.cursor(dictionary=True) as cursor:
+            cursor.execute(
+                """
+                SELECT 
+                COUNT(*) AS count,
+                sr.memory_status
+                FROM users u
+                JOIN user_words uw ON u.user_id = uw.user_id
+                JOIN study_records sr ON uw.user_word_id = sr.user_word_id
+                JOIN words w ON uw.word_id = w.word_id
+                WHERE u.username = %s AND DATE(sr.record_time) = %s
+                GROUP BY sr.memory_status;
+                """,
+                (username, record_time),
+            )
+            result = cursor.fetchall()
+            return result
+
+
 def create_wordbook(
     username: str, wordbook_name: str, description: str, is_public: bool
 ):

@@ -1,9 +1,10 @@
-import {Platform, StatusBar, StyleSheet, Text, View} from 'react-native';
+import {Platform, StatusBar, StyleSheet, View} from 'react-native';
 // import { BarChart } from 'react-native-gifted-charts';
 import {Tab, TabView} from '@rneui/themed';
 import React from 'react';
 import ForgetCurve from './StatisticsTabs/ForgetCurve';
 import Schedule from './StatisticsTabs/Schedule';
+import MemoryList from './StatisticsTabs/MemoryList';
 
 function StatisticsScreen() {
   const [index, setIndex] = React.useState(0);
@@ -18,20 +19,23 @@ function StatisticsScreen() {
           backgroundColor: 'white',
           height: 3,
         }}
+        style={{
+          backgroundColor: '#a4a3e895',
+        }}
         variant="default">
         <Tab.Item
           title="Forget curve"
-          titleStyle={{fontSize: 12}}
+          titleStyle={{fontSize: 12, color: 'white'}}
           icon={{name: 'analytics', type: 'ionicon', color: 'white'}}
         />
         <Tab.Item
           title="Your plan"
-          titleStyle={{fontSize: 12}}
+          titleStyle={{fontSize: 12, color: 'white'}}
           icon={{name: 'clipboard', type: 'ionicon', color: 'white'}}
         />
         <Tab.Item
           title="Memory"
-          titleStyle={{fontSize: 12}}
+          titleStyle={{fontSize: 12, color: 'white'}}
           icon={{name: 'book', type: 'ionicon', color: 'white'}}
         />
       </Tab>
@@ -44,7 +48,7 @@ function StatisticsScreen() {
           <Schedule />
         </TabView.Item>
         <TabView.Item style={{backgroundColor: '#00000052', width: '100%'}}>
-          <Text>Cart</Text>
+          <MemoryList />
         </TabView.Item>
       </TabView>
     </View>
@@ -53,7 +57,7 @@ function StatisticsScreen() {
 
 const styles = StyleSheet.create({
   toolbar: {
-    backgroundColor: '#d784ec6e',
+    backgroundColor: '#a4a3e895',
     paddingTop: Platform.OS === 'android' ? StatusBar.currentHeight : 0,
     boxSizing: 'content-box',
   },

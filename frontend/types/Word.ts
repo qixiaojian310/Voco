@@ -8,6 +8,8 @@ export type RemStatus =
 export interface Translation {
   abbreviation: string;
   translation: string;
+  /**For list */
+  translation_id?: number;
 }
 
 export interface Sentence {
@@ -40,6 +42,13 @@ export interface Word {
   translations: Translation[];
   example_sentence: Sentence[];
   etymology: string;
+  study_records: RemRecords[];
+  user_word: UserWord | null;
+}
+
+export interface WordItem {
+  word: string;
+  translations: Translation[];
   study_records: RemRecords[];
   user_word: UserWord | null;
 }

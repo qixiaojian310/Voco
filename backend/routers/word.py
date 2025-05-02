@@ -1,12 +1,18 @@
-from datetime import datetime
+from datetime import datetime, timedelta, timezone
 from typing import Optional
 from fastapi import HTTPException, Depends, APIRouter
 from pydantic import BaseModel
-from static.word import get_books_by_user, get_all_books, get_words_details
+from static.word import (
+    get_books_by_user,
+    get_all_books,
+    get_study_status_statistics,
+    get_words_details,
+)
 from static.memory import (
     answer_word_status,
     get_all_reviewed_words,
     get_all_unlearned_words,
+    get_word_detail_from_wordbook,
 )
 from utils.jwt_utils import get_current_user, jwt_manager
 
@@ -21,6 +27,11 @@ class AllWordRequest(BaseModel):
     wordbook_id: int
 
 
+class AllWordDetailRequest(BaseModel):
+    wordbook_id: int
+    search_word: Optional[str] = None
+
+
 class WordbookRequest(BaseModel):
     wordbook_name: Optional[str] = None
 
@@ -29,7 +40,7 @@ class WordStatusRequest(BaseModel):
     word: str
     memory_status: str
     is_review: bool
-    easiness: int
+    easiness: float
     review_interval: int
     next_review: datetime
     current_review: datetime
@@ -65,6 +76,17 @@ async def get_word(
     }
 
 
+@router.post("/get_words_detail_from_wordbook")
+async def get_word_detail(
+    request: AllWordDetailRequest,
+    username: int = Depends(get_current_user),
+):
+    word_list = get_word_detail_from_wordbook(
+        request.wordbook_id, request.search_word, username
+    )
+    return word_list
+
+
 @router.post("/get_word_info")
 async def get_word_info(
     request: WordRequest,
@@ -74,7 +96,7 @@ async def get_word_info(
     return word_detail
 
 
-@router.post("/set_word_memory_status")
+@router.post("/set_word_status")
 async def set_word_memory_status(
     request: WordStatusRequest,
     username: int = Depends(get_current_user),
@@ -89,3 +111,31 @@ async def set_word_memory_status(
         request.review_interval,
         request.next_review,
     )
+
+
+@router.post("/get_memory_status")
+async def get_memory_status(username: str = Depends(get_current_user)):
+    result = []
+
+    for i in range(30):
+        # 向前推 i 天
+        utc_day = datetime.utcnow().date() - timedelta(days=i)
+
+        # 转为北京时间日期字符串
+        local_day = datetime(
+            utc_day.year, utc_day.month, utc_day.day, tzinfo=timezone.utc
+        ).astimezone(timezone(timedelta(hours=8)))
+        day_str = local_day.strftime("%Y-%m-%d")
+
+        daily_stats = get_study_status_statistics(username, day_str)
+
+        for stat in daily_stats:
+            result.append(
+                {
+                    "date": day_str,
+                    "memory_status": stat["memory_status"],
+                    "count": stat["count"],
+                }
+            )
+
+    return result

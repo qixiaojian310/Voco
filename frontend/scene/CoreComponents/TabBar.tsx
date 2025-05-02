@@ -48,7 +48,7 @@ function TabBar({state, descriptors, navigation}: BottomTabBarProps) {
             testID={options.tabBarButtonTestID}
             onPress={onPress}
             onLongPress={onLongPress}
-            style={{flex: 1, justifyContent: 'center', alignItems: 'center', paddingBottom: 10, paddingTop: 10}}
+            style={{flex: 1, justifyContent: 'center', alignItems: 'center', paddingBottom: 20, paddingTop: 10}}
             key={label as string}>
             <View style={{justifyContent: 'center', alignItems:'center'}}>
             {options.tabBarIcon &&
@@ -58,7 +58,7 @@ function TabBar({state, descriptors, navigation}: BottomTabBarProps) {
                 size: 24, // 你可以根据 UI 自定义
               })}
             </View>
-            <Text style={{color: isFocused ? colors.primary : colors.text}}>
+            <Text style={{color: isFocused ? colors.primary : colors.text, fontSize: 10}}>
               {label as string}
             </Text>
           </PlatformPressable>
