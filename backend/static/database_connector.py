@@ -3,7 +3,9 @@ from mysql.connector import pooling
 from contextlib import contextmanager
 import loguru
 import os
+from dotenv import load_dotenv
 
+load_dotenv()
 # 初始化日志
 logger = loguru.logger
 

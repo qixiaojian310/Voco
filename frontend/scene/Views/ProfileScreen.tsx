@@ -6,14 +6,6 @@ import userStore from '../../stores/UserStore';
 import {Avatar} from '@rneui/themed';
 import {useFocusEffect} from '@react-navigation/native';
 
-function SettingComponent({title}) {
-  return (
-    <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
-      <Text>{title}</Text>
-    </View>
-  );
-}
-
 function ProfileScreen() {
   const [userInfo, setUserInfo] = React.useState<any>(null);
 
@@ -52,9 +44,8 @@ function ProfileScreen() {
       {
         userInfo && (
          <View style={{flex: 1}}>
-          <SettingComponent title="Daily Goal" />
-          <SettingComponent title="Language" />
-          <SettingComponent title="Theme" />
+           <Text>Daily Goal:</Text>
+           <Text>{userInfo.daily_goal}</Text>
         </View>
         )
       }
