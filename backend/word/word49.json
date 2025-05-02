@@ -1,0 +1,2404 @@
+[
+  {
+      "word": "abacus",
+      "phonetic": "ˈæbəkəs",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "算盘"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The abacus is an ancient calculating tool.",
+              "translation": "算盘是一种古老的计算工具。"
+          },
+          {
+              "sentence": "He can calculate quickly using an abacus.",
+              "translation": "他能用算盘快速计算。"
+          },
+          {
+              "sentence": "The abacus was widely used in ancient China.",
+              "translation": "算盘在中国古代被广泛使用。"
+          }
+      ]
+  },
+  {
+      "word": "abase",
+      "phonetic": "əˈbeɪs",
+      "translations": [
+          {
+              "abbreviation": "v.",
+              "translation": "贬抑，使谦卑"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "He was abased by the harsh criticism.",
+              "translation": "他被严厉的批评贬低了。"
+          },
+          {
+              "sentence": "The experience abased his pride.",
+              "translation": "这次经历使他失去了傲气。"
+          },
+          {
+              "sentence": "She felt abased by the way she was treated.",
+              "translation": "她觉得自己受到的待遇很屈辱。"
+          }
+      ]
+  },
+  {
+      "word": "abate",
+      "phonetic": "əˈbeɪt",
+      "translations": [
+          {
+              "abbreviation": "v.",
+              "translation": "（指风势、疼痛等）减弱，减轻，减退"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The storm began to abate.",
+              "translation": "暴风雨开始减弱。"
+          },
+          {
+              "sentence": "The pain gradually abated.",
+              "translation": "疼痛逐渐减轻。"
+          },
+          {
+              "sentence": "The noise finally abated.",
+              "translation": "噪音终于停止了。"
+          }
+      ]
+  },
+  {
+      "word": "abbreviate",
+      "phonetic": "əˈbriːvɪeɪt",
+      "translations": [
+          {
+              "abbreviation": "v.",
+              "translation": "缩短（字、词组等），缩写"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The word 'television' is often abbreviated to 'TV'.",
+              "translation": "“television”这个词经常被缩写为“TV”。"
+          },
+          {
+              "sentence": "Please abbreviate the long sentence.",
+              "translation": "请把那个长句子缩写一下。"
+          },
+          {
+              "sentence": "The name of the organization is abbreviated as 'UNESCO'.",
+              "translation": "该组织的名称缩写为“UNESCO”。"
+          }
+      ]
+  },
+  {
+      "word": "abbreviation",
+      "phonetic": "əˌbriːvɪˈeɪʃn",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "缩写"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The abbreviation for 'World Health Organization' is 'WHO'.",
+              "translation": "“World Health Organization”的缩写是“WHO”。"
+          },
+          {
+              "sentence": "The abbreviation 'ASAP' means 'as soon as possible'.",
+              "translation": "缩写“ASAP”表示“尽快”。"
+          },
+          {
+              "sentence": "He used the abbreviation 'FYI' in his email.",
+              "translation": "他在电子邮件中使用了缩写“FYI”。"
+          }
+      ]
+  },
+  {
+      "word": "abdicate",
+      "phonetic": "ˈæbdɪkeɪt",
+      "translations": [
+          {
+              "abbreviation": "v.",
+              "translation": "正式放弃（官职、权利），让位，退位，逊位"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The king decided to abdicate the throne.",
+              "translation": "国王决定退位。"
+          },
+          {
+              "sentence": "He abdicated his position as president.",
+              "translation": "他辞去了总统职务。"
+          },
+          {
+              "sentence": "The emperor abdicated in favor of his son.",
+              "translation": "皇帝传位给他的儿子。"
+          }
+      ]
+  },
+  {
+      "word": "abdominal",
+      "phonetic": "æbˈdɒmɪnəl",
+      "translations": [
+          {
+              "abbreviation": "adj.",
+              "translation": "腹（部）的，下腹的"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "He suffered from abdominal pain.",
+              "translation": "他患有腹痛。"
+          },
+          {
+              "sentence": "The doctor performed an abdominal surgery.",
+              "translation": "医生进行了腹部手术。"
+          },
+          {
+              "sentence": "Abdominal exercises can strengthen the core muscles.",
+              "translation": "腹部锻炼可以增强核心肌群。"
+          }
+      ]
+  },
+  {
+      "word": "abduct",
+      "phonetic": "əbˈdʌkt, æb-",
+      "translations": [
+          {
+              "abbreviation": "v.",
+              "translation": "诱拐，拐走，绑架"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The child was abducted by a stranger.",
+              "translation": "孩子被一个陌生人绑架了。"
+          },
+          {
+              "sentence": "The police are investigating the abduction case.",
+              "translation": "警方正在调查这起绑架案。"
+          },
+          {
+              "sentence": "She was abducted while walking home alone.",
+              "translation": "她在独自回家的路上被绑架了。"
+          }
+      ]
+  },
+  {
+      "word": "aberrant",
+      "phonetic": "ˈæberənt",
+      "translations": [
+          {
+              "abbreviation": "adj.",
+              "translation": "不循常轨的，不走正路的"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The aberrant behavior raised concerns among the community.",
+              "translation": "这种异常行为引起了社区的关注。"
+          },
+          {
+              "sentence": "The company's aberrant practices led to its downfall.",
+              "translation": "公司的异常行为导致了它的倒闭。"
+          },
+          {
+              "sentence": "His aberrant views were not accepted by the majority.",
+              "translation": "他的异端观点没有被大多数人接受。"
+          }
+      ]
+  },
+  {
+      "word": "abhor",
+      "phonetic": "əbˈhɔː",
+      "translations": [
+          {
+              "abbreviation": "v.",
+              "translation": "憎恨（某人、某事物），厌恶，讨厌"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "I abhor violence in any form.",
+              "translation": "我憎恨任何形式的暴力。"
+          },
+          {
+              "sentence": "She abhors the idea of wasting food.",
+              "translation": "她厌恶浪费食物的想法。"
+          },
+          {
+              "sentence": "He abhors dishonesty.",
+              "translation": "他憎恨不诚实的行为。"
+          }
+      ]
+  },
+  {
+      "word": "abide",
+      "phonetic": "əˈbaɪd",
+      "translations": [
+          {
+              "abbreviation": "v.",
+              "translation": "忍受，容忍 || abide by 遵守（法律等），信守（诺言等）"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "I can't abide his rudeness.",
+              "translation": "我无法忍受他的粗鲁。"
+          },
+          {
+              "sentence": "We must abide by the rules.",
+              "translation": "我们必须遵守规则。"
+          },
+          {
+              "sentence": "He will abide by the decision.",
+              "translation": "他会遵守这个决定。"
+          }
+      ]
+  },
+  {
+      "word": "abiding",
+      "phonetic": "əˈbaɪdɪŋ",
+      "translations": [
+          {
+              "abbreviation": "adj.",
+              "translation": "（信念等）永恒的，持久的"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "He has an abiding love for music.",
+              "translation": "他对音乐有着持久的热爱。"
+          },
+          {
+              "sentence": "Her abiding memory was of her childhood.",
+              "translation": "她记忆中最持久的是她的童年。"
+          },
+          {
+              "sentence": "The abiding friendship between them lasted for decades.",
+              "translation": "他们之间持久的友谊持续了几十年。"
+          }
+      ]
+  },
+  {
+      "word": "abject",
+      "phonetic": "ˈæbdʒekt",
+      "translations": [
+          {
+              "abbreviation": "adj.",
+              "translation": "1. （境况）凄惨的，绝望的 2. （人、动作或行为）无耻的，下贱的，卑鄙的"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The refugees were in an abject state.",
+              "translation": "难民处于凄惨的状态。"
+          },
+          {
+              "sentence": "His abject behavior was condemned by everyone.",
+              "translation": "他的卑鄙行为遭到了众人的谴责。"
+          },
+          {
+              "sentence": "She felt abject after the failure.",
+              "translation": "失败后，她感到绝望。"
+          }
+      ]
+  },
+  {
+      "word": "ablaze",
+      "phonetic": "əˈbleɪz",
+      "translations": [
+          {
+              "abbreviation": "adj.",
+              "translation": "1. 着火，燃烧着 2. 闪耀，灯火辉煌"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The building was ablaze within minutes.",
+              "translation": "那栋建筑几分钟内就着火了。"
+          },
+          {
+              "sentence": "The night sky was ablaze with fireworks.",
+              "translation": "夜空被烟花照亮。"
+          },
+          {
+              "sentence": "The campfire was ablaze, casting a warm glow.",
+              "translation": "篝火熊熊燃烧，散发着温暖的光芒。"
+          }
+      ]
+  },
+  {
+      "word": "ably",
+      "phonetic": "ˈeɪblɪ",
+      "translations": [
+          {
+              "abbreviation": "adv.",
+              "translation": "能干地，熟练地"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "She ably managed the project.",
+              "translation": "她能干地管理了这个项目。"
+          },
+          {
+              "sentence": "He ably handled the difficult situation.",
+              "translation": "他熟练地处理了这个棘手的情况。"
+          },
+          {
+              "sentence": "The team worked ably under pressure.",
+              "translation": "团队在压力下表现出色。"
+          }
+      ]
+  },
+  {
+      "word": "abnormality",
+      "phonetic": "ˌæbnɔːˈmælətɪ",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "不正常，变态"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The abnormality in the test results caused concern.",
+              "translation": "测试结果中的异常引起了担忧。"
+          },
+          {
+              "sentence": "He exhibited signs of abnormality in his behavior.",
+              "translation": "他的行为表现出异常迹象。"
+          },
+          {
+              "sentence": "The doctor investigated the cause of the abnormality.",
+              "translation": "医生调查了异常的原因。"
+          }
+      ]
+  },
+  {
+      "word": "abode",
+      "phonetic": "əˈbəʊd",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "房屋；家 || of (with) no fixed abode 居无定所"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "This is my abode.",
+              "translation": "这是我的住所。"
+          },
+          {
+              "sentence": "He has no fixed abode.",
+              "translation": "他居无定所。"
+          },
+          {
+              "sentence": "The old man's abode was a small cottage.",
+              "translation": "老人的住所是一间小茅屋。"
+          }
+      ]
+  },
+  {
+      "word": "abominable",
+      "phonetic": "əˈbɒmɪnəbl",
+      "translations": [
+          {
+              "abbreviation": "adj.",
+              "translation": "1. 可憎的，可恶的 2. 糟糕的，极坏的"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The abominable weather ruined our plans.",
+              "translation": "糟糕的天气破坏了我们的计划。"
+          },
+          {
+              "sentence": "His abominable behavior was unacceptable.",
+              "translation": "他的可恶行为令人无法接受。"
+          },
+          {
+              "sentence": "The abominable service made us leave the restaurant.",
+              "translation": "糟糕的服务让我们离开了餐厅。"
+          }
+      ]
+  },
+  {
+      "word": "abort",
+      "phonetic": "əˈbɔːt",
+      "translations": [
+          {
+              "abbreviation": "v.",
+              "translation": "1. 使流产，堕胎 2. 中止，（使）夭折，使（计划）失败"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The doctor performed an abortion.",
+              "translation": "医生进行了堕胎手术。"
+          },
+          {
+              "sentence": "The mission had to be aborted due to technical problems.",
+              "translation": "由于技术问题，任务不得不中止。"
+          },
+          {
+              "sentence": "The project was aborted halfway.",
+              "translation": "项目中途夭折了。"
+          }
+      ]
+  },
+  {
+      "word": "aboveboard",
+      "phonetic": "əˌbʌvˈbɔːd",
+      "translations": [
+          {
+              "abbreviation": "adj.",
+              "translation": "光明磊落的，光明正大的，率直的"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "He conducts all his business aboveboard.",
+              "translation": "他做生意光明磊落。"
+          },
+          {
+              "sentence": "The aboveboard deal was praised by everyone.",
+              "translation": "这笔光明正大的交易受到了众人的称赞。"
+          },
+          {
+              "sentence": "She is known for her aboveboard approach.",
+              "translation": "她以正直的方式著称。"
+          }
+      ]
+  },
+  {
+      "word": "abrasive",
+      "phonetic": "əˈbreɪsɪv",
+      "translations": [
+          {
+              "abbreviation": "adj.",
+              "translation": "1. 表面磨损的，损伤性的 2. 粗糙的，恼人的"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The abrasive material can damage the surface.",
+              "translation": "这种磨料会损坏表面。"
+          },
+          {
+              "sentence": "His abrasive manner offended many people.",
+              "translation": "他粗暴的态度冒犯了许多人。"
+          },
+          {
+              "sentence": "The abrasive tool is used for grinding.",
+              "translation": "这种磨料工具用于研磨。"
+          }
+      ]
+  },
+  {
+      "word": "abreast",
+      "phonetic": "əˈbrest",
+      "translations": [
+          {
+              "abbreviation": "adv.",
+              "translation": "并排，并肩"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The soldiers marched abreast.",
+              "translation": "士兵们并排前进。"
+          },
+          {
+              "sentence": "They walked abreast along the road.",
+              "translation": "他们并肩走在路上。"
+          },
+          {
+              "sentence": "The team moved abreast through the forest.",
+              "translation": "队伍并排穿过森林。"
+          }
+      ]
+  },
+  {
+      "word": "absentee",
+      "phonetic": "ˌæbsənˈtiː",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "缺席（缺勤）者"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The absentee missed the important meeting.",
+              "translation": "缺席者错过了重要会议。"
+          },
+          {
+              "sentence": "There were several absentees in the class.",
+              "translation": "班上有几个缺席者。"
+          },
+          {
+              "sentence": "The absentee had to submit an explanation.",
+              "translation": "缺席者必须提交一个解释。"
+          }
+      ]
+  },
+  {
+      "word": "abstain",
+      "phonetic": "əbˈsteɪn",
+      "translations": [
+          {
+              "abbreviation": "v.",
+              "translation": "1. 戒绝（喝酒） 2. 放弃（投票等）"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "He abstains from alcohol for health reasons.",
+              "translation": "他因健康原因戒酒。"
+          },
+          {
+              "sentence": "Many voters chose to abstain in the election.",
+              "translation": "许多选民在选举中选择弃权。"
+          },
+          {
+              "sentence": "She decided to abstain from smoking.",
+              "translation": "她决定戒烟。"
+          }
+      ]
+  },
+  {
+      "word": "abstention",
+      "phonetic": "əbˈstenʃən",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "1. 戒绝 2. （投票）弃权"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "His abstention from the vote was noted.",
+              "translation": "他的弃权被记录下来了。"
+          },
+          {
+              "sentence": "Abstention from alcohol is a common practice in some cultures.",
+              "translation": "在某些文化中，戒酒是一种常见的做法。"
+          },
+          {
+              "sentence": "The abstention rate in the election was high.",
+              "translation": "选举中的弃权率很高。"
+          }
+      ]
+  },
+  {
+      "word": "abstinence",
+      "phonetic": "ˈæbstɪnəns",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "禁欲，节制"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "She practices abstinence for religious reasons.",
+              "translation": "她因宗教原因实行禁欲。"
+          },
+          {
+              "sentence": "Abstinence from food is a form of fasting.",
+              "translation": "禁食是一种节食方式。"
+          },
+          {
+              "sentence": "He observed abstinence during the holy month.",
+              "translation": "他在圣月期间实行禁欲。"
+          }
+      ]
+  },
+  {
+      "word": "abusive",
+      "phonetic": "əˈbjuːsɪv",
+      "translations": [
+          {
+              "abbreviation": "adj.",
+              "translation": "辱骂的，咒骂的"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The abusive language was not tolerated.",
+              "translation": "辱骂的语言是不被容忍的。"
+          },
+          {
+              "sentence": "He was fired for his abusive behavior.",
+              "translation": "他因辱骂行为被解雇了。"
+          },
+          {
+              "sentence": "The abusive comments caused a lot of trouble.",
+              "translation": "辱骂的评论引起了很多麻烦。"
+          }
+      ]
+  },
+  {
+      "word": "abyss",
+      "phonetic": "əˈbɪs",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "深渊，深坑"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The abyss was dark and deep.",
+              "translation": "深渊黑暗而深邃。"
+          },
+          {
+              "sentence": "He felt like falling into an abyss.",
+              "translation": "他感觉自己像是掉入了深渊。"
+          },
+          {
+              "sentence": "The abyss of ignorance is vast.",
+              "translation": "无知的深渊是无边无际的。"
+          }
+      ]
+  },
+  {
+      "word": "academician",
+      "phonetic": "əˌkædəˈmɪʃən",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "院士，学会会员"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The academician delivered a lecture on science.",
+              "translation": "院士发表了一场关于科学的演讲。"
+          },
+          {
+              "sentence": "He was elected as an academician of the academy.",
+              "translation": "他被选为该学院的院士。"
+          },
+          {
+              "sentence": "The academician is a leading expert in his field.",
+              "translation": "这位院士是该领域的权威专家。"
+          }
+      ]
+  },
+  {
+      "word": "accede",
+      "phonetic": "əkˈsiːd",
+      "translations": [
+          {
+              "abbreviation": "v.",
+              "translation": "1. 同意 2. 就职"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "He acceded to the request.",
+              "translation": "他同意了这个请求。"
+          },
+          {
+              "sentence": "The new king acceded to the throne.",
+              "translation": "新国王登基了。"
+          },
+          {
+              "sentence": "She acceded to the proposal.",
+              "translation": "她同意了这个提议。"
+          }
+      ]
+  },
+  {
+      "word": "accentuate",
+      "phonetic": "əkˈsentʃʊeɪt",
+      "translations": [
+          {
+              "abbreviation": "v.",
+              "translation": "重读，重音读出"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "He accentuated the first syllable of the word.",
+              "translation": "他重读了这个词的第一个音节。"
+          },
+          {
+              "sentence": "The accentuated notes were easy to recognize.",
+              "translation": "重读的音符很容易辨认。"
+          },
+          {
+              "sentence": "She accentuated the important points in her speech.",
+              "translation": "她在演讲中强调了重点。"
+          }
+      ]
+  },
+  {
+      "word": "accessible",
+      "phonetic": "əkˈsesəbl",
+      "translations": [
+          {
+              "abbreviation": "adj.",
+              "translation": "易于得到（接近、达到的）"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The information is easily accessible.",
+              "translation": "这些信息很容易获得。"
+          },
+          {
+              "sentence": "The building is accessible to people with disabilities.",
+              "translation": "这座建筑对残疾人是可进入的。"
+          },
+          {
+              "sentence": "The library is accessible during working hours.",
+              "translation": "图书馆在工作时间是可以进入的。"
+          }
+      ]
+  },
+  {
+      "word": "accession",
+      "phonetic": "əkˈseʃən",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "就职，登基"
+          }
+      ], "example_sentence": [
+      {
+          "sentence": "The queen's accession was celebrated nationwide.",
+          "translation": "女王的登基在全国范围内庆祝。"
+      },
+      {
+          "sentence": "His accession to the throne marked a new era.",
+          "translation": "他登基标志着一个新时代的开始。"
+      },
+      {
+          "sentence": "The accession of the new leader was widely anticipated.",
+          "translation": "新领导人的上任备受期待。"
+      }
+  ]
+},
+  {
+      "word": "acclaim",
+      "phonetic": "əˈkleɪm",
+      "translations": [
+          {
+              "abbreviation": "v.",
+              "translation": "欢呼，喝彩，称赞"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The audience acclaimed the performance with applause.",
+              "translation": "观众以掌声欢呼这场表演。"
+          },
+          {
+              "sentence": "The artist was acclaimed for his unique style.",
+              "translation": "这位艺术家因其独特风格受到赞誉。"
+          },
+          {
+              "sentence": "The new product was acclaimed by customers.",
+              "translation": "新产品受到客户的称赞。"
+          }
+      ]
+  },
+  {
+      "word": "accompanist",
+      "phonetic": "əˈkʌmpənɪst",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "伴奏者，和奏者"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The pianist was an excellent accompanist.",
+              "translation": "这位钢琴家是一位出色的伴奏者。"
+          },
+          {
+              "sentence": "The accompanist supported the singer perfectly.",
+              "translation": "伴奏者完美地支持了歌手。"
+          },
+          {
+              "sentence": "She worked as an accompanist for the choir.",
+              "translation": "她为合唱团担任伴奏。"
+          }
+      ]
+  },
+  {
+      "word": "accomplice",
+      "phonetic": "əˈkʌmplɪs",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "从犯，帮凶"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The accomplice was arrested along with the main suspect.",
+              "translation": "帮凶和主要嫌疑人一起被捕了。"
+          },
+          {
+              "sentence": "The police are searching for the accomplice.",
+              "translation": "警察正在搜捕帮凶。"
+          },
+          {
+              "sentence": "He acted as an accomplice in the robbery.",
+              "translation": "他在抢劫中充当了帮凶。"
+          }
+      ]
+  },
+  {
+      "word": "accountable",
+      "phonetic": "əˈkaʊntəbl",
+      "translations": [
+          {
+              "abbreviation": "adj.",
+              "translation": "有责任的，有义务加以解说的"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The manager is accountable for the team's performance.",
+              "translation": "经理要对团队的表现负责。"
+          },
+          {
+              "sentence": "He is accountable for his actions.",
+              "translation": "他要为自己的行为负责。"
+          },
+          {
+              "sentence": "The accountable person must provide an explanation.",
+              "translation": "负责人必须提供一个解释。"
+          }
+      ]
+  },
+  {
+      "word": "accountancy",
+      "phonetic": "əˈkaʊntənsi",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "会计职业"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "She studied accountancy in college.",
+              "translation": "她在大学学习会计。"
+          },
+          {
+              "sentence": "Accountancy is a demanding profession.",
+              "translation": "会计是一个要求很高的职业。"
+          },
+          {
+              "sentence": "He has a degree in accountancy.",
+              "translation": "他有会计学位。"
+          }
+      ]
+  },
+  {
+      "word": "accredit",
+      "phonetic": "əˈkredɪt",
+      "translations": [
+          {
+              "abbreviation": "v.",
+              "translation": "1. 认为（某说法等）出自某人 2. 委派"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The statement was accredited to the spokesperson.",
+              "translation": "这句话被认为出自发言人。"
+          },
+          {
+              "sentence": "The journalist was accredited to cover the event.",
+              "translation": "记者被委派去报道这一事件。"
+          },
+          {
+              "sentence": "The organization was accredited by the government.",
+              "translation": "该组织得到了政府的认证。"
+          }
+      ]
+  },
+  {
+      "word": "accrue",
+      "phonetic": "əˈkruː",
+      "translations": [
+          {
+              "abbreviation": "v.",
+              "translation": "增加，增长"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "Interest accrues on the loan annually.",
+              "translation": "贷款利息每年增加。"
+          },
+          {
+              "sentence": "The benefits will accrue over time.",
+              "translation": "这些好处会随着时间的推移而增加。"
+          },
+          {
+              "sentence": "The amount accrued to a significant sum.",
+              "translation": "累积的金额达到了一个可观的数目。"
+          }
+      ]
+  },
+  {
+      "word": "acoustics",
+      "phonetic": "əˈkuːstɪks",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "1. 声学，音响学 2. 音响效果"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The acoustics of the concert hall are excellent.",
+              "translation": "音乐厅的音响效果非常好。"
+          },
+          {
+              "sentence": "He studied acoustics in college.",
+              "translation": "他在大学学习声学。"
+          },
+          {
+              "sentence": "The acoustics of the room need improvement.",
+              "translation": "这个房间的音响效果需要改进。"
+          }
+      ]
+  },
+  {
+      "word": "acquiesce",
+      "phonetic": "ˌækwiˈes",
+      "translations": [
+          {
+              "abbreviation": "v.",
+              "translation": "默认，顺从，默许"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "He acquiesced to the decision.",
+              "translation": "他默认了这个决定。"
+          },
+          {
+              "sentence": "She acquiesced in the arrangement.",
+              "translation": "她顺从了这个安排。"
+          },
+          {
+              "sentence": "The employees acquiesced to the new policy.",
+              "translation": "员工们默认了新政策。"
+          }
+      ]
+  },
+  {
+      "word": "acquit",
+      "phonetic": "əˈkwɪt",
+      "translations": [
+          {
+              "abbreviation": "v.",
+              "translation": "1. 宣判（某人）无罪 2. 表现，履行，完成"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The court acquitted the defendant of the charges.",
+              "translation": "法院宣判被告无罪。"
+          },
+          {
+              "sentence": "He acquitted himself well in the competition.",
+              "translation": "他在比赛中表现出色。"
+          },
+          {
+              "sentence": "The jury acquitted the suspect after deliberation.",
+              "translation": "陪审团经过讨论后宣判嫌疑人无罪。"
+          }
+      ]
+  },
+  {
+      "word": "acquittal",
+      "phonetic": "əˈkwɪtəl",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "无罪的判决"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The acquittal was celebrated by the defendant's family.",
+              "translation": "被告的家人庆祝了无罪判决。"
+          },
+          {
+              "sentence": "The acquittal was based on insufficient evidence.",
+              "translation": "无罪判决是基于证据不足。"
+          },
+          {
+              "sentence": "The acquittal brought relief to the accused.",
+              "translation": "无罪判决让被告松了一口气。"
+          }
+      ]
+  },
+  {
+      "word": "acrimony",
+      "phonetic": "ˈækrɪmənɪ",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "严厉，辛辣"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The debate was marked by acrimony.",
+              "translation": "这场辩论充满了激烈的言辞。"
+          },
+          {
+              "sentence": "The acrimony of the argument was surprising.",
+              "translation": "这场争吵的激烈程度令人惊讶。"
+          },
+          {
+              "sentence": "The acrimony between the two sides was evident.",
+              "translation": "双方之间的激烈言辞显而易见。"
+          }
+      ]
+  },
+  {
+      "word": "actuality",
+      "phonetic": "ˌæktʃʊˈælətɪ",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "实际，真实"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The actuality of the situation was worse than expected.",
+              "translation": "实际情况比预期的更糟。"
+          },
+          {
+              "sentence": "The actuality of the event was different from the reports.",
+              "translation": "事件的实际经过与报道不同。"
+          },
+          {
+              "sentence": "The actuality of the problem needs to be addressed.",
+              "translation": "需要解决这个问题的实际状况。"
+          }
+      ]
+  },
+  {
+      "word": "acumen",
+      "phonetic": "əˈkjuːmən",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "敏锐，聪明，洞察力"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "He showed great acumen in business.",
+              "translation": "他在商业上表现出敏锐的洞察力。"
+          },
+          {
+              "sentence": "Her acumen helped her succeed in her career.",
+              "translation": "她的敏锐帮助她在事业上取得了成功。"
+          },
+          {
+              "sentence": "The leader's acumen was praised by everyone.",
+              "translation": "领导的敏锐被大家称赞。"
+          }
+      ]
+  },
+  {
+      "word": "adamant",
+      "phonetic": "ˈædəmənt",
+      "translations": [
+          {
+              "abbreviation": "adj.",
+              "translation": "坚定不移的，强硬的"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "She remained adamant about her decision.",
+              "translation": "她对自己的决定坚定不移。"
+          },
+          {
+              "sentence": "He was adamant that he was innocent.",
+              "translation": "他坚决认为自己是无辜的。"
+          },
+          {
+              "sentence": "The manager was adamant about the new policy.",
+              "translation": "经理对新政策态度强硬。"
+          }
+      ]
+  },
+  {
+      "word": "addictive",
+      "phonetic": "əˈdɪktɪv",
+      "translations": [
+          {
+              "abbreviation": "adj.",
+              "translation": "（使人）上瘾的，沉迷的"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The game is highly addictive.",
+              "translation": "这个游戏很容易上瘾。"
+          },
+          {
+              "sentence": "He warned about the addictive nature of drugs.",
+              "translation": "他警告了毒品的成瘾性。"
+          },
+          {
+              "sentence": "The addictive app consumed a lot of his time.",
+              "translation": "这个让人上瘾的应用占用了他很多时间。"
+          }
+      ]
+  },
+  {
+      "word": "additive",
+      "phonetic": "ˈædɪtɪv",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "添加物，添加剂"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The food contains several additives.",
+              "translation": "这种食物含有几种添加剂。"
+          },
+          {
+              "sentence": "The additive improved the quality of the product.",
+              "translation": "这种添加剂提高了产品的质量。"
+          },
+          {
+              "sentence": "The company uses natural additives in its products.",
+              "translation": "该公司在其产品中使用天然添加剂。"
+          }
+      ]
+  },
+  {
+      "word": "add-on",
+      "phonetic": "ˈædɒn",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "（电脑上增加功能的）附加装置"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The software has several useful add-ons.",
+              "translation": "这个软件有几个有用的附加组件。"
+          },
+          {
+              "sentence": "He installed an add-on to enhance the functionality.",
+              "translation": "他安装了一个附加组件来增强功能。"
+          },
+          {
+              "sentence": "The add-on provides additional features for the program.",
+              "translation": "这个附加组件为程序提供了额外的功能。"
+          }
+      ]
+  },
+  {
+      "word": "adept",
+      "phonetic": "əˈdept",
+      "translations": [
+          {
+              "abbreviation": "adj.",
+              "translation": "擅长的，熟练的，精通的"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "She is adept at playing the piano.",
+              "translation": "她擅长弹钢琴。"
+          },
+          {
+              "sentence": "He is adept at solving complex problems.",
+              "translation": "他擅长解决复杂问题。"
+          },
+          {
+              "sentence": "The chef is adept at preparing gourmet meals.",
+              "translation": "这位厨师擅长准备美食。"
+          }
+      ]
+  },
+  {
+      "word": "adhesive",
+      "phonetic": "ədˈhiːsɪv",
+      "translations": [
+          {
+              "abbreviation": "adj.",
+              "translation": "粘性物质（如粘胶）的，带粘性的"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The adhesive tape stuck firmly to the surface.",
+              "translation": "粘性胶带牢固地粘在表面上。"
+          },
+          {
+              "sentence": "The adhesive properties of the glue are remarkable.",
+              "translation": "这种胶水的粘性很强。"
+          },
+          {
+              "sentence": "The adhesive label was easy to apply.",
+              "translation": "这种粘性标签很容易贴上。"
+          }
+      ]
+  },
+  {
+      "word": "ad hoc",
+      "phonetic": "ˌædˈhɒk",
+      "translations": [
+          {
+              "abbreviation": "adj.",
+              "translation": "为某一特定目的而安排的，特定的"
+          }
+      ], "example_sentence": [
+      {
+          "sentence": "The ad hoc committee was formed to address the crisis.",
+          "translation": "这个临时委员会是为了应对危机而成立的。"
+      },
+      {
+          "sentence": "The ad hoc solution worked well for the short term.",
+          "translation": "这个临时解决方案在短期内效果很好。"
+      },
+      {
+          "sentence": "The ad hoc meeting was called to discuss the urgent issue.",
+          "translation": "这次临时会议是为了讨论紧急问题而召开的。"
+      }
+  ]
+},
+  {
+      "word": "adjoin",
+      "phonetic": "əˈdʒɔɪn",
+      "translations": [
+          {
+              "abbreviation": "v.",
+              "translation": "贴近，相接"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The two buildings adjoin each other.",
+              "translation": "这两座建筑紧挨着。"
+          },
+          {
+              "sentence": "The garden adjoins the house.",
+              "translation": "花园紧挨着房子。"
+          },
+          {
+              "sentence": "The two properties adjoin at the back.",
+              "translation": "这两处房产在后面相连。"
+          }
+      ]
+  },
+  {
+      "word": "adjourn",
+      "phonetic": "əˈdʒɜːn",
+      "translations": [
+          {
+              "abbreviation": "v.",
+              "translation": "（使）休会，中止（开会、行动等）"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The meeting was adjourned until further notice.",
+              "translation": "会议暂时休会，等待进一步通知。"
+          },
+          {
+              "sentence": "The court adjourned for lunch.",
+              "translation": "法庭休庭吃午饭。"
+          },
+          {
+              "sentence": "The session was adjourned due to time constraints.",
+              "translation": "由于时间限制，会议暂时中止。"
+          }
+      ]
+  },
+  {
+      "word": "adjudicate",
+      "phonetic": "əˈdʒuːdɪkeɪt",
+      "translations": [
+          {
+              "abbreviation": "v.",
+              "translation": "充当裁判，裁决，判决"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The judge will adjudicate the case.",
+              "translation": "法官将裁决此案。"
+          },
+          {
+              "sentence": "The committee adjudicated the dispute.",
+              "translation": "委员会对争端进行了裁决。"
+          },
+          {
+              "sentence": "The referee adjudicated the match.",
+              "translation": "裁判裁决了这场比赛。"
+          }
+      ]
+  },
+  {
+      "word": "adjunct",
+      "phonetic": "ˈædʒʌŋkt",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "附属物，伴随物"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The adjunct professor taught a special course.",
+              "translation": "这位兼职教授讲授了一门特别课程。"
+          },
+          {
+              "sentence": "The adjunct building houses the library.",
+              "translation": "附属建筑里有图书馆。"
+          },
+          {
+              "sentence": "The adjunct equipment was used for the experiment.",
+              "translation": "附属设备用于实验。"
+          }
+      ]
+  },
+  {
+      "word": "admissible",
+      "phonetic": "ədˈmɪsəbl",
+      "translations": [
+          {
+              "abbreviation": "adj.",
+              "translation": "可以接受的，可加以考虑的，可容许的"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The evidence was deemed admissible by the court.",
+              "translation": "法院认为这些证据是可以接受的。"
+          },
+          {
+              "sentence": "The suggestion was admissible for consideration.",
+              "translation": "这个建议是可以考虑的。"
+          },
+          {
+              "sentence": "The admissible proposal was approved by the committee.",
+              "translation": "这个可以接受的提议得到了委员会的批准。"
+          }
+      ]
+  },
+  {
+      "word": "admonish",
+      "phonetic": "ədˈmɒnɪʃ",
+      "translations": [
+          {
+              "abbreviation": "v.",
+              "translation": "1. 温和而严正地警告（责备）某人 2. 劝告，告诫"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The teacher admonished the student for being late.",
+              "translation": "老师因学生迟到而责备他。"
+          },
+          {
+              "sentence": "He admonished his friend for his careless behavior.",
+              "translation": "他告诫朋友不要粗心大意。"
+          },
+          {
+              "sentence": "The parent admonished the child for not doing homework.",
+              "translation": "父母因孩子不做作业而责备他。"
+          }
+      ]
+  },
+  {
+      "word": "ado",
+      "phonetic": "əˈduː",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "大惊小怪，大惊小怪的行为"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "There was a lot of ado about the new policy.",
+              "translation": "人们对新政策大惊小怪。"
+          },
+          {
+              "sentence": "The whole situation caused quite a bit of ado.",
+              "translation": "整个情况引起了很大的骚动。"
+          },
+          {
+              "sentence": "Without further ado, let's get started.",
+              "translation": "不要再大惊小怪了，我们开始吧。"
+          }
+      ]
+  },
+  {
+      "word": "adorn",
+      "phonetic": "əˈdɔːn",
+      "translations": [
+          {
+              "abbreviation": "v.",
+              "translation": "装饰"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The room was adorned with beautiful paintings.",
+              "translation": "房间里装饰着美丽的画作。"
+          },
+          {
+              "sentence": "She adorned herself with jewelry.",
+              "translation": "她用珠宝装饰自己。"
+          },
+          {
+              "sentence": "The stage was adorned with colorful flowers.",
+              "translation": "舞台上装饰着五颜六色的花朵。"
+          }
+      ]
+  },
+  {
+      "word": "adrift",
+      "phonetic": "əˈdrɪft",
+      "translations": [
+          {
+              "abbreviation": "adv.&adj.",
+              "translation": "（船只）漂泊着（的），未曾系牢的"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The boat was adrift in the middle of the lake.",
+              "translation": "船在湖中央漂泊。"
+          },
+          {
+              "sentence": "The adrift ship was spotted by a passing vessel.",
+              "translation": "一艘路过的船发现了这艘漂泊的船。"
+          },
+          {
+              "sentence": "The adrift raft was carried by the current.",
+              "translation": "这个漂泊的木筏被水流带走了。"
+          }
+      ]
+  },
+  {
+      "word": "adroit",
+      "phonetic": "əˈdrɔɪt",
+      "translations": [
+          {
+              "abbreviation": "adj.",
+              "translation": "熟练的，机巧的，灵敏的"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "He was adroit at handling difficult situations.",
+              "translation": "他擅长处理棘手的情况。"
+          },
+          {
+              "sentence": "The adroit performer amazed the audience.",
+              "translation": "这位熟练的表演者让观众惊叹不已。"
+          },
+          {
+              "sentence": "She was adroit in her dealings with people.",
+              "translation": "她在与人交往中表现出色。"
+          }
+      ]
+  },
+  {
+      "word": "adulterate",
+      "phonetic": "əˈdʌltəreɪt",
+      "translations": [
+          {
+              "abbreviation": "v.",
+              "translation": "掺入（劣等或不纯的物质），掺杂"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The milk was adulterated with water.",
+              "translation": "牛奶被掺了水。"
+          },
+          {
+              "sentence": "The adulterated product was recalled from the market.",
+              "translation": "掺杂的产品被从市场上召回。"
+          },
+          {
+              "sentence": "He was caught adulterating the chemicals.",
+              "translation": "他被抓住掺杂化学品。"
+          }
+      ]
+  },
+  {
+      "word": "adultery",
+      "phonetic": "əˈdʌltərɪ",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "通奸，私通"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "Adultery is considered a serious offense in many cultures.",
+              "translation": "在许多文化中，通奸被视为一种严重的过错。"
+          },
+          {
+              "sentence": "The novel explores the theme of adultery.",
+              "translation": "这部小说探讨了通奸的主题。"
+          },
+          {
+              "sentence": "He was accused of adultery by his spouse.",
+              "translation": "他被配偶指控通奸。"
+          }
+      ]
+  },
+  {
+      "word": "advent",
+      "phonetic": "ˈædvənt",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "（重要事件等的）到来、来临"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The advent of the internet changed the world.",
+              "translation": "互联网的出现改变了世界。"
+          },
+          {
+              "sentence": "The advent of the new technology was celebrated.",
+              "translation": "新技术的出现受到庆祝。"
+          },
+          {
+              "sentence": "The advent of the new era brought many opportunities.",
+              "translation": "新时代的到来带来了许多机会。"
+          }
+      ]
+  },
+  {
+      "word": "adversary",
+      "phonetic": "ˈædvəsərɪ",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "对手，敌手，敌人"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "He faced his adversary in the final match.",
+              "translation": "他在决赛中面对了他的对手。"
+          },
+          {
+              "sentence": "The team overcame their adversaries to win the championship.",
+              "translation": "球队战胜了对手，赢得了冠军。"
+          },
+          {
+              "sentence": "The adversary was a formidable opponent.",
+              "translation": "这个对手非常强大。"
+          }
+      ]
+  },
+  {
+      "word": "adverse",
+      "phonetic": "ˈædvɜːs",
+      "translations": [
+          {
+              "abbreviation": "adj.",
+              "translation": "不利的，相反的，敌对的"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "Adverse weather conditions delayed the flight.",
+              "translation": "不利的天气条件导致航班延误。"
+          },
+          {
+              "sentence": "The adverse reaction to the medicine was unexpected.",
+              "translation": "对这种药的不良反应是意料之外的。"
+          },
+          {
+              "sentence": "The company faced adverse market conditions.",
+              "translation": "公司面临不利的市场条件。"
+          }
+      ]
+  },
+  {
+      "word": "adversity",
+      "phonetic": "ədˈvɜːsətɪ",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "逆境，厄运，苦难，灾祸"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "He faced adversity with courage.",
+              "translation": "他勇敢地面对逆境。"
+          },
+          {
+              "sentence": "The family overcame great adversity to succeed.",
+              "translation": "这个家庭克服了巨大的困难才取得成功。"
+          },
+          {
+              "sentence": "Adversity often brings out the best in people.",
+              "translation": "逆境常常能激发出人们最好的一面。"
+          }
+      ]
+  },
+  {
+      "word": "advocacy",
+      "phonetic": "ˈædvəkəsɪ",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "辩护，提倡，拥护"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The organization is known for its advocacy of human rights.",
+              "translation": "该组织以倡导人权而闻名。"
+          },
+          {
+              "sentence": "He is involved in environmental advocacy.",
+              "translation": "他参与了环保倡导活动。"
+          },
+          {
+              "sentence": "The advocacy group pushed for policy change.",
+              "translation": "倡导团体推动了政策变革。"
+          }
+      ]
+  },
+  {
+      "word": "aerobatics",
+      "phonetic": "ˌeərəˈbætɪks",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "飞行特技（表演）"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The aerobatics show was thrilling to watch.",
+              "translation": "飞行特技表演令人兴奋。"
+          },
+          {
+              "sentence": "The pilot performed amazing aerobatics.",
+              "translation": "飞行员表演了惊人的特技飞行。"
+          },
+          {
+              "sentence": "The aerobatics team won the championship.",
+              "translation": "特技飞行队赢得了冠军。"
+          }
+      ]
+  },
+  {
+      "word": "aerobics",
+      "phonetic": "eəˈrəʊbɪks",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "健身舞（操），有氧健身操"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "She goes to aerobics classes twice a week.",
+              "translation": "她每周去两次有氧健身操课。"
+          },
+          {
+              "sentence": "Aerobics is a great way to stay fit.",
+              "translation": "有氧健身操是保持健康的好方法。"
+          },
+          {
+              "sentence": "The aerobics instructor demonstrated the moves.",
+              "translation": "有氧健身操教练演示了动作。"
+          }
+      ]
+  },
+  {
+      "word": "aerodynamics",
+      "phonetic": "ˌeərəʊdaɪˈnæmɪks",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "空气动力学，气体动力学"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The study of aerodynamics is crucial for aircraft design.",
+              "translation": "空气动力学的研究对飞机设计至关重要。"
+          },
+          {
+              "sentence": "He specialized in aerodynamics.",
+              "translation": "他专攻空气动力学。"
+          },
+          {
+              "sentence": "The aerodynamics of the car improved its performance.",
+              "translation": "汽车的空气动力学设计提高了其性能。"
+          }
+      ]
+  },
+  {
+      "word": "aerosol",
+      "phonetic": "ˈeərəsɒl",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "烟，雾"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The aerosol spray is used for cleaning.",
+              "translation": "这种气溶胶喷雾用于清洁。"
+          },
+          {
+              "sentence": "The aerosol particles can affect air quality.",
+              "translation": "气溶胶颗粒会影响空气质量。"
+          },
+          {
+              "sentence": "The aerosol can contains paint.",
+              "translation": "这个气溶胶罐子里装着油漆。"
+          }
+      ]
+  },
+  {
+      "word": "aerospace",
+      "phonetic": "ˈeərəʊspeɪs",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "航空宇宙（即大气层及其外的太空）"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The company is a leader in the aerospace industry.",
+              "translation": "该公司是航空航天行业的领导者。"
+          },
+          {
+              "sentence": "He works in aerospace engineering.",
+              "translation": "他在航空航天工程领域工作。"
+          },
+          {
+              "sentence": "The aerospace sector is rapidly developing.",
+              "translation": "航空航天领域正在迅速发展。"
+          }
+      ]
+  },
+  {
+      "word": "affable",
+      "phonetic": "ˈæfəbl",
+      "translations": [
+          {
+              "abbreviation": "adj.",
+              "translation": "友善的，和蔼可亲的"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "He is an affable person.",
+              "translation": "他是一个和蔼可亲的人。"
+          },
+          {
+              "sentence": "The affable host welcomed the guests warmly.",
+              "translation": "这位和蔼可亲的主人热情地欢迎了客人。"
+          },
+          {
+              "sentence": "Her affable nature made her popular.",
+              "translation": "她和蔼可亲的性格使她很受欢迎。"
+          }
+      ]
+  },
+  {
+      "word": "affiliate",
+      "phonetic": "əˈfɪlɪeɪt",
+      "translations": [
+          {
+              "abbreviation": "v.",
+              "translation": "（指团体）加入（联合），使隶属，附属于"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The local branch affiliated with the national organization.",
+              "translation": "当地分会加入了全国性组织。"
+          },
+          {
+              "sentence": "He affiliated himself with the club.",
+              "translation": "他加入了这个俱乐部。"
+          },
+          {
+              "sentence": "The company affiliated with a larger corporation.",
+              "translation": "该公司隶属于一家更大的公司。"
+          }
+      ]
+  },
+  {
+      "word": "affinity",
+      "phonetic": "əˈfɪnətɪ",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "1. 构造相似，特点相近，关系 2. 喜爱 3. 亲和性，亲和力"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "There is a strong affinity between the two species.",
+              "translation": "这两个物种之间有很强的相似性。"
+          },
+          {
+              "sentence": "She has an affinity for painting.",
+              "translation": "她对绘画有喜爱。"
+          },
+          {
+              "sentence": "The chemical affinity between the substances is remarkable.",
+              "translation": "这些物质之间的化学亲和力很强。"
+          }
+      ]
+  },
+  {
+      "word": "afflict",
+      "phonetic": "əˈflɪkt",
+      "translations": [
+          {
+              "abbreviation": "v.",
+              "translation": "使身体（精神）痛苦，折磨"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "He was afflicted by a chronic illness.",
+              "translation": "他被一种慢性病折磨。"
+          },
+          {
+              "sentence": "The family was afflicted by financial problems.",
+              "translation": "这个家庭被经济问题困扰。"
+          },
+          {
+              "sentence": "She was afflicted with anxiety.",
+              "translation": "她被焦虑折磨。"
+          }
+      ]
+  },
+  {
+      "word": "affront",
+      "phonetic": "əˈfrʌnt",
+      "translations": [
+          {
+              "abbreviation": "v.",
+              "translation": "侮辱，冒犯"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "He felt affronted by the rude comment.",
+              "translation": "他觉得那句粗鲁的评论很冒犯人。"
+          },
+          {
+              "sentence": "The affront caused a lot of tension.",
+              "translation": "这次冒犯造成了很大的紧张。"
+          },
+          {
+              "sentence": "She was deeply affronted by his behavior.",
+              "translation": "他的行为让她感到非常受辱。"
+          }
+      ]
+  },
+  {
+      "word": "afield",
+      "phonetic": "əˈfiːld",
+      "translations": [
+          {
+              "abbreviation": "adv.",
+              "translation": "远离着，在远处"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The soldiers were sent afield to gather intelligence.",
+              "translation": "士兵们被派到野外收集情报。"
+          },
+          {
+              "sentence": "He went afield to explore the countryside.",
+              "translation": "他到野外去探索乡村。"
+          },
+          {
+              "sentence": "The researchers went afield to study the animals.",
+              "translation": "研究人员到野外去研究动物。"
+          }
+      ]
+  },
+  {
+      "word": "afloat",
+      "phonetic": "əˈfləʊt",
+      "translations": [
+          {
+              "abbreviation": "adv.&adj.",
+              "translation": "1. 漂浮地（的） 2. 在船上 3. 无欠债，（经济）上应付自如的（地）"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The boat has been afloat for several days.",
+              "translation": "这艘船已经在水上漂浮了好几天。"
+          },
+          {
+              "sentence": "He has been afloat on the lake since morning.",
+              "translation": "他从早上起就在湖上漂浮。"
+          },
+          {
+              "sentence": "The company has been afloat despite financial difficulties.",
+              "translation": "尽管面临财务困难，公司仍然能够维持下去。"
+          }
+      ]
+  },
+  {
+      "word": "afoot",
+      "phonetic": "əˈfʊt",
+      "translations": [
+          {
+              "abbreviation": "adv.&adj.",
+              "translation": "在酝酿中，在进行中"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "There is a plan afoot to improve the community.",
+              "translation": "有一个正在酝酿中的计划来改善社区。"
+          },
+          {
+              "sentence": "Something suspicious is afoot.",
+              "translation": "有些可疑的事情正在进行。"
+          },
+          {
+              "sentence": "The project is afoot and progressing well.",
+              "translation": "这个项目正在进行，并且进展顺利。"
+          }
+      ]
+  },
+  {
+      "word": "afresh",
+      "phonetic": "əˈfreʃ",
+      "translations": [
+          {
+              "abbreviation": "adv.",
+              "translation": "（指从头）再；重新"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "We started the experiment afresh.",
+              "translation": "我们重新开始了实验。"
+          },
+          {
+              "sentence": "He decided to begin afresh after the failure.",
+              "translation": "失败后，他决定重新开始。"
+          },
+          {
+              "sentence": "The team started afresh with a new strategy.",
+              "translation": "团队带着新策略重新开始。"
+          }
+      ]
+  },
+  {
+      "word": "aggravate",
+      "phonetic": "ˈæɡrəveɪt",
+      "translations": [
+          {
+              "abbreviation": "v.",
+              "translation": "加重（病情、负担等），使恶化"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The injury was aggravated by the heavy lifting.",
+              "translation": "搬运重物加重了伤势。"
+          },
+          {
+              "sentence": "The situation was aggravated by the lack of communication.",
+              "translation": "缺乏沟通使情况恶化。"
+          },
+          {
+              "sentence": "The doctor warned that stress could aggravate the condition.",
+              "translation": "医生警告说压力可能会加重病情。"
+          }
+      ]
+  },
+  {
+      "word": "aggregate",
+      "phonetic": "ˈæɡrɪɡeɪt",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "总数，合计"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The aggregate score was higher than expected.",
+              "translation": "总分比预期的要高。"
+          },
+          {
+              "sentence": "The aggregate amount of donations reached a million dollars.",
+              "translation": "捐赠的总金额达到了一百万美元。"
+          },
+          {
+              "sentence": "The aggregate data provided a clear picture of the situation.",
+              "translation": "汇总数据清楚地展示了情况。"
+          }
+      ]
+  },
+  {
+      "word": "aggrieved",
+      "phonetic": "əˈɡriːvd",
+      "translations": [
+          {
+              "abbreviation": "adj.",
+              "translation": "1. 受委屈的，感到痛心的 2. 愤愤不平的"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The aggrieved employee filed a complaint.",
+              "translation": "受委屈的员工提出了投诉。"
+          },
+          {
+              "sentence": "He felt aggrieved by the unfair treatment.",
+              "translation": "他觉得这种不公平的待遇让他很委屈。"
+          },
+          {
+              "sentence": "The aggrieved party sought legal action.",
+              "translation": "受委屈的一方寻求法律行动。"
+          }
+      ]
+  },
+  {
+      "word": "agile",
+      "phonetic": "ˈædʒaɪl",
+      "translations": [
+          {
+              "abbreviation": "adj.",
+              "translation": "敏捷的，灵活的"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The athlete was very agile on the field.",
+              "translation": "这位运动员在赛场上非常敏捷。"
+          },
+          {
+              "sentence": "The agile cat jumped over the fence.",
+              "translation": "这只敏捷的猫跳过了篱笆。"
+          },
+          {
+              "sentence": "The company needs to be more agile to compete.",
+              "translation": "公司需要更加灵活才能竞争。"
+          }
+      ]
+  },
+  {
+      "word": "agitate",
+      "phonetic": "ˈædʒɪteɪt",
+      "translations": [
+          {
+              "abbreviation": "v.",
+              "translation": "1. 鼓动，煽动 2. 使焦虑，使不安"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The protesters agitated for change.",
+              "translation": "抗议者鼓动变革。"
+          },
+          {
+              "sentence": "The news agitated the public.",
+              "translation": "这条消息使公众感到不安。"
+          },
+          {
+              "sentence": "He was agitated by the unexpected turn of events.",
+              "translation": "他被这突如其来的事件弄得焦虑不安。"
+          }
+      ]
+  },
+  {
+      "word": "agitation",
+      "phonetic": "ˌædʒɪˈteɪʃən",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "1. 鼓动，煽动 2. 激动不安，焦虑"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The agitation for reform continued.",
+              "translation": "改革的鼓动仍在继续。"
+          },
+          {
+              "sentence": "The agitation caused a lot of tension.",
+              "translation": "这种鼓动造成了很大的紧张。"
+          },
+          {
+              "sentence": "The agitation made it difficult to concentrate.",
+              "translation": "这种焦虑不安使很难集中精力。"
+          }
+      ]
+  },
+  {
+      "word": "agnostic",
+      "phonetic": "æɡˈnɒstɪk",
+      "translations": [
+          {
+              "abbreviation": "n.&adj.",
+              "translation": "不可知论者（的）"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "He is an agnostic.",
+              "translation": "他是一个不可知论者。"
+          },
+          {
+              "sentence": "The agnostic view is that the existence of God is unknown.",
+              "translation": "不可知论的观点是上帝的存在是未知的。"
+          },
+          {
+              "sentence": "The agnostic scientist refused to take a stance on the issue.",
+              "translation": "这位不可知论的科学家拒绝在这个问题上表态。"
+          }
+      ]
+  },
+  {
+      "word": "agonizing",
+      "phonetic": "ˈæɡənaɪzɪŋ",
+      "translations": [
+          {
+              "abbreviation": "adj.",
+              "translation": "使人痛苦的，折磨人的"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The agonizing decision was difficult to make.",
+              "translation": "这个令人痛苦的决定很难做出。"
+          },
+          {
+              "sentence": "The agonizing wait was unbearable.",
+              "translation": "这种折磨人的等待令人难以忍受。"
+          },
+          {
+              "sentence": "The agonizing pain lasted for hours.",
+              "translation": "这种折磨人的疼痛持续了数小时。"
+          }
+      ]
+  },
+  {
+      "word": "aground",
+      "phonetic": "əˈɡraʊnd",
+      "translations": [
+          {
+              "abbreviation": "adv.&adj.",
+              "translation": "（指船）搁浅，触礁"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The ship ran aground on the rocks.",
+              "translation": "船在礁石上搁浅了。"
+          },
+          {
+              "sentence": "The boat was aground for several days.",
+              "translation": "这艘船搁浅了好几天。"
+          },
+          {
+              "sentence": "The aground vessel was eventually refloated.",
+              "translation": "这艘搁浅的船最终被重新浮起来了。"
+          }
+      ]
+  },
+  {
+      "word": "AIDS",
+      "phonetic": "eɪdz",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "艾滋病，获得性免疫缺损综合症"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "AIDS is a serious health issue worldwide.",
+              "translation": "艾滋病是全球性的严重健康问题。"
+          },
+          {
+              "sentence": "Prevention and awareness campaigns are crucial in fighting AIDS.",
+              "translation": "预防和提高意识的活动在抗击艾滋病中至关重要。"
+          },
+          {
+              "sentence": "The research on AIDS has made significant progress.",
+              "translation": "艾滋病的研究取得了显著进展。"
+          }
+      ]
+  },
+  {
+      "word": "ailing",
+      "phonetic": "ˈeɪlɪŋ",
+      "translations": [
+          {
+              "abbreviation": "adj.",
+              "translation": "感觉不舒服，生病的，有病的"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The ailing patient needed constant care.",
+              "translation": "这位生病的病人需要不断的照顾。"
+          },
+          {
+              "sentence": "He has been ailing for several weeks.",
+              "translation": "他生病已经好几个星期了。"
+          },
+          {
+              "sentence": "The ailing man was admitted to the hospital.",
+              "translation": "这位生病的人被送进了医院。"
+          }
+      ]
+  },
+  {
+      "word": "ailment",
+      "phonetic": "ˈeɪlmənt",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "轻微的病痛"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "He suffered from a minor ailment.",
+              "translation": "他患了一种轻微的疾病。"
+          },
+          {
+              "sentence": "The common cold is a frequent ailment.",
+              "translation": "普通感冒是一种常见的小病。"
+          },
+          {
+              "sentence": "She had an ailment that caused her to cough.",
+              "translation": "她有一种病痛，导致她咳嗽。"
+          }
+      ]
+  },
+  {
+      "word": "airborne",
+      "phonetic": "ˈeəbɔːn",
+      "translations": [
+          {
+              "abbreviation": "adj.",
+              "translation": "1. 空运的，空降的 2. （飞机）在空中，飞行中"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The airborne troops were deployed to the disaster area.",
+              "translation": "空降部队被派往灾区。"
+          },
+          {
+              "sentence": "The plane was airborne for several hours.",
+              "translation": "飞机在空中飞行了几个小时。"
+          },
+          {
+              "sentence": "The airborne mission was successful.",
+              "translation": "空运任务取得了成功。"
+          }
+      ]
+  },
+  {
+      "word": "airily",
+      "phonetic": "ˈeərɪlɪ",
+      "translations": [
+          {
+              "abbreviation": "adv.",
+              "translation": "轻松地，活泼地，轻盈地"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "She dismissed the idea airily.",
+              "translation": "她轻松地否定了这个想法。"
+          },
+          {
+              "sentence": "He spoke airily about his plans.",
+              "translation": "他轻描淡写地谈论了他的计划。"
+          },
+          {
+              "sentence": "The dancer moved airily across the stage.",
+              "translation": "舞者轻盈地在舞台上移动。"
+          }
+      ]
+  },
+  {
+      "word": "airlift",
+      "phonetic": "ˈeəˌlɪft",
+      "translations": [
+          {
+              "abbreviation": "n.",
+              "translation": "1. （指紧急情况下或陆上交通断绝时的）空运 2. 空中补给线 3. 空运的旅客，空运的货物 4. 空运用的飞机"
+          },
+          {
+              "abbreviation": "v.",
+              "translation": "空运"
+          }
+      ],
+      "example_sentence": [
+          {
+              "sentence": "The airlift brought supplies to the stranded villagers.",
+              "translation": "空运为被困的村民带来了物资。"
+          },
+          {
+              "sentence": "The emergency airlift was crucial for the rescue mission.",
+              "translation": "紧急空运对救援任务至关重要。"
+          },
+          {
+              "sentence": "The airlifted goods were delivered to the disaster area.",
+              "translation": "空运的货物被送到了灾区。"
+          }
+      ]
+  }
+]
