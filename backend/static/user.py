@@ -31,7 +31,7 @@ def create_user(username, password_hash, is_test=False):
                 user_id = cursor.lastrowid
                 # 获取插入的完整记录
                 cursor.execute(
-                    "SELECT username, daily_goal, total_words_learned, daily_reminder, reminder_time FROM users WHERE id = %s",
+                    "SELECT username, daily_goal, daily_reminder, reminder_time FROM users WHERE id = %s",
                     (user_id,),
                 )
                 user_record = cursor.fetchone()
@@ -48,7 +48,7 @@ def user_login(username, password_hash, is_test=False):
         with get_connection() as conn:
             with conn.cursor(dictionary=True) as cursor:
                 cursor.execute(
-                    "SELECT username, daily_goal, total_words_learned, daily_reminder, reminder_time FROM users WHERE username = %s AND password_hash = %s",
+                    "SELECT username, daily_goal, daily_reminder, reminder_time FROM users WHERE username = %s AND password_hash = %s",
                     (username, password_hash),
                 )
                 user = cursor.fetchone()
@@ -91,13 +91,13 @@ def change_password(username, old_password_hash, new_password_hash, is_test=True
         return False
 
 
-def set_user_daily_goal(username, daily_goal, is_test=True):
+def set_user_setting(username, daily_goal, reminder_time, is_test=True):
     try:
         with get_connection() as conn:
             with conn.cursor() as cursor:
                 cursor.execute(
-                    "UPDATE users SET daily_goal = %s WHERE username = %s",
-                    (daily_goal, username),
+                    "UPDATE users SET daily_goal = %s, reminder_time = %s WHERE username = %s",
+                    (daily_goal, reminder_time, username),
                 )
                 conn.commit()
                 logger.debug(f"用户 {username} 每日目标设置成功")
