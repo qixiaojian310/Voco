@@ -2,6 +2,7 @@ import mysql.connector
 from mysql.connector import pooling
 from contextlib import contextmanager
 import loguru
+import os
 
 # 初始化日志
 logger = loguru.logger
@@ -9,9 +10,9 @@ logger = loguru.logger
 # 数据库配置
 dbconfig = {
     "user": "root",
-    "password": "123456",
-    "host": "localhost",
-    "database": "voco",
+    "password": os.environ.get("MYSQL_PASSWORD"),
+    "host": os.environ.get("MYSQL_HOST"),
+    "database": os.environ.get("MYSQL_DATABASE"),
     "port": 3306,
     "connect_timeout": 5,
     "raise_on_warnings": True,
