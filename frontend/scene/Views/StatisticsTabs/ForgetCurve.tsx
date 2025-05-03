@@ -32,7 +32,7 @@ function ForgetCurve() {
         left: 'center',
         textStyle: {
           fontSize: 14,
-          color: '#dbc4c4',
+          color: '#3d2626',
         },
       },
       xAxis: {
@@ -44,7 +44,7 @@ function ForgetCurve() {
         },
         axisLine:{
           lineStyle: {
-            color: '#ffffff', // 坐标轴线颜色
+            color: '#6d6d6d', // 坐标轴线颜色
           },
         },
       },
@@ -56,7 +56,7 @@ function ForgetCurve() {
         axisLine:{
           show: true, // ✅ 显示 y 轴线
           lineStyle: {
-            color: '#ffffff', // 坐标轴线颜色
+            color: '#6d6d6d', // 坐标轴线颜色
           },
         },
       },
@@ -118,7 +118,7 @@ function ForgetCurve() {
   },[]);
   const handleLayout = (event: LayoutChangeEvent) => {
     const {height: layoutHeight, width: layoutWidth} = event.nativeEvent.layout;
-    setHeight(layoutHeight - 100);
+    setHeight(layoutHeight);
     setWidth(layoutWidth);
   };
 

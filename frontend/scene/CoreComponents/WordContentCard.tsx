@@ -18,14 +18,13 @@ function WordContentCard({
           paddingTop: 5,
           paddingEnd: 5,
         }}>
-        <Text style={{fontSize: 12, color: '#ffffff'}}>{title}</Text>
+        <Text style={{fontSize: 12, color: '#424242'}}>{title}</Text>
       </View>
-      <Divider width={2} color="#383838" />
+      <Divider width={1} color="#ababab" />
       <View
         style={{
           paddingLeft: 10,
           paddingRight: 10,
-          backgroundColor: '#00000056',
         }}>
         {children}
       </View>

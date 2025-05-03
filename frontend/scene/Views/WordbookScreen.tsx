@@ -43,7 +43,7 @@ const WordbookItem = ({
         style={{
           marginRight: 10,
           borderRadius: 5,
-          width: 90,
+          width:70,
           height: 80,
         }}
         resizeMode="cover"
@@ -103,20 +103,20 @@ function WordbookScreen() {
         <View style={{flex: 1}}>
           <Input
             placeholder="Search"
-            placeholderTextColor={'#cbcbcb'}
+            placeholderTextColor={'#262626'}
             leftIcon={
               <Icon
                 name="search"
                 type="font-awesome"
                 size={24}
-                color="#cbcbcb"
+                color="#262626"
               />
             }
             onChangeText={text => {
               setWordbook_name(text);
             }}
             renderErrorMessage={false}
-            inputStyle={{fontSize: 12, height: 50, color: '#ffffff'}}
+            inputStyle={{fontSize: 12, color: '#ffffff'}}
           />
         </View>
         <View style={{flexDirection: 'row', alignItems: 'center'}}>
@@ -149,7 +149,7 @@ function WordbookScreen() {
 }
 const styles = StyleSheet.create({
   toolbar: {
-    backgroundColor: '#8684ec6d',
+    backgroundColor: '#c0c0c099',
     paddingTop: Platform.OS === 'android' ? StatusBar.currentHeight : 0,
     boxSizing: 'content-box',
   },
@@ -159,7 +159,7 @@ const styles = StyleSheet.create({
     paddingVertical: 10,
     paddingHorizontal: 16,
     textAlign: 'center',
-    backgroundColor: '#8684ec6d',
+    backgroundColor: '#c0c0c099',
   },
   controllerBar: {
     flexDirection: 'row',

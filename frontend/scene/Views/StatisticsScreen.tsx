@@ -16,38 +16,38 @@ function StatisticsScreen() {
         value={index}
         onChange={e => setIndex(e)}
         indicatorStyle={{
-          backgroundColor: 'white',
+          backgroundColor: '#866833',
           height: 3,
         }}
         style={{
-          backgroundColor: '#a4a3e895',
+          backgroundColor: '#c0c0c099',
         }}
         variant="default">
         <Tab.Item
           title="Forget curve"
-          titleStyle={{fontSize: 12, color: 'white'}}
-          icon={{name: 'analytics', type: 'ionicon', color: 'white'}}
+          titleStyle={{fontSize: 12, color: '#866833'}}
+          icon={{name: 'analytics', type: 'ionicon', color: '#866833'}}
         />
         <Tab.Item
           title="Your plan"
-          titleStyle={{fontSize: 12, color: 'white'}}
-          icon={{name: 'clipboard', type: 'ionicon', color: 'white'}}
+          titleStyle={{fontSize: 12, color: '#866833'}}
+          icon={{name: 'clipboard', type: 'ionicon', color: '#866833'}}
         />
         <Tab.Item
           title="Memory"
-          titleStyle={{fontSize: 12, color: 'white'}}
-          icon={{name: 'book', type: 'ionicon', color: 'white'}}
+          titleStyle={{fontSize: 12, color: '#866833'}}
+          icon={{name: 'book', type: 'ionicon', color: '#866833'}}
         />
       </Tab>
 
       <TabView value={index} onChange={setIndex} animationType="spring">
-        <TabView.Item style={{backgroundColor: '#00000052', width: '100%'}}>
+        <TabView.Item style={{width: '100%'}}>
           <ForgetCurve />
         </TabView.Item>
-        <TabView.Item style={{backgroundColor: '#00000052', width: '100%'}}>
+        <TabView.Item style={{width: '100%'}}>
           <Schedule />
         </TabView.Item>
-        <TabView.Item style={{backgroundColor: '#00000052', width: '100%'}}>
+        <TabView.Item style={{width: '100%'}}>
           <MemoryList />
         </TabView.Item>
       </TabView>
@@ -57,7 +57,7 @@ function StatisticsScreen() {
 
 const styles = StyleSheet.create({
   toolbar: {
-    backgroundColor: '#a4a3e895',
+    backgroundColor: '#c0c0c099',
     paddingTop: Platform.OS === 'android' ? StatusBar.currentHeight : 0,
     boxSizing: 'content-box',
   },

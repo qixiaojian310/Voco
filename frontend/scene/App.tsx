@@ -4,7 +4,7 @@ import * as React from 'react';
 import {DefaultTheme, NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import RegisterScreen from './Views/RegisterScreen';
-import {KeyboardAvoidingView, StatusBar} from 'react-native';
+import {KeyboardAvoidingView, StatusBar, View} from 'react-native';
 import ReviewScreen from './Views/ReviewScreen';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import BackgroundView from './CoreComponents/BackgroundView';
@@ -17,6 +17,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import userStore from '../stores/UserStore';
 import {observer} from 'mobx-react';
 import WordbookScreen from './Views/WordbookScreen';
+import NewWordbookScreen from './Views/NewWordbookScreen';
 
 const RootStack = createNativeStackNavigator();
 const MainTab = createBottomTabNavigator();
@@ -35,6 +36,29 @@ function HomeTabs() {
               size={24}
               color={props.color}
             />
+          ),
+        }}
+      />
+      <MainTab.Screen
+        name="Add"
+        component={NewWordbookScreen}
+        options={{
+          headerShown: false,
+          tabBarIcon: props => (
+            <View
+              style={{
+                backgroundColor: '#fffff1',
+                transform: 'scale(1.7)',
+                borderRadius: 100,
+              }}>
+              <Icon
+                name="plus"
+                type="font-awesome"
+                size={24}
+                color={props.color}
+                style={{paddingHorizontal:15,paddingVertical:13}}
+              />
+            </View>
           ),
         }}
       />
@@ -97,8 +121,8 @@ const navTheme = {
   ...DefaultTheme,
   colors: {
     ...DefaultTheme.colors,
-    background: '#00000040',
-    primary: '#54539c',
+    background: '#ffffff00',
+    primary: '#866833',
     text: '#8f8f8f',
   },
 };

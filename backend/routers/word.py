@@ -1,5 +1,5 @@
 from datetime import datetime, timedelta, timezone
-from typing import Optional
+from typing import Any, List, Optional
 from fastapi import HTTPException, Depends, APIRouter
 from pydantic import BaseModel
 from static.word import (
@@ -7,6 +7,8 @@ from static.word import (
     get_all_books,
     get_study_status_statistics,
     get_words_details,
+    create_wordbook,
+    add_words_to_wordbook,
 )
 from static.memory import (
     answer_word_status,
@@ -34,6 +36,12 @@ class AllWordDetailRequest(BaseModel):
 
 class WordbookRequest(BaseModel):
     wordbook_name: Optional[str] = None
+
+
+class AddWordbookRequest(BaseModel):
+    wordbook_name: str
+    wordbook_description: str
+    content: List[Any]
 
 
 class WordStatusRequest(BaseModel):
@@ -111,6 +119,18 @@ async def set_word_memory_status(
         request.review_interval,
         request.next_review,
     )
+
+
+@router.post("/add_wordbook")
+async def add_wordbook(
+    request: AddWordbookRequest,
+    username: int = Depends(get_current_user),
+):
+    wordbook_id = create_wordbook(
+        username, request.wordbook_name, request.wordbook_description, True
+    )
+    res = add_words_to_wordbook(wordbook_id, request.content)
+    return res
 
 
 @router.post("/get_memory_status")

@@ -9,7 +9,7 @@ function TabBar({state, descriptors, navigation}: BottomTabBarProps) {
   const {buildHref} = useLinkBuilder();
 
   return (
-    <View style={{flexDirection: 'row', backgroundColor: '#00000099'}}>
+    <View style={{flexDirection: 'row', backgroundColor: '#c0c0c099'}}>
       {state.routes.map((route, index) => {
         const {options} = descriptors[route.key];
         const label =
@@ -48,19 +48,31 @@ function TabBar({state, descriptors, navigation}: BottomTabBarProps) {
             testID={options.tabBarButtonTestID}
             onPress={onPress}
             onLongPress={onLongPress}
-            style={{flex: 1, justifyContent: 'center', alignItems: 'center', paddingBottom: 20, paddingTop: 10}}
+            style={{
+              flex: 1,
+              justifyContent: 'center',
+              alignItems: 'center',
+              paddingBottom: 20,
+              paddingTop: 10,
+            }}
             key={label as string}>
-            <View style={{justifyContent: 'center', alignItems:'center'}}>
-            {options.tabBarIcon &&
-              options.tabBarIcon({
-                focused: isFocused,
-                color: isFocused ? colors.primary : colors.text,
-                size: 24, // 你可以根据 UI 自定义
-              })}
+            <View style={{justifyContent: 'center', alignItems: 'center'}}>
+              {options.tabBarIcon &&
+                options.tabBarIcon({
+                  focused: isFocused,
+                  color: isFocused ? colors.primary : colors.text,
+                  size: 24, // 你可以根据 UI 自定义
+                })}
             </View>
-            <Text style={{color: isFocused ? colors.primary : colors.text, fontSize: 10}}>
-              {label as string}
-            </Text>
+            {label !== 'Add' && (
+              <Text
+                style={{
+                  color: isFocused ? colors.primary : colors.text,
+                  fontSize: 10,
+                }}>
+                {label as string}
+              </Text>
+            )}
           </PlatformPressable>
         );
       })}

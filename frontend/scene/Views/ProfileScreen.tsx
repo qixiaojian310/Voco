@@ -316,7 +316,7 @@ function ProfileScreen() {
 
 const styles = StyleSheet.create({
   toolbar: {
-    backgroundColor: '#8684ec6d',
+    backgroundColor: '#c0c0c099',
     paddingTop: Platform.OS === 'android' ? StatusBar.currentHeight : 0,
     boxSizing: 'content-box',
   },

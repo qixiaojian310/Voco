@@ -57,3 +57,19 @@ export const get_words_from_wordbook = async (wordbook_id?: number) => {
     return res;
   }
 };
+
+export const add_words_to_wordbook = async (addBundle?: any) => {
+  const res = await requestWrapper(
+    '/add_wordbook',
+    addBundle,
+    {
+      method: 'POST',
+    },
+  );
+  if (typeof res !== 'number') {
+    const body = await res.json();
+    return body;
+  } else {
+    return res;
+  }
+};

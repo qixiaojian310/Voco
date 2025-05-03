@@ -36,7 +36,7 @@ function Schedule() {
         data: statusesLegend,
         textStyle: {
           fontSize: 14,
-          color: '#dbc4c4',
+          color: '#3d2626',
         },
       },
       grid: {
@@ -71,7 +71,7 @@ function Schedule() {
           name: 'daily_goal',
           type: 'bar',
           stack: null,
-          itemStyle: { color: '#ccc', opacity: 0.3 },
+          itemStyle: { color: '#454545', opacity: 0.3 },
           data: Array(dates.length).fill(dailyGoal),
         },
       ],
@@ -79,7 +79,7 @@ function Schedule() {
   }, [statusesLegend, series, dailyGoal, dates]);
   const handleLayout = (event: LayoutChangeEvent) => {
     const {height: layoutHeight, width: layoutWidth} = event.nativeEvent.layout;
-    setHeight(layoutHeight - 100);
+    setHeight(layoutHeight);
     setWidth(layoutWidth);
   };
 

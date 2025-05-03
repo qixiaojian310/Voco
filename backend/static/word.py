@@ -168,59 +168,63 @@ def add_word_to_wordbook(word: str, wordbook_id):
             conn.commit()  # 提交事务
 
 
-def add_words_to_wordbook_from_json_data(wordbook_id, json_file_path):
+def add_words_to_wordbook(wordbook_id, content):
     """
     从 JSON 数据批量添加单词到单词本。
     返回：
-      - not_found_words: 在words表中找不到的单词
-      - already_in_wordbook: 在wordbook_contents表中已经存在的单词
+      - not_found_words: 在 words 表中找不到的单词
+      - already_in_wordbook: 在 wordbook_contents 表中已经存在的单词
+      - final_add_words: 成功插入的单词
     """
     not_found_words = []
-    already_in_wordbook = []
     final_add_words = []
 
-    with open(json_file_path, "r", encoding="utf-8") as f:
-        words = json.load(f)
+    words_to_add = [item for item in content]
+    word_to_id = {}
+
     with get_connection() as conn:
         with conn.cursor(dictionary=True) as cursor:
-            word_id_err = 1
             try:
-                for res in words:
-                    # 先查 words 表
-                    cursor.execute(
-                        "SELECT word_id FROM words WHERE word = %s", (res["word"],)
-                    )
-                    result = cursor.fetchone()
-                    if not result:
-                        # 不存在words表
-                        not_found_words.append(res["word"])
-                        continue
+                # 批量获取 words 表中存在的单词及其 ID
+                format_strings = ",".join(["%s"] * len(words_to_add))
+                cursor.execute(
+                    f"SELECT word, word_id FROM words WHERE word IN ({format_strings})",
+                    words_to_add,
+                )
+                results = cursor.fetchall()
+                word_to_id = {row["word"]: row["word_id"] for row in results}
 
-                    word_id = result["word_id"]
-                    # 再查 wordbook_contents 是否已经有这个word_id
-                    cursor.execute(
-                        "SELECT 1 FROM wordbook_contents WHERE wordbook_id = %s AND word_id = %s",
-                        (wordbook_id, word_id),
-                    )
-                    word_id_err = word_id
-                    exist = cursor.fetchone()
-                    if exist:
-                        # 已经存在wordbook_contents
-                        already_in_wordbook.append(res["word"])
+                # 找出不存在的单词
+                not_found_words = [w for w in words_to_add if w not in word_to_id]
+
+                # 插入尚未存在的记录
+                to_insert = []
+                for word in words_to_add:
+                    word_id = word_to_id.get(word)
+                    if word_id is None:
+                        continue
                     else:
-                        # 可以插入
-                        cursor.execute(
-                            "INSERT INTO wordbook_contents (word_id, wordbook_id, added_at) VALUES (%s, %s, NOW())",
-                            (word_id, wordbook_id),
-                        )
-                        final_add_words.append(res["word"])
+                        to_insert.append((word_id, wordbook_id))
+                        final_add_words.append(word)
+
+                if to_insert:
+                    cursor.executemany(
+                        "INSERT INTO wordbook_contents (word_id, wordbook_id, added_at) VALUES (%s, %s, NOW())",
+                        to_insert,
+                    )
 
                 conn.commit()
             except Exception as e:
-                print("word", word_id_err)
-                return not_found_words, already_in_wordbook, final_add_words
+                print("Error:", e)
+                return {
+                    "not_found_words": not_found_words,
+                    "final_add_words": final_add_words,
+                }
 
-    return not_found_words, already_in_wordbook, final_add_words
+    return {
+        "not_found_words": not_found_words,
+        "final_add_words": final_add_words,
+    }
 
 
 def get_all_books(wordbook_name=None):

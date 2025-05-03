@@ -1,4 +1,4 @@
-import {Badge, Divider, Icon, Skeleton} from '@rneui/themed';
+import {Badge, Icon, Skeleton} from '@rneui/themed';
 import React, {useCallback, useEffect, useMemo} from 'react';
 import {
   Platform,
@@ -278,11 +278,11 @@ const ReviewScreen = observer(() => {
       <View style={styles.toolbar} />
       {!isLoading ? (
         <>
-          <View style={{height: 100, backgroundColor: '#8684ec6d'}}>
+          <View style={{height: 100, backgroundColor: '#c0c0c099'}}>
             <TouchableOpacity onPress={clickBackHandler}>
               <View style={styles.cleanBar}>
-                <Icon name="trash" type="font-awesome" color="#c2c1c1" />
-                <Text style={{color: '#c2c1c1'}}>Choose a new book</Text>
+                <Icon name="trash" type="font-awesome" color="#424242" />
+                <Text style={{color: '#424242'}}>Choose a new book</Text>
               </View>
             </TouchableOpacity>
             <Text style={styles.mainWord}>{reqWord.word}</Text>
@@ -301,14 +301,15 @@ const ReviewScreen = observer(() => {
               <View style={styles.translation}>
                 {reqWord.translations.map(translation => {
                   return (
-                    <View
+                    <ScrollView
+                      horizontal={true}
                       style={{flexDirection: 'row', gap: 5}}
                       key={translation.translation}>
                       <Badge value={` ${translation.abbreviation} `} />
-                      <Text style={{color: '#ffffff'}}>
+                      <Text style={{color: '#424242'}}>
                         {translation.translation}
                       </Text>
-                    </View>
+                    </ScrollView>
                   );
                 })}
               </View>
@@ -325,10 +326,10 @@ const ReviewScreen = observer(() => {
                               paddingBottom: 10,
                             }}
                             key={sentence.sentence}>
-                            <Text style={{fontSize: 12, color: '#cbcbcb'}}>
+                            <Text style={{fontSize: 12, color: '#424242'}}>
                               {sentence.sentence}
                             </Text>
-                            <Text style={{fontSize: 12, color: '#cbcbcb'}}>
+                            <Text style={{fontSize: 12, color: '#424242'}}>
                               {sentence.translation}
                             </Text>
                           </View>
@@ -346,13 +347,13 @@ const ReviewScreen = observer(() => {
                       paddingTop: 10,
                       paddingBottom: 10,
                     }}>
-                    <Text style={{fontSize: 12, color: '#cbcbcb'}}>
+                    <Text style={{fontSize: 12, color: '#424242'}}>
                       {reqWord.etymology}
                     </Text>
                   </View>
                 </WordContentCard>
                 <WordContentCard title={'记忆记录 Remember History'}>
-                  <Text style={{fontSize: 12, color: '#cbcbcb'}}>
+                  <Text style={{fontSize: 12, color: '#424242'}}>
                     Record Range: {rem_day_range[0]} ➡️ {rem_day_range[1]}
                   </Text>
                   <View
@@ -379,7 +380,6 @@ const ReviewScreen = observer(() => {
                   </View>
                 </WordContentCard>
               </ScrollView>
-              <Divider width={4} color="#383838" />
               <View
                 style={{
                   flexDirection: 'row',
@@ -413,10 +413,10 @@ const ReviewScreen = observer(() => {
                 <Text style={styles.transLabel}>
                   Please recall the pronunciation and translation of words
                 </Text>
-                <Text style={{fontSize: 10, color: '#e0d5d5'}}>
+                <Text style={{fontSize: 10, color: '#554d4d'}}>
                   点击屏幕查看翻译
                 </Text>
-                <Text style={{fontSize: 10, color: '#e0d5d5'}}>
+                <Text style={{fontSize: 10, color: '#554d4d'}}>
                   Click the screen to view the translation
                 </Text>
               </View>
@@ -442,7 +442,7 @@ const ReviewScreen = observer(() => {
 
 const styles = StyleSheet.create({
   toolbar: {
-    backgroundColor: '#8684ec6d',
+    backgroundColor: '#c0c0c099',
     paddingTop: Platform.OS === 'android' ? StatusBar.currentHeight : 0,
     boxSizing: 'content-box',
   },
@@ -454,12 +454,12 @@ const styles = StyleSheet.create({
   },
   transLabel: {
     fontSize: 12,
-    color: '#e0d5d5',
+    color: '#554d4d',
   },
   mainWord: {
     fontSize: 30,
     fontWeight: 900,
-    color: '#bbbbbb',
+    color: '#424242',
     textAlign: 'center',
     fontFamily: 'arial',
   },
@@ -473,12 +473,12 @@ const styles = StyleSheet.create({
   WordHint: {
     fontSize: 10,
     fontWeight: 900,
-    color: '#bbbbbb',
+    color: '#424242',
   },
   translation: {
     padding: 10,
     gap: 5,
-    backgroundColor: '#54539cab',
+    backgroundColor: '#c0c0c099',
   },
 });
 
