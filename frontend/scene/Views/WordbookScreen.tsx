@@ -10,7 +10,7 @@ import {
   TouchableOpacity,
   Switch,
 } from 'react-native';
-import React, {useCallback, useEffect} from 'react';
+import React, {useCallback} from 'react';
 import {
   get_all_wordbook,
   get_all_wordbook_by_user,
@@ -21,6 +21,7 @@ import {Icon, Input} from '@rneui/themed';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import wordbookStore from '../../stores/WordbookStore';
 import userStore from '../../stores/UserStore';
+import { useFocusEffect } from '@react-navigation/native';
 
 const WordbookItem = ({
   title,
@@ -82,9 +83,13 @@ function WordbookScreen() {
     await getWordbook();
     setRefreshing(false);
   }, [getWordbook]);
-  useEffect(() => {
-    getWordbook();
-  }, [getWordbook]);
+
+  // 初始化获取单词本
+  useFocusEffect(
+    React.useCallback(() => {
+      onRefresh();
+    }, [onRefresh]),
+  );
 
   const pressWordbookHandler = async (wordbook_id: number) => {
     // 点击跳转到单词本
@@ -139,7 +144,7 @@ function WordbookScreen() {
             onPress={pressWordbookHandler}
           />
         )}
-        style={styles.scrollView}
+        contentContainerStyle={styles.scrollView}
         refreshControl={
           <RefreshControl refreshing={refreshing} onRefresh={onRefresh} />
         }
@@ -168,8 +173,8 @@ const styles = StyleSheet.create({
     paddingHorizontal: 16,
   },
   scrollView: {
-    flex: 1,
     paddingTop: 20,
+    paddingBottom: 20,
   },
   item: {
     boxShadow: '0 0px 14px rgba(0, 0, 0, 0.692)',

@@ -281,7 +281,7 @@ const ReviewScreen = observer(() => {
           <View style={{height: 100, backgroundColor: '#c0c0c099'}}>
             <TouchableOpacity onPress={clickBackHandler}>
               <View style={styles.cleanBar}>
-                <Icon name="trash" type="font-awesome" color="#424242" />
+                <Icon name="angle-left" type="font-awesome" color="#424242" />
                 <Text style={{color: '#424242'}}>Choose a new book</Text>
               </View>
             </TouchableOpacity>

@@ -15,7 +15,7 @@ function RegisterScreen() {
         }}>
         <Text
           style={{
-            color: '#ffffff',
+            color: '#424242',
             fontSize: 24,
             textAlign: 'center',
             fontWeight: 900,

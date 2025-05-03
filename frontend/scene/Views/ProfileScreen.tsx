@@ -87,7 +87,7 @@ function ProfileScreen() {
   }, [streakDaysJSON]);
 
   const onStreakDayPress = () => {
-    const dateString = new Date().toISOString().slice(0, 10);
+    const dateString = new Date(Date.now() + 8 * 60 * 60 * 1000).toISOString().slice(0, 10);
     setStreakDaysJSON(prev => {
       const prevObj = JSON.parse(prev); // 是个日期字符串数组
       let updated;
@@ -171,7 +171,7 @@ function ProfileScreen() {
     const hours = Math.floor(hourNumber);
     const minutes = Math.round((hourNumber - hours) * 60);
 
-    const now = new Date();
+    const now = new Date(Date.now() + 8 * 60 * 60 * 1000);
     const tomorrow = new Date(now);
     tomorrow.setDate(now.getDate() + 1); // 前进到“明天”
 
@@ -241,12 +241,12 @@ function ProfileScreen() {
               <Picker.Item label="100" value="100" />
             </Picker>
           </View>
-          {Object.keys(markedDates).includes(new Date().toISOString().slice(0, 10)) ? (
+          {Object.keys(markedDates).includes(new Date(Date.now() + 8 * 60 * 60 * 1000).toISOString().slice(0, 10)) ? (
             <View style={styles.datePickerItem}>
               <Text style={{fontSize: 18, fontWeight: 'bold'}}>Streak Day</Text>
               <Calendar
                 markingType={'multi-dot'}
-                initialDate={new Date().toDateString()}
+                initialDate={new Date(Date.now() + 8 * 60 * 60 * 1000).toDateString()}
                 style={{
                   borderWidth: 1,
                   borderColor: '#ddd',
