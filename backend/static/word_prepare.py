@@ -1,5 +1,6 @@
 import json
-
+import csv
+import time  # 为防止过快请求被封建议加延迟
 from database_connector import get_connection
 import requests
 from bs4 import BeautifulSoup
@@ -47,6 +48,7 @@ def get_trans(word):
         print(f"Error: Status code {response.status_code}")
         return None
     soup = BeautifulSoup(response.text, "html.parser")
+    translations = []  # 先定义为空数组
     divs = soup.find_all("div", {"class": "pr dsense"})
     if divs:
         translations = []
@@ -95,7 +97,29 @@ def get_trans(word):
     return None
 
 
-print(get_trans("fire"))
+def generateWordJSONFromCSV():
+    """从CSV中读取单词，抓取翻译并生成JSON"""
+    word_data_list = []
+
+    with open("../word/10000word.csv", "r", encoding="utf-8") as csvfile:
+        reader = csv.DictReader(csvfile)
+        for i, row in enumerate(reader, 1):
+            word = row["words"].strip()
+            print(f"[{i}] 正在抓取: {word}...")
+            word_info = get_trans(word)
+            if word_info:
+                word_data_list.append(word_info)
+            else:
+                print(f"❌ 未找到: {word}")
+            # time.sleep(1)  # 加1秒延迟防止被网站封IP
+
+    # 写入 JSON 文件
+    with open("word_data.json", "w", encoding="utf-8") as f:
+        json.dump(word_data_list, f, ensure_ascii=False, indent=4)
+        print("✅ 所有单词信息已保存到 word_data.json")
+
+
+print(generateWordJSONFromCSV())
 
 
 def insert_word_records():
