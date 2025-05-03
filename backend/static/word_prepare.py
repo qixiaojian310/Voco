@@ -19,74 +19,79 @@ USER_AGENTS = [
 
 def get_etymology(word):
     """爬取单词词源"""
-    url = f"https://www.etymonline.com/word/{word}"
-    headers = {
-        "User-Agent": random.choice(USER_AGENTS),
-    }
-    response = requests.get(url, headers=headers)
-    if response.status_code != 200:
-        print(f"Error: Status code {response.status_code}")
-        return None
-    soup = BeautifulSoup(response.text, "html.parser")
-    section = soup.find("section", {"class": "-mt-4 -mb-2 lg:-mb-2"})
-    if section:
-        return section.text.strip()
+    try:
+        url = f"https://www.etymonline.com/word/{word}"
+        headers = {
+            "User-Agent": random.choice(USER_AGENTS),
+        }
+        response = requests.get(url, headers=headers)
+        if response.status_code != 200:
+            print(
+                f"Error: Status code {response.status_code} when fetching etymology for {word}"
+            )
+            return None
+        soup = BeautifulSoup(response.text, "html.parser")
+        section = soup.find("section", {"class": "-mt-4 -mb-2 lg:-mb-2"})
+        if section:
+            return section.text.strip()
+    except Exception as e:
+        print(f"Exception in get_etymology for '{word}': {e}")
     return None
 
 
 def get_trans(word):
     """爬取单词翻译"""
-    url = (
-        f"https://dictionary.cambridge.org/dictionary/english-chinese-simplified/{word}"
-    )
+    try:
+        url = f"https://dictionary.cambridge.org/dictionary/english-chinese-simplified/{word}"
 
-    headers = {
-        "User-Agent": random.choice(USER_AGENTS),
-    }
-    response = requests.get(url, headers=headers)
-    if response.status_code != 200:
-        print(f"Error: Status code {response.status_code}")
-        return None
-    soup = BeautifulSoup(response.text, "html.parser")
-    translations = []  # 先定义为空数组
-    divs = soup.find_all("div", {"class": "pr dsense"})
-    if divs:
-        translations = []
-        for div in divs:
-            translation = {}
-            abbr_span = div.find("span", {"class": "pos dsense_pos"})
-            if abbr_span:
-                translation["abbreviation"] = (
-                    abbr_span.text.strip()
-                )  # 提取子div中的文本
-            trans_div = div.find("span", {"class": "trans dtrans dtrans-se break-cj"})
-            if trans_div:
-                translation["translation"] = trans_div.text.strip()  # 提取子div中的文本
-            translations.append(translation)
-    # 假设 soup 是 BeautifulSoup 对象
-    phonetic_div = soup.find("div", {"class": "pos-header dpos-h"})
-    if phonetic_div:
-        phonetic_span = phonetic_div.find("span", {"class": "ipa dipa lpr-2 lpl-1"})
-        if phonetic_span:
-            phonetic = phonetic_span.text.strip()  # 提取子div中的文本
+        headers = {
+            "User-Agent": random.choice(USER_AGENTS),
+        }
+        response = requests.get(url, headers=headers)
+        if response.status_code != 200:
+            print(
+                f"Error: Status code {response.status_code} when fetching translation for {word}"
+            )
+            return None
+        soup = BeautifulSoup(response.text, "html.parser")
+        translations = []  # 先定义为空数组
+        divs = soup.find_all("div", {"class": "pr dsense"})
+        if divs:
+            for div in divs:
+                translation = {}
+                abbr_span = div.find("span", {"class": "pos dsense_pos"})
+                if abbr_span:
+                    translation["abbreviation"] = abbr_span.text.strip()
+                trans_div = div.find(
+                    "span", {"class": "trans dtrans dtrans-se break-cj"}
+                )
+                if trans_div:
+                    translation["translation"] = trans_div.text.strip()
+                if translation:
+                    translations.append(translation)
 
-    examples_div = soup.find_all("div", {"class": "examp dexamp"})
-    if examples_div:
+        phonetic = ""
+        phonetic_div = soup.find("div", {"class": "pos-header dpos-h"})
+        if phonetic_div:
+            phonetic_span = phonetic_div.find("span", {"class": "ipa dipa lpr-2 lpl-1"})
+            if phonetic_span:
+                phonetic = phonetic_span.text.strip()
+
         examples = []
-        examples_max_length = 5
-        for example_div in examples_div:
-            if len(examples) >= examples_max_length:
-                break
+        examples_div = soup.find_all("div", {"class": "examp dexamp"})
+        for example_div in examples_div[:5]:
             example = {}
             sentence = example_div.find("span", {"class": "eg deg"})
             if sentence:
-                example["sentence"] = sentence.text.strip()  # 提取子div中的文本
+                example["sentence"] = sentence.text.strip()
             translation = example_div.find(
                 "span", {"class": "trans dtrans dtrans-se hdb break-cj"}
             )
             if translation:
-                example["translation"] = translation.text.strip()  # 提取子div中的文本
-            examples.append(example)
+                example["translation"] = translation.text.strip()
+            if example:
+                examples.append(example)
+
         return {
             "word": word,
             "phonetic": phonetic,
@@ -94,7 +99,10 @@ def get_trans(word):
             "translations": translations,
             "example_sentence": examples,
         }
-    return None
+
+    except Exception as e:
+        print(f"Exception in get_trans for '{word}': {e}")
+        return None
 
 
 def generateWordJSONFromCSV():
@@ -111,7 +119,6 @@ def generateWordJSONFromCSV():
                 word_data_list.append(word_info)
             else:
                 print(f"❌ 未找到: {word}")
-            # time.sleep(1)  # 加1秒延迟防止被网站封IP
 
     # 写入 JSON 文件
     with open("word_data.json", "w", encoding="utf-8") as f:
