@@ -24,6 +24,42 @@ function HomeTabs() {
   return (
     <MainTab.Navigator tabBar={props => <TabBar {...props} />}>
       <MainTab.Screen
+        name="Book"
+        component={WordbookScreen}
+        options={{
+          headerShown: false,
+          tabBarIcon: props => (
+            <Icon
+              name="book"
+              type="font-awesome"
+              size={24}
+              color={props.color}
+            />
+          ),
+        }}
+      />
+      <MainTab.Screen
+        name="Profile"
+        component={ProfileScreen}
+        options={{
+          headerShown: false,
+          tabBarIcon: props => (
+            <Icon
+              name="user"
+              type="font-awesome"
+              size={24}
+              color={props.color}
+            />
+          ),
+        }}
+      />
+    </MainTab.Navigator>
+  );
+}
+function WordTabs() {
+  return (
+    <MainTab.Navigator tabBar={props => <TabBar {...props} />}>
+      <MainTab.Screen
         name="Review"
         component={ReviewScreen}
         options={{
@@ -46,21 +82,6 @@ function HomeTabs() {
           tabBarIcon: props => (
             <Icon
               name="area-chart"
-              type="font-awesome"
-              size={24}
-              color={props.color}
-            />
-          ),
-        }}
-      />
-      <MainTab.Screen
-        name="Profile"
-        component={ProfileScreen}
-        options={{
-          headerShown: false,
-          tabBarIcon: props => (
-            <Icon
-              name="user"
               type="font-awesome"
               size={24}
               color={props.color}
@@ -115,17 +136,15 @@ const App = observer(() => {
           {userStore.isLoggedIn ? (
             userStore.selectBookId === -1 ? (
               <RootStack.Screen
-                name="Book"
-                component={WordbookScreen}
-                options={{
-                  headerShown: false,
-                }}
-              />
-            ) : (
-              <RootStack.Screen
                 name="Home"
                 options={{headerShown: false}}
                 component={HomeTabs}
+              />
+            ) : (
+              <RootStack.Screen
+                name="Word"
+                options={{headerShown: false}}
+                component={WordTabs}
               />
             )
           ) : (
