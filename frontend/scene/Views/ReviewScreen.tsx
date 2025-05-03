@@ -1,4 +1,4 @@
-import {Badge, Divider, Skeleton} from '@rneui/themed';
+import {Badge, Divider, Icon, Skeleton} from '@rneui/themed';
 import React, {useCallback, useEffect, useMemo} from 'react';
 import {
   Platform,
@@ -19,6 +19,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import {computeSM2, firstReview} from '../../utils/sm2';
 import {get_word_info, set_word_status} from '../../request/word';
 import {useFocusEffect} from '@react-navigation/native';
+import userStore from '../../stores/UserStore';
 
 const ReviewScreen = observer(() => {
   const [showTrans, setShowTrans] = React.useState(false);
@@ -205,6 +206,10 @@ const ReviewScreen = observer(() => {
     }, [wordbookStore.wordbook_id]),
   );
 
+  const clickBackHandler = () => {
+    userStore.unSelectBook();
+  };
+
   useEffect(() => {
     const changeWordIndex = async () => {
       await AsyncStorage.setItem(
@@ -234,10 +239,10 @@ const ReviewScreen = observer(() => {
       console.log('res', res);
       if (res) {
         // 切换下一个词
-        let statusCount = await AsyncStorage.getItem(
-          `${status}_count`,
-        );
-        statusCount = (statusCount ? parseInt(statusCount, 10) + 1 : 1).toString();
+        let statusCount = await AsyncStorage.getItem(`${status}_count`);
+        statusCount = (
+          statusCount ? parseInt(statusCount, 10) + 1 : 1
+        ).toString();
         await AsyncStorage.setItem(`${status}_count`, statusCount);
         setAllTodayWordsIndex(prev => prev + 1);
         setShowTrans(false);
@@ -273,7 +278,13 @@ const ReviewScreen = observer(() => {
       <View style={styles.toolbar} />
       {!isLoading ? (
         <>
-          <View style={{height: 80, backgroundColor: '#8684ec6d'}}>
+          <View style={{height: 100, backgroundColor: '#8684ec6d'}}>
+            <TouchableOpacity onPress={clickBackHandler}>
+              <View style={styles.cleanBar}>
+                <Icon name="trash" type="font-awesome" color="#c2c1c1" />
+                <Text style={{color: '#c2c1c1'}}>Choose a new book</Text>
+              </View>
+            </TouchableOpacity>
             <Text style={styles.mainWord}>{reqWord.word}</Text>
             <View style={styles.WordHintBox}>
               <Badge
@@ -434,9 +445,14 @@ const styles = StyleSheet.create({
     backgroundColor: '#8684ec6d',
     paddingTop: Platform.OS === 'android' ? StatusBar.currentHeight : 0,
     boxSizing: 'content-box',
-    height: 40,
   },
-  transLabel:{
+  cleanBar:{
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 5,
+    paddingHorizontal: 10,
+  },
+  transLabel: {
     fontSize: 12,
     color: '#e0d5d5',
   },

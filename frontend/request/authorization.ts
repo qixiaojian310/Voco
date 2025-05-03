@@ -7,6 +7,11 @@ interface BasicUserInfo {
   password: string;
 }
 
+interface UserSetting {
+  daily_goal: number,
+  reminder_time: string,
+}
+
 interface ConvertedUserInfo {
   username: string;
   password_hash: string;
@@ -31,6 +36,7 @@ export const signin = async (
     const body = await res.json();
     await AsyncStorage.setItem('access_token', body.access_token);
     await AsyncStorage.setItem('userInfo', JSON.stringify(body.user));
+
     return body;
   } else {
     return res;
@@ -60,3 +66,51 @@ export const signup = async (
     return res;
   }
 };
+
+
+export const set_streak_day = async (
+  streak_day: string
+) => {
+  const res = await requestWrapper(
+    '/set_streak_day',
+    {
+      streak_day,
+    },
+    {
+      method: 'POST',
+    },
+  );
+  if (typeof res !== 'number') {
+    const body = await res.json();
+    console.log(body);
+
+    return body;
+  } else {
+    return res;
+  }
+};
+
+
+export const set_user_setting = async (
+  userSetting: UserSetting
+) => {
+  const res = await requestWrapper(
+    '/set_user_setting',
+    {
+      daily_goal: userSetting.daily_goal,
+      reminder_time: userSetting.reminder_time,
+    },
+    {
+      method: 'POST',
+    },
+  );
+  if (typeof res !== 'number') {
+    const body = await res.json();
+    console.log(body);
+
+    return body;
+  } else {
+    return res;
+  }
+};
+

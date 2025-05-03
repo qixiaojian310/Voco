@@ -20,7 +20,7 @@ import {Wordbook} from '../../types/Wordbook';
 import {Icon, Input} from '@rneui/themed';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import wordbookStore from '../../stores/WordbookStore';
-import { useNavigation } from '@react-navigation/native';
+import userStore from '../../stores/UserStore';
 
 const WordbookItem = ({
   title,
@@ -59,7 +59,6 @@ const WordbookItem = ({
   </TouchableOpacity>
 );
 function WordbookScreen() {
-  const navigation = useNavigation<any>();
   const [refreshing, setRefreshing] = React.useState(false);
   const [allWordbook, setAllWordbook] = React.useState<Wordbook[]>([]);
   const [openFilter, setOpenFilter] = React.useState(false);
@@ -94,7 +93,7 @@ function WordbookScreen() {
     wordbookStore.setReviewWordList(res.review_word_list);
     await AsyncStorage.setItem('wordbook_id', wordbook_id.toString());
     wordbookStore.setWordbookId(wordbook_id);
-    navigation.navigate('Review');
+    userStore.selectBook(wordbook_id);
   };
   return (
     <View style={{flex: 1}}>

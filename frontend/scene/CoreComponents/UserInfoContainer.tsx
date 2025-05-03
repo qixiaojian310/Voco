@@ -51,8 +51,6 @@ function UserInfoContainer() {
         type: 'success',
       });
       userStore.login();
-      console.log(userStore.isLoggedIn);
-
     }
   };
 

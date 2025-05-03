@@ -15,7 +15,7 @@ import {Icon} from '@rneui/themed';
 import Toast from 'react-native-toast-message';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import userStore from '../stores/UserStore';
-import { observer } from 'mobx-react';
+import {observer} from 'mobx-react';
 import WordbookScreen from './Views/WordbookScreen';
 
 const RootStack = createNativeStackNavigator();
@@ -24,22 +24,17 @@ function HomeTabs() {
   return (
     <MainTab.Navigator tabBar={props => <TabBar {...props} />}>
       <MainTab.Screen
-        name="Book"
-        component={WordbookScreen}
-        options={{
-          headerShown: false,
-          tabBarIcon: props => (
-            <Icon name="book" type="font-awesome" size={24} color={props.color} />
-          ),
-        }}
-      />
-      <MainTab.Screen
         name="Review"
         component={ReviewScreen}
         options={{
           headerShown: false,
           tabBarIcon: props => (
-            <Icon name="flag-checkered" type="font-awesome" size={24} color={props.color} />
+            <Icon
+              name="flag-checkered"
+              type="font-awesome"
+              size={24}
+              color={props.color}
+            />
           ),
         }}
       />
@@ -49,7 +44,12 @@ function HomeTabs() {
         options={{
           headerShown: false,
           tabBarIcon: props => (
-            <Icon name="area-chart" type="font-awesome" size={24} color={props.color} />
+            <Icon
+              name="area-chart"
+              type="font-awesome"
+              size={24}
+              color={props.color}
+            />
           ),
         }}
       />
@@ -112,15 +112,24 @@ const App = observer(() => {
           }
         }}>
         <RootStack.Navigator>
-          {
-            userStore.isLoggedIn ? (
+          {userStore.isLoggedIn ? (
+            userStore.selectBookId === -1 ? (
               <RootStack.Screen
-              name="Home"
-              options={{headerShown: false}}
-              component={HomeTabs}
-            />
+                name="Book"
+                component={WordbookScreen}
+                options={{
+                  headerShown: false,
+                }}
+              />
             ) : (
               <RootStack.Screen
+                name="Home"
+                options={{headerShown: false}}
+                component={HomeTabs}
+              />
+            )
+          ) : (
+            <RootStack.Screen
               name="Register"
               options={{
                 title: 'Register',
@@ -128,8 +137,7 @@ const App = observer(() => {
               }}
               component={RegisterScreen}
             />
-            )
-          }
+          )}
         </RootStack.Navigator>
       </NavigationContainer>
       <Toast position="top" topOffset={20} />

@@ -2,6 +2,7 @@ import { makeAutoObservable } from 'mobx';
 
 class UserStore {
   isLoggedIn: boolean = false;
+  selectBookId: number = -1;
 
   constructor() {
     makeAutoObservable(this);
@@ -15,6 +16,13 @@ class UserStore {
   // 登出方法
   logout() {
     this.isLoggedIn = false;
+  }
+
+  selectBook(bookId:number) {
+    this.selectBookId = bookId;
+  }
+  unSelectBook() {
+    this.selectBookId = -1;
   }
   // 获取登录状态
   getLoginStatus() {

@@ -1,15 +1,57 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import {Button} from '@rneui/base';
-import {Platform, StatusBar, StyleSheet, Text, View} from 'react-native';
-import React, {useRef} from 'react';
+import {
+  Platform,
+  StatusBar,
+  StyleSheet,
+  Text,
+  TouchableOpacity,
+  View,
+} from 'react-native';
+import React, {useMemo, useRef} from 'react';
 import userStore from '../../stores/UserStore';
 import {Avatar} from '@rneui/themed';
 import {useFocusEffect} from '@react-navigation/native';
 import DatePicker from 'react-native-date-picker';
 import {Picker} from '@react-native-picker/picker';
+import {set_streak_day, set_user_setting} from '../../request/authorization';
+import Toast from 'react-native-toast-message';
+import {Calendar} from 'react-native-calendars';
+import {ScrollView} from 'react-native';
+import {Dimensions} from 'react-native';
+import {Animated} from 'react-native';
+import LinearGradient from 'react-native-linear-gradient';
 
 function ProfileScreen() {
   const [userInfo, setUserInfo] = React.useState<any>(null);
+  const [settingPanelWidth, setSettingPanelWidth] = React.useState(0);
+  const [streakDaysJSON, setStreakDaysJSON] = React.useState<string>('[]');
+
+  const animation = useRef(new Animated.Value(0)).current;
+
+  React.useEffect(() => {
+    Animated.loop(
+      Animated.sequence([
+        Animated.timing(animation, {
+          toValue: 1,
+          duration: 1000,
+          useNativeDriver: false,
+        }),
+        Animated.timing(animation, {
+          toValue: 0,
+          duration: 1000,
+          useNativeDriver: false,
+        }),
+      ]),
+    ).start();
+  }, [animation]);
+
+  const animatedStyle = {
+    opacity: animation.interpolate({
+      inputRange: [0, 1],
+      outputRange: [0.4, 1],
+    }),
+  };
 
   const logoutHandler = async () => {
     await AsyncStorage.removeItem('access_token');
@@ -21,7 +63,7 @@ function ProfileScreen() {
     const userInfoJSON = await AsyncStorage.getItem('userInfo');
     if (userInfoJSON) {
       const userInfo = JSON.parse(userInfoJSON);
-      console.log(userInfo);
+      setStreakDaysJSON(userInfo.streak_days);
       setUserInfo(userInfo);
     }
   };
@@ -32,15 +74,96 @@ function ProfileScreen() {
     setUserInfo((prev: any) => ({...prev, reminder_time: decimalTime})); // 22.5 格式返回
   };
 
+  const markedDates = useMemo(() => {
+    //同步到设置JSON里面
+    const markedDatesArr = JSON.parse(streakDaysJSON);
+    const markedDatesObj = markedDatesArr.reduce((acc: any, date: string) => {
+      acc[date] = {selected: true, marked: true, selectedColor: 'blue'};
+      return acc;
+    }, {});
+    console.log(markedDatesObj);
+
+    return markedDatesObj;
+  }, [streakDaysJSON]);
+
+  const onStreakDayPress = () => {
+    const dateString = new Date().toISOString().slice(0, 10);
+    setStreakDaysJSON(prev => {
+      const prevObj = JSON.parse(prev); // 是个日期字符串数组
+      let updated;
+      if (prevObj.includes(dateString)) {
+        updated = prevObj.filter((date: string) => date !== dateString);
+      } else {
+        updated = [...prevObj, dateString];
+      }
+      return JSON.stringify(updated);
+    });
+  };
+
   React.useEffect(() => {
-    if (userInfo) {
-      AsyncStorage.setItem('userInfo', JSON.stringify(userInfo));
+    async function updatestreakDays() {
+      const res = await set_streak_day(streakDaysJSON);
+      if (res === true) {
+        setUserInfo((prev:any) => ({...prev, streak_days: streakDaysJSON}));
+        Toast.show({
+          type: 'success',
+          text1: 'Success',
+          text2: 'Streak day updated',
+          position: 'top',
+          visibilityTime: 1000,
+          autoHide: true,
+          topOffset: 30,
+        });
+      } else if (typeof res === 'number') {
+        Toast.show({
+          type: 'error',
+          text1: 'Error',
+          text2: 'Streak day updated failed',
+          position: 'top',
+          visibilityTime: 1000,
+          autoHide: true,
+          topOffset: 30,
+        });
+      }
     }
+    updatestreakDays();
+  }, [streakDaysJSON]);
+
+  React.useEffect(() => {
+    async function updateUserInfo() {
+      if (userInfo) {
+        await AsyncStorage.setItem('userInfo', JSON.stringify(userInfo));
+        const res = await set_user_setting(userInfo);
+        if (res === true) {
+          Toast.show({
+            type: 'success',
+            text1: 'Success',
+            text2: 'Setting updated',
+            position: 'top',
+            visibilityTime: 1000,
+            autoHide: true,
+            topOffset: 30,
+          });
+        } else if (typeof res === 'number') {
+          Toast.show({
+            type: 'error',
+            text1: 'Error',
+            text2: 'Setting updated failed',
+            position: 'top',
+            visibilityTime: 1000,
+            autoHide: true,
+            topOffset: 30,
+          });
+        }
+      }
+    }
+    updateUserInfo();
   }, [userInfo]);
 
   useFocusEffect(
     React.useCallback(() => {
       initInfo();
+      setSettingPanelWidth(Dimensions.get('window').width - 60);
     }, []),
   );
 
@@ -78,27 +201,28 @@ function ProfileScreen() {
         </View>
       )}
       {userInfo && (
-        <View style={styles.settingPanel}>
+        <ScrollView style={styles.settingPanel}>
           <Text style={{fontSize: 18}}>Setting Panel</Text>
           <View style={styles.settingItem}>
             <Text style={{fontSize: 18, fontWeight: 'bold'}}>Remind Time</Text>
             <View style={{transform: [{scale: 0.7}]}}>
-            <DatePicker
-              mode="time"
-              locale="zh_CN"
-              date={convertHourNumberToDate(userInfo.reminder_time)}
-              onDateChange={onDateChangeHandler}
-              minuteInterval={30}
-              style={{height: 120, padding: 0, margin: 0}}
-            />
+              <DatePicker
+                mode="time"
+                locale="zh_CN"
+                date={convertHourNumberToDate(userInfo.reminder_time)}
+                onDateChange={onDateChangeHandler}
+                minuteInterval={30}
+                style={{height: 120, padding: 0, margin: 0}}
+              />
             </View>
           </View>
           <View style={styles.settingItem}>
             <Text style={{fontSize: 18, fontWeight: 'bold'}}>Daily Goal</Text>
             <Picker
-              style={{flex: 1}}
+              mode="dropdown"
+              style={{width: 120, textAlign: 'right'}}
               ref={pickerRef}
-              selectedValue={userInfo.daily_goal}
+              selectedValue={userInfo.daily_goal.toString()}
               onValueChange={itemValue =>
                 setUserInfo({
                   ...userInfo,
@@ -117,7 +241,68 @@ function ProfileScreen() {
               <Picker.Item label="100" value="100" />
             </Picker>
           </View>
-        </View>
+          {Object.keys(markedDates).includes(new Date().toISOString().slice(0, 10)) ? (
+            <View style={styles.datePickerItem}>
+              <Text style={{fontSize: 18, fontWeight: 'bold'}}>Streak Day</Text>
+              <Calendar
+                markingType={'multi-dot'}
+                initialDate={new Date().toDateString()}
+                style={{
+                  borderWidth: 1,
+                  borderColor: '#ddd',
+                  borderRadius: 10,
+                  width: settingPanelWidth,
+                }}
+                theme={{
+                  backgroundColor: '#ffffff72',
+                  calendarBackground: '#ffffff0',
+                  textSectionTitleColor: '#92a1ae',
+                  textSectionTitleDisabledColor: '#d9e1e8',
+                  selectedDayBackgroundColor: '#00adf5',
+                  selectedDayTextColor: '#ffffff',
+                  todayTextColor: '#00adf5',
+                  dayTextColor: '#2d4150',
+                  textDisabledColor: '#92a1ae',
+                  dotColor: '#00adf5',
+                  selectedDotColor: '#ffffff',
+                  arrowColor: 'orange',
+                  disabledArrowColor: '#d9e1e8',
+                  monthTextColor: 'blue',
+                  indicatorColor: 'blue',
+                  textDayFontFamily: 'monospace',
+                  textMonthFontFamily: 'monospace',
+                  textDayHeaderFontFamily: 'monospace',
+                  textDayFontWeight: '300',
+                  textMonthFontWeight: 'bold',
+                  textDayHeaderFontWeight: '300',
+                  textDayFontSize: 16,
+                  textMonthFontSize: 16,
+                  textDayHeaderFontSize: 16,
+                }}
+                markedDates={markedDates}
+              />
+            </View>
+          ) : (
+            <TouchableOpacity onPress={onStreakDayPress}>
+              <Animated.View style={[styles.streakDaysPanel, animatedStyle]}>
+                <LinearGradient
+                  colors={['#7F7FD5', '#86A8E7', '#91EAE4']} // 你可以换成你喜欢的渐变色
+                  start={{x: 0, y: 0}}
+                  end={{x: 1, y: 1}}
+                  style={styles.gradientPanel}>
+                  <Text
+                    style={{
+                      fontSize: 18,
+                      fontWeight: 'bold',
+                      color: '#7a5c7a',
+                    }}>
+                    Record Your Activity!
+                  </Text>
+                </LinearGradient>
+              </Animated.View>
+            </TouchableOpacity>
+          )}
+        </ScrollView>
       )}
       <Button
         title="Logout"
@@ -158,9 +343,35 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'space-between',
   },
+  datePickerItem: {
+    padding: 10,
+    marginHorizontal: 10,
+    marginTop: 10,
+    borderRadius: 10,
+    gap: 10,
+    flexDirection: 'column',
+    boxShadow: '0 0 10 1 #858585',
+    marginBottom: 50,
+  },
   settingPanel: {
     flex: 1,
-    padding: 10,
+    paddingHorizontal: 10,
+    marginTop: 10,
+    paddingTop: 10,
+    paddingBottom: 100,
+  },
+
+  gradientPanel: {
+    padding: 16,
+    borderRadius: 12,
+    alignItems: 'center',
+    justifyContent: 'center',
+    flex: 1,
+  },
+  streakDaysPanel: {
+    height: 100,
+    margin: 10,
+    borderRadius: 10,
   },
 });
 export default ProfileScreen;
