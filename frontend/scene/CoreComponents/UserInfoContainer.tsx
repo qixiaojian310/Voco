@@ -18,8 +18,6 @@ function UserInfoContainer() {
       username: username,
       password: password,
     });
-    console.log(res);
-
     if (typeof res === 'number') {
       Toast.show({
         text1: 'Signup Failed',

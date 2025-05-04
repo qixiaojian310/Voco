@@ -37,7 +37,6 @@ export const requestWrapper = async (
         signal,
       },
     );
-    console.log('fetch response', response);
     if (response.ok) {
       return response;
     } else {

@@ -81,8 +81,6 @@ function ProfileScreen() {
       acc[date] = {selected: true, marked: true, selectedColor: 'blue'};
       return acc;
     }, {});
-    console.log(markedDatesObj);
-
     return markedDatesObj;
   }, [streakDaysJSON]);
 

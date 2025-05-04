@@ -75,7 +75,6 @@ const MemoryList = observer(() => {
     setRefreshing(true);
     //TODO REQ
     const res = await get_words_detail_from_wordbook(wordbookStore.wordbook_id,search_word);
-    console.log(res);
     setAllWord(res);
     setRefreshing(false);
     // eslint-disable-next-line react-hooks/exhaustive-deps

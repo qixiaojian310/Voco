@@ -82,7 +82,6 @@ export const set_streak_day = async (
   );
   if (typeof res !== 'number') {
     const body = await res.json();
-    console.log(body);
 
     return body;
   } else {
@@ -106,8 +105,6 @@ export const set_user_setting = async (
   );
   if (typeof res !== 'number') {
     const body = await res.json();
-    console.log(body);
-
     return body;
   } else {
     return res;

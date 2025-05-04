@@ -145,7 +145,6 @@ const ReviewScreen = observer(() => {
           return today.getDay() >= nextReviewDate.getDay();
         })
         .map((wordItem: any) => wordItem.word);
-      console.log('review_word_list', review_word_list);
 
       // Step 2: 打乱数组的函数
       const shuffle = (array: any[]) => {
@@ -234,9 +233,7 @@ const ReviewScreen = observer(() => {
         review_interval: rem_req.interval,
         next_review: rem_req.review_datetime,
       };
-      console.log('req', request);
       const res = await set_word_status(request);
-      console.log('res', res);
       if (res) {
         // 切换下一个词
         let statusCount = await AsyncStorage.getItem(`${status}_count`);
