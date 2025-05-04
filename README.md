@@ -1,13 +1,32 @@
 
 
-![icon](./report/icon.png#pic_center =50*50)
+![icon](./report/icon.png)
 
-This is a Android app for improving your memory in vocabulary. 
+(HKU7506) This is a Android app for improving your memory in vocabulary. 
 
-# Getting Started
+# How to setup it
 
-> **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
+## (For usage)
+Download APK in the release
 
+## (For development) Just setup frontend
+
+### prerequisite
+- Have Java 23
+- Have NodeJS >= 18
+- Download Android SDK > 25
+
+### Step 1 Download all package
+Input these commands in your root path
+```shell
+npm install -g yarn
+yarn install
+yarn android
+```
+if every thing setup well, you can see a emulator or if you have real android smart phone and setup adb, you can see a package install in there
+![first page](./report/Screenshot_2025-05-04-13-28-26-17_252b32529fff5119fd2770dbc3524f79.jpg)
+
+### Step 2 Show result
 ## Step 1: Start Metro
 
 First, you will need to run **Metro**, the JavaScript build tool for React Native.
