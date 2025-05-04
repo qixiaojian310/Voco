@@ -50,4 +50,5 @@ MYSQL_DATABASE=voco
 MYSQL_HOST=127.0.0.1
 ```
 in your backend folder
+
 4. Change `frontend/request/requestWrapper.ts` change backend to your backend address
