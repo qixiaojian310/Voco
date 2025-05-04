@@ -73,3 +73,22 @@ export const add_words_to_wordbook = async (addBundle?: any) => {
     return res;
   }
 };
+
+export const delete_wordbook = async (wordbook_id?: any) => {
+  const res = await requestWrapper(
+    '/delete_wordbook',
+    {
+      wordbook_id,
+    },
+    {
+      method: 'POST',
+    },
+  );
+  if (typeof res !== 'number') {
+    const body = await res.json();
+    return body;
+  } else {
+    return res;
+  }
+};
+

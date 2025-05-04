@@ -12,6 +12,7 @@ import {
 } from 'react-native';
 import React, {useCallback} from 'react';
 import {
+  delete_wordbook,
   get_all_wordbook,
   get_all_wordbook_by_user,
   get_words_from_wordbook,
@@ -21,63 +22,70 @@ import {Icon, Input} from '@rneui/themed';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import wordbookStore from '../../stores/WordbookStore';
 import userStore from '../../stores/UserStore';
-import { useFocusEffect } from '@react-navigation/native';
+import {useFocusEffect} from '@react-navigation/native';
+import { Toast } from 'react-native-toast-message/lib/src/Toast';
 
 const WordbookItem = ({
   title,
   description,
   wordbook_id,
-  onPress,
+  onEnter,
+  onDelete,
 }: {
   title: string;
   description: string;
   wordbook_id: number;
-  onPress: (wordbook_id: number) => void;
+  onEnter: (wordbook_id: number) => void;
+  onDelete: (wordbook_id: number) => void;
 }) => (
-  <TouchableOpacity
-    activeOpacity={0.8}
-    onPress={() => {
-      onPress(wordbook_id);
-    }}>
-    <View style={styles.item}>
-      <Image
-        style={{
-          marginRight: 10,
-          borderRadius: 5,
-          width:70,
-          height: 80,
-        }}
-        resizeMode="cover"
-        source={require('../../assets/wordbook_cover.png')}
-      />
-      <View style={{flex: 1}}>
-        <Text style={styles.wordbook_title}>{title}</Text>
+  <View style={styles.item}>
+    <TouchableOpacity
+      activeOpacity={0.8}
+      style={styles.itemContent}
+      onPress={() => {
+        onEnter(wordbook_id);
+      }}>
+        <Image
+          style={{
+            marginRight: 10,
+            borderRadius: 5,
+            width: 70,
+            height: 80,
+          }}
+          resizeMode="cover"
+          source={require('../../assets/wordbook_cover.png')}
+        />
         <View style={{flex: 1}}>
-          <Text style={styles.wordbook_subtitle}>{description}</Text>
+          <Text style={styles.wordbook_title}>{title}</Text>
+          <View style={{flex: 1}}>
+            <Text style={styles.wordbook_subtitle}>{description}</Text>
+          </View>
         </View>
-      </View>
-    </View>
-  </TouchableOpacity>
+    </TouchableOpacity>
+    <TouchableOpacity
+      activeOpacity={0.8}
+      style={styles.deleteContent}
+      onPress={() => {
+        onDelete(wordbook_id);
+      }}>
+        <Icon name="trash" type="font-awesome" color="#cbcbcb" size={24} />
+    </TouchableOpacity>
+  </View>
 );
 function WordbookScreen() {
   const [refreshing, setRefreshing] = React.useState(false);
   const [allWordbook, setAllWordbook] = React.useState<Wordbook[]>([]);
   const [openFilter, setOpenFilter] = React.useState(false);
   const [wordbook_name, setWordbook_name] = React.useState('');
-  const getWordbook = useCallback(
-    async () => {
-      if (openFilter) {
-        const res = (await get_all_wordbook_by_user(
-          wordbook_name,
-        )) as Wordbook[];
-        setAllWordbook(res);
-      } else {
-        const res = await get_all_wordbook(wordbook_name);
-        setAllWordbook(res);
-      }
-    },
-    [openFilter, wordbook_name],
-  );
+  const getWordbook = useCallback(async () => {
+    if (openFilter) {
+      const res = (await get_all_wordbook_by_user(wordbook_name)) as Wordbook[];
+      setAllWordbook(res);
+    } else {
+      const res = await get_all_wordbook(wordbook_name);
+      setAllWordbook(res);
+    }
+  }, [openFilter, wordbook_name]);
   const onRefresh = useCallback(async () => {
     setRefreshing(true);
     await getWordbook();
@@ -99,6 +107,17 @@ function WordbookScreen() {
     await AsyncStorage.setItem('wordbook_id', wordbook_id.toString());
     wordbookStore.setWordbookId(wordbook_id);
     userStore.selectBook(wordbook_id);
+  };
+  const pressWordbookDeleteHandler = async (wordbook_id: number) => {
+    // 删除单词本
+    const res = await delete_wordbook(wordbook_id);
+    if (typeof res !== 'number' && res.wordbook_id === wordbook_id ) {
+      Toast.show({
+        type: 'success',
+        text1: 'Delete wordbook successfully',
+      });
+      onRefresh();
+    }
   };
   return (
     <View style={{flex: 1}}>
@@ -141,7 +160,8 @@ function WordbookScreen() {
             title={item.name}
             description={item.description}
             wordbook_id={item.wordbook_id}
-            onPress={pressWordbookHandler}
+            onEnter={pressWordbookHandler}
+            onDelete={pressWordbookDeleteHandler}
           />
         )}
         contentContainerStyle={styles.scrollView}
@@ -185,6 +205,18 @@ const styles = StyleSheet.create({
     gap: 10,
     height: 80,
     flexDirection: 'row',
+  },
+  itemContent: {
+    gap: 10,
+    height: 80,
+    flexDirection: 'row',
+    flex: 1,
+  },
+  deleteContent: {
+    alignItems: 'center',
+    justifyContent: 'center',
+    height: 80,
+    width: 80,
   },
   wordbook_title: {
     fontSize: 14,

@@ -3,6 +3,7 @@ from typing import Any, List, Optional
 from fastapi import HTTPException, Depends, APIRouter
 from pydantic import BaseModel
 from static.word import (
+    delete_book_from_user,
     get_books_by_user,
     get_all_books,
     get_study_status_statistics,
@@ -131,6 +132,14 @@ async def add_wordbook(
     )
     res = add_words_to_wordbook(wordbook_id, request.content)
     return res
+
+@router.post("/delete_wordbook")
+async def delete_wordbook(
+    request: AllWordRequest,
+    username: int = Depends(get_current_user),
+):
+    res = delete_book_from_user(request.wordbook_id)
+    return {"wordbook_id": res}
 
 
 @router.post("/get_memory_status")
