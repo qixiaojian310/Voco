@@ -115,7 +115,7 @@ const MemoryList = observer(() => {
       <FlatList
         data={allWord}
         keyExtractor={item => item.word.toString()}
-        maxToRenderPerBatch={5}
+        maxToRenderPerBatch={50}
         renderItem={({item}) => (
           <WordItemComponent
             word={item.word}
