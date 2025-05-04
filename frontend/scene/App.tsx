@@ -18,6 +18,8 @@ import userStore from '../stores/UserStore';
 import {observer} from 'mobx-react';
 import WordbookScreen from './Views/WordbookScreen';
 import NewWordbookScreen from './Views/NewWordbookScreen';
+import notifee, { AndroidImportance} from '@notifee/react-native';
+
 
 const RootStack = createNativeStackNavigator();
 const MainTab = createBottomTabNavigator();
@@ -138,7 +140,21 @@ const App = observer(() => {
       }
     };
     userLoginWIthToken();
-  });
+  },[]);
+  React.useEffect(() => {
+    async function setupNotifications() {
+      // Android 通道
+      await notifee.createChannel({
+        id: 'default',
+        name: '默认通道',
+        importance: AndroidImportance.HIGH,
+      });
+
+      // 请求通知权限（iOS + Android 13）
+      await notifee.requestPermission();
+    }
+    setupNotifications();
+  }, []);
   return (
     <KeyboardAvoidingView
       style={{flex: 1}}

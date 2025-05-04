@@ -10,7 +10,7 @@ import {
 } from 'react-native';
 import React, {useMemo, useRef} from 'react';
 import userStore from '../../stores/UserStore';
-import {Avatar} from '@rneui/themed';
+import {Avatar, Switch} from '@rneui/themed';
 import {useFocusEffect} from '@react-navigation/native';
 import DatePicker from 'react-native-date-picker';
 import {Picker} from '@react-native-picker/picker';
@@ -21,11 +21,17 @@ import {ScrollView} from 'react-native';
 import {Dimensions} from 'react-native';
 import {Animated} from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
+import notifee, {
+  RepeatFrequency,
+  TimestampTrigger,
+  TriggerType,
+} from '@notifee/react-native';
 
 function ProfileScreen() {
   const [userInfo, setUserInfo] = React.useState<any>(null);
   const [settingPanelWidth, setSettingPanelWidth] = React.useState(0);
   const [streakDaysJSON, setStreakDaysJSON] = React.useState<string>('[]');
+  const [notification, setNotification] = React.useState<boolean>(false);
 
   const animation = useRef(new Animated.Value(0)).current;
 
@@ -61,6 +67,7 @@ function ProfileScreen() {
 
   const initInfo = async () => {
     const userInfoJSON = await AsyncStorage.getItem('userInfo');
+    setNotification(await AsyncStorage.getItem('notification') === 'true');
     if (userInfoJSON) {
       const userInfo = JSON.parse(userInfoJSON);
       setStreakDaysJSON(userInfo.streak_days);
@@ -85,7 +92,9 @@ function ProfileScreen() {
   }, [streakDaysJSON]);
 
   const onStreakDayPress = () => {
-    const dateString = new Date(Date.now() + 8 * 60 * 60 * 1000).toISOString().slice(0, 10);
+    const dateString = new Date(Date.now() + 8 * 60 * 60 * 1000)
+      .toISOString()
+      .slice(0, 10);
     setStreakDaysJSON(prev => {
       const prevObj = JSON.parse(prev); // 是个日期字符串数组
       let updated;
@@ -102,7 +111,7 @@ function ProfileScreen() {
     async function updatestreakDays() {
       const res = await set_streak_day(streakDaysJSON);
       if (res === true) {
-        setUserInfo((prev:any) => ({...prev, streak_days: streakDaysJSON}));
+        setUserInfo((prev: any) => ({...prev, streak_days: streakDaysJSON}));
         Toast.show({
           type: 'success',
           text1: 'Success',
@@ -184,6 +193,59 @@ function ProfileScreen() {
   };
 
   const pickerRef = useRef<any>(null);
+  async function sendNotification() {
+    await notifee.displayNotification({
+      title: 'Cancel Notification',
+      body: 'You have cancel notification',
+      android: {
+        channelId: 'default',
+        smallIcon: 'ic_launcher', // 默认图标
+      },
+    });
+  }
+  async function cancelDailyReminder() {
+    await notifee.cancelNotification('daily-review');
+    // 或取消全部：await notifee.cancelAllNotifications();
+    await sendNotification();
+  }
+
+  async function scheduleDailyReminder() {
+    const userInfoJSON = await AsyncStorage.getItem('userInfo');
+    const userInfo = userInfoJSON ? JSON.parse(userInfoJSON) : null;
+    if (!userInfo) {
+      return;
+    }
+    const date = new Date();
+    date.setHours(
+      userInfo.reminder_time ? Math.floor(userInfo.reminder_time) : 10,
+    );
+    date.setMinutes(
+      userInfo.reminder_time ? (userInfo.reminder_time % 1) * 60 : 0,
+    );
+    date.setSeconds(0);
+
+    if (date < new Date()) {
+      date.setMinutes(new Date().getMinutes() + 1);
+    }
+
+    const trigger: TimestampTrigger = {
+      type: TriggerType.TIMESTAMP,
+      timestamp: date.getTime(),
+      repeatFrequency: RepeatFrequency.DAILY,
+    };
+
+    await notifee.createTriggerNotification(
+      {
+        id: 'daily-review', // 自定义 ID，方便取消
+        title: '记得复习单词 📘',
+        body: `Time is ${new Date().toISOString()}, it's time to study`,
+        android: {
+          channelId: 'default',
+        },
+      },
+      trigger,
+    );
+  }
 
   return (
     <View style={{flex: 1, backgroundColor: '#f1f1f1c6'}}>
@@ -239,12 +301,43 @@ function ProfileScreen() {
               <Picker.Item label="100" value="100" />
             </Picker>
           </View>
-          {Object.keys(markedDates).includes(new Date(Date.now() + 8 * 60 * 60 * 1000).toISOString().slice(0, 10)) ? (
+          <View style={styles.settingItem}>
+            <Text style={{fontSize: 18, fontWeight: 'bold'}}>Notification</Text>
+            <View style={{flexDirection: 'row', alignItems: 'center'}}>
+              <Switch
+                value={notification}
+                onValueChange={async value => {
+                  setNotification(value);
+                  await AsyncStorage.setItem('notification', value.toString());
+                  if (value) {
+                    await scheduleDailyReminder();
+                    Toast.show({
+                      type: 'success',
+                      text1: 'Start Notification',
+                      position: 'top',
+                      visibilityTime: 1500,
+                      topOffset: 30,
+                    });
+                  } else {
+                    await cancelDailyReminder();
+                  }
+                }}
+              />
+            </View>
+          </View>
+
+          {Object.keys(markedDates).includes(
+            new Date(Date.now() + 8 * 60 * 60 * 1000)
+              .toISOString()
+              .slice(0, 10),
+          ) ? (
             <View style={styles.datePickerItem}>
               <Text style={{fontSize: 18, fontWeight: 'bold'}}>Streak Day</Text>
               <Calendar
                 markingType={'multi-dot'}
-                initialDate={new Date(Date.now() + 8 * 60 * 60 * 1000).toDateString()}
+                initialDate={new Date(
+                  Date.now() + 8 * 60 * 60 * 1000,
+                ).toDateString()}
                 style={{
                   borderWidth: 1,
                   borderColor: '#ddd',
